@@ -1,0 +1,18 @@
+/* main css */
+body {
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    height: 1000px;
+    background: rgb(175, 175, 175);
+}
+
+nav {
+    font-size: 20px;
+}
+
+.main-img {
+    width: 100%;
+}
