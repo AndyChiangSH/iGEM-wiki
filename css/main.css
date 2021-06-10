@@ -113,7 +113,7 @@ nav {
     width: auto;
 }
 
-.contact li:hover {
+.contact span:hover {
     color: yellow;
 }
 
