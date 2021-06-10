@@ -7,14 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
     <link rel="stylesheet" href="..\\css\\bootstrap.css">
+    <link rel="stylesheet" href="..\\css\\carousel.css">
     <link rel="stylesheet" href="..\\css\\main.css">
     <script src="..\\js\\bootstrap.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">
+                <img id="team-logo" class="d-inline-block align-text-top" src="..\\resources\\team-logo.jpeg"
+                    alt="team-logo">
+                NCHU_Taichung</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -22,33 +26,196 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Parts
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Overview</a></li>
+                            <li><a class="dropdown-item" href="#">Basic</a></li>
+                            <li><a class="dropdown-item" href="#">Composite</a></li>
+                            <li><a class="dropdown-item" href="#">Collection</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                            Project
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Description</a></li>
+                            <li><a class="dropdown-item" href="#">Design</a></li>
+                            <li><a class="dropdown-item" href="#">Experiments</a></li>
+                            <li><a class="dropdown-item" href="#">Notebooks</a></li>
+                            <li><a class="dropdown-item" href="#">Contribution</a></li>
+                            <li><a class="dropdown-item" href="#">Results</a></li>
+                            <li><a class="dropdown-item" href="#">Demonstrate</a></li>
+                            <li><a class="dropdown-item" href="#">Improve</a></li>
+                            <li><a class="dropdown-item" href="#">Model</a></li>
+                            <li><a class="dropdown-item" href="#">Sponsors</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Safety</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            HP
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">HP</a></li>
+                            <li><a class="dropdown-item" href="#">Education & Engagement</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            How to
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Handle Chlamy</a></li>
+                            <li><a class="dropdown-item" href="#">To crowfunding</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Team
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Members</a></li>
+                            <li><a class="dropdown-item" href="#">Collaborations</a></li>
+                            <li><a class="dropdown-item" href="#">Attributions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Awards
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Measurement</a></li>
+                            <li><a class="dropdown-item" href="#">Plant</a></li>
+                            <li><a class="dropdown-item" href="#">Model</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container">
-        <h1>Header1</h1>
-        <img class="main-img" src="https://placem.at/places?w=1000&h=600" alt="">
+    <img class="main-img img-fluid" src="..\\resources\\placeholder.png" alt="">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#777" />
+                </svg>
+
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>Example headline.</h1>
+                        <p>Some representative placeholder content for the first slide of the carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#777" />
+                </svg>
+
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Another example headline.</h1>
+                        <p>Some representative placeholder content for the second slide of the carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <rect width="100%" height="100%" fill="#777" />
+                </svg>
+
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1>One more for good measure.</h1>
+                        <p>Some representative placeholder content for the third slide of this carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="content-container">
+        <div class="content">
+            <h1>Header1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices congue lectus, eget bibendum sem.
+                Praesent maximus sagittis aliquam. Quisque pellentesque, diam sit amet efficitur molestie, turpis nisl
+                rutrum neque, ac dapibus tortor felis eget metus. Etiam ligula lorem, blandit non efficitur sed,
+                sollicitudin consequat dolor. Fusce pellentesque tellus a dapibus vestibulum. Etiam enim elit, convallis
+                at aliquet sed, ullamcorper eget nisi. Morbi sit amet ligula eleifend, auctor quam at, consectetur
+                velit. Donec lorem purus, pulvinar id blandit sed, fringilla a lectus. Duis ante massa, iaculis a
+                rhoncus id, suscipit sit amet urna.
+            </p>
+        </div>
+        <div class="content">
+            <h1>Header1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices congue lectus, eget bibendum sem.
+                Praesent maximus sagittis aliquam. Quisque pellentesque, diam sit amet efficitur molestie, turpis nisl
+                rutrum neque, ac dapibus tortor felis eget metus. Etiam ligula lorem, blandit non efficitur sed,
+                sollicitudin consequat dolor. Fusce pellentesque tellus a dapibus vestibulum. Etiam enim elit, convallis
+                at aliquet sed, ullamcorper eget nisi. Morbi sit amet ligula eleifend, auctor quam at, consectetur
+                velit. Donec lorem purus, pulvinar id blandit sed, fringilla a lectus. Duis ante massa, iaculis a
+                rhoncus id, suscipit sit amet urna.
+            </p>
+        </div>
+        <div class="content">
+            <h1>Header1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices congue lectus, eget bibendum sem.
+                Praesent maximus sagittis aliquam. Quisque pellentesque, diam sit amet efficitur molestie, turpis nisl
+                rutrum neque, ac dapibus tortor felis eget metus. Etiam ligula lorem, blandit non efficitur sed,
+                sollicitudin consequat dolor. Fusce pellentesque tellus a dapibus vestibulum. Etiam enim elit, convallis
+                at aliquet sed, ullamcorper eget nisi. Morbi sit amet ligula eleifend, auctor quam at, consectetur
+                velit. Donec lorem purus, pulvinar id blandit sed, fringilla a lectus. Duis ante massa, iaculis a
+                rhoncus id, suscipit sit amet urna.
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="content-container">
+            <div class="contact">
+                <ul>
+                    <li><img class="footer-icon" src="..\\resources\\icons\\envelope-fill.svg" alt="">
+                        igemnchu2019@gmail.com</li>
+                    <li><img class="footer-icon" src="..\\resources\\icons\\facebook.svg" alt="">NCHU iGEM Team</li>
+                    <li><img class="footer-icon" src="..\\resources\\icons\\instagram.svg" alt="">@nchuigem2019</li>
+                    <li><img class="footer-icon" src="..\\resources\\icons\\twitter.svg" alt="">@NCHUiGEM</li>
+                    <li><img class="footer-icon" src="..\\resources\\icons\\geo-alt-fill.svg" alt="">NCHU, Taichung,
+                        Taiwan</li>
+                </ul>
+
+            </div>
+        </div>
     </div>
 </body>
 
