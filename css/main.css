@@ -71,6 +71,15 @@ nav {
     margin: 5px;
 }
 
+.nav-link {
+    color: #0000008c;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #ff970e; 
+}
+
 .main-img {
     /* margin-top: 50px; */
     width: 100%;
@@ -85,13 +94,52 @@ nav {
 
 .content {
     width: 80%;
-    margin: 50px auto;
-    text-align: center;
+    margin: 100px auto;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
+#reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.content-img {
+    width: 30%;
+    height: 100%;
+}
+
+.content-text {
+    width: 60%;
+}
+
+@media screen and (max-width: 1000px) {
+    .content-img {
+        width: 80%;
+        height: 100%;
+    }
+    
+    .content-text {
+        width: 100%;
+    }
+
+    .content {
+        text-align: center;
+    }
+}
+
 
 .content h1 {
     color: #e42f2f;
     font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    line-height: 2em;
 }
 
 .footer {
@@ -104,6 +152,8 @@ nav {
 .footer-icon {
     width: 20px;
     height: 20px;
+    margin-right: 10px;
+    fill: white;
 }
 
 .contact li {
@@ -115,10 +165,6 @@ nav {
 
 .contact span:hover {
     color: yellow;
-}
-
-.contact img {
-    margin-right: 10px;
 }
 
 .copyright {
@@ -137,4 +183,5 @@ nav {
     z-index: 10;
     width: 60px;
     height: 60px;
+    border-radius: 50%
 }
