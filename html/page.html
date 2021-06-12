@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="..\\css\\page.css">
 </head>
 
-<body data-bs-spy="scroll">
+<body data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-offset="10" data-bs-method="position">
     <!-- Back to top button start-->
     <button type="button" class="btn btn-danger btn-lg" id="btn-back-to-top">
         <svg width="24" height="24" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
@@ -26,7 +26,7 @@
     <!-- navbar start -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="main.html">
                 <img class="d-inline-block align-text-top team-logo" src="..\\resources\\team-logo.jpeg"
                     alt="team-logo">
                 NCHU_Taichung</a>
@@ -43,7 +43,7 @@
                             Parts
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Overview</a></li>
+                            <li><a class="dropdown-item" href="page.html">Overview</a></li>
                             <li><a class="dropdown-item" href="#">Basic</a></li>
                             <li><a class="dropdown-item" href="#">Composite</a></li>
                             <li><a class="dropdown-item" href="#">Collection</a></li>
@@ -122,39 +122,87 @@
     <main class="page">
         <img class="main-img img-fluid" src="..\\resources\\placeholder.png" alt="">
         <div class="content-container">
-            <nav id="navbar-scrollspy" class="navbar navbar-light flex-column sidebar">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <nav class="nav nav-pills flex-column">
-                    <a class="nav-link" href="#item-1">Item 1</a>
-                    <nav class="nav nav-pills flex-column">
-                        <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
-                        <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+            <div class="sidebar">
+                <div class="position-sticky">
+                    <nav id="scrollspy" class="navbar flex-column align-items-stretch p-3">
+                        <a class="navbar-brand" href="#header">Header</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link" href="#item-1">Item 1</a>
+                            <a class="nav-link" href="#item-2">Item 2</a>
+                            <a class="nav-link" href="#item-3">Item 3</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                            </nav>
+                        </nav>
                     </nav>
-                    <a class="nav-link" href="#item-2">Item 2</a>
-                    <a class="nav-link" href="#item-3">Item 3</a>
-                    <nav class="nav nav-pills flex-column">
-                        <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
-                        <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
-                    </nav>
-                </nav>
-            </nav>
+                </div>
+            </div>
 
-            <div class="content" data-bs-spy="scroll" data-bs-target="#navbar-scrollspy" data-bs-offset="0"
-                tabindex="0">
-                <h4 id="item-1">Item 1</h4>
-                <p>...</p>
-                <h5 id="item-1-1">Item 1-1</h5>
-                <p>...</p>
-                <h5 id="item-1-2">Item 1-2</h5>
-                <p>...</p>
-                <h4 id="item-2">Item 2</h4>
-                <p>...</p>
-                <h4 id="item-3">Item 3</h4>
-                <p>...</p>
-                <h5 id="item-3-1">Item 3-1</h5>
-                <p>...</p>
-                <h5 id="item-3-2">Item 3-2</h5>
-                <p>...</p>
+            <div class="content">
+                <h1 id="header">Header</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget nisl tempor, tincidunt orci et,
+                    ultrices velit. Aliquam erat volutpat. Suspendisse at libero eget dui semper facilisis et euismod
+                    dui. Integer nec aliquam elit. Sed id pretium nibh, a elementum lacus. Etiam tincidunt metus eget
+                    magna pellentesque, ut viverra sapien iaculis. Donec dapibus volutpat ligula sit amet dignissim.
+                    Vivamus tristique feugiat felis ac vulputate. Sed mollis urna in odio rutrum, eget vulputate elit
+                    maximus. Mauris venenatis massa egestas odio hendrerit rutrum. Maecenas porta nunc sed nulla congue,
+                    vel pulvinar nibh scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                    per inceptos himenaeos.
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid" src="..\\resources\\placeholder.png" alt="">
+                </div>
+                <h2 id="item-1">item-1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget nisl tempor, tincidunt orci et,
+                    ultrices velit. Aliquam erat volutpat. Suspendisse at libero eget dui semper facilisis et euismod
+                    dui. Integer nec aliquam elit. Sed id pretium nibh, a elementum lacus. Etiam tincidunt metus eget
+                    magna pellentesque, ut viverra sapien iaculis. Donec dapibus volutpat ligula sit amet dignissim.
+                    Vivamus tristique feugiat felis ac vulputate. Sed mollis urna in odio rutrum, eget vulputate elit
+                    maximus. Mauris venenatis massa egestas odio hendrerit rutrum. Maecenas porta nunc sed nulla congue,
+                    vel pulvinar nibh scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                    per inceptos himenaeos.
+                </p>
+                <h2 id="item-2">item-2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget nisl tempor, tincidunt orci et,
+                    ultrices velit. Aliquam erat volutpat. Suspendisse at libero eget dui semper facilisis et euismod
+                    dui. Integer nec aliquam elit. Sed id pretium nibh, a elementum lacus. Etiam tincidunt metus eget
+                    magna pellentesque, ut viverra sapien iaculis. Donec dapibus volutpat ligula sit amet dignissim.
+                    Vivamus tristique feugiat felis ac vulputate. Sed mollis urna in odio rutrum, eget vulputate elit
+                    maximus. Mauris venenatis massa egestas odio hendrerit rutrum. Maecenas porta nunc sed nulla congue,
+                    vel pulvinar nibh scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                    per inceptos himenaeos.
+                </p>
+                <h2 id="item-3">item-3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget nisl tempor, tincidunt orci et,
+                    ultrices velit. Aliquam erat volutpat. Suspendisse at libero eget dui semper facilisis et euismod
+                    dui. Integer nec aliquam elit. Sed id pretium nibh, a elementum lacus. Etiam tincidunt metus eget
+                    magna pellentesque, ut viverra sapien iaculis. Donec dapibus volutpat ligula sit amet dignissim.
+                    Vivamus tristique feugiat felis ac vulputate. Sed mollis urna in odio rutrum, eget vulputate elit
+                    maximus. Mauris venenatis massa egestas odio hendrerit rutrum. Maecenas porta nunc sed nulla congue,
+                    vel pulvinar nibh scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                    per inceptos himenaeos.
+                </p>
+                <h3 id="item-3-1">item-3-1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget nisl tempor, tincidunt orci et,
+                    ultrices velit. Aliquam erat volutpat. Suspendisse at libero eget dui semper facilisis et euismod
+                    dui. Integer nec aliquam elit. Sed id pretium nibh, a elementum lacus. Etiam tincidunt metus eget
+                    magna pellentesque, ut viverra sapien iaculis. Donec dapibus volutpat ligula sit amet dignissim.
+                    Vivamus tristique feugiat felis ac vulputate. Sed mollis urna in odio rutrum, eget vulputate elit
+                    maximus. Mauris venenatis massa egestas odio hendrerit rutrum. Maecenas porta nunc sed nulla congue,
+                    vel pulvinar nibh scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                    per inceptos himenaeos.
+                </p>
+                <h3 id="item-3-2">item-3-2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget nisl tempor, tincidunt orci et,
+                    ultrices velit. Aliquam erat volutpat. Suspendisse at libero eget dui semper facilisis et euismod
+                    dui. Integer nec aliquam elit. Sed id pretium nibh, a elementum lacus. Etiam tincidunt metus eget
+                    magna pellentesque, ut viverra sapien iaculis. Donec dapibus volutpat ligula sit amet dignissim.
+                    Vivamus tristique feugiat felis ac vulputate. Sed mollis urna in odio rutrum, eget vulputate elit
+                    maximus. Mauris venenatis massa egestas odio hendrerit rutrum. Maecenas porta nunc sed nulla congue,
+                    vel pulvinar nibh scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                    per inceptos himenaeos.
+                </p>
             </div>
         </div>
     </main>

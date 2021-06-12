@@ -5,15 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page</title>
+    <title>Chang me!</title>
     <!-- css -->
     <!-- <link rel="stylesheet" href="..\\css\\mdb.min.css"> -->
     <link rel="stylesheet" href="..\\css\\bootstrap.css">
-    <link rel="stylesheet" href="..\\css\\layout.css">
-    <link rel="stylesheet" href="..\\css\\page.css">
+    <link rel="stylesheet" href="..\\css\\main.css">
 </head>
 
-<body data-bs-spy="scroll">
+<body>
     <!-- Back to top button start-->
     <button type="button" class="btn btn-danger btn-lg" id="btn-back-to-top">
         <svg width="24" height="24" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
@@ -26,7 +25,7 @@
     <!-- navbar start -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="main.html">
                 <img class="d-inline-block align-text-top team-logo" src="..\\resources\\team-logo.jpeg"
                     alt="team-logo">
                 NCHU_Taichung</a>
@@ -43,7 +42,7 @@
                             Parts
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Overview</a></li>
+                            <li><a class="dropdown-item" href="page.html">Overview</a></li>
                             <li><a class="dropdown-item" href="#">Basic</a></li>
                             <li><a class="dropdown-item" href="#">Composite</a></li>
                             <li><a class="dropdown-item" href="#">Collection</a></li>
@@ -119,45 +118,9 @@
     <!-- navbar end -->
 
     <!-- page content start -->
-    <main class="page">
-        <img class="main-img img-fluid" src="..\\resources\\placeholder.png" alt="">
-        <div class="content-container">
-            <nav id="navbar-scrollspy" class="navbar navbar-light flex-column sidebar">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <nav class="nav nav-pills flex-column">
-                    <a class="nav-link" href="#item-1">Item 1</a>
-                    <nav class="nav nav-pills flex-column">
-                        <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
-                        <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
-                    </nav>
-                    <a class="nav-link" href="#item-2">Item 2</a>
-                    <a class="nav-link" href="#item-3">Item 3</a>
-                    <nav class="nav nav-pills flex-column">
-                        <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
-                        <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
-                    </nav>
-                </nav>
-            </nav>
+    <div class="page">
 
-            <div class="content" data-bs-spy="scroll" data-bs-target="#navbar-scrollspy" data-bs-offset="0"
-                tabindex="0">
-                <h4 id="item-1">Item 1</h4>
-                <p>...</p>
-                <h5 id="item-1-1">Item 1-1</h5>
-                <p>...</p>
-                <h5 id="item-1-2">Item 1-2</h5>
-                <p>...</p>
-                <h4 id="item-2">Item 2</h4>
-                <p>...</p>
-                <h4 id="item-3">Item 3</h4>
-                <p>...</p>
-                <h5 id="item-3-1">Item 3-1</h5>
-                <p>...</p>
-                <h5 id="item-3-2">Item 3-2</h5>
-                <p>...</p>
-            </div>
-        </div>
-    </main>
+    </div>
     <!-- page content end -->
 
     <!-- footer start -->
