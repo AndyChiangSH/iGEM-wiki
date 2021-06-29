@@ -1,0 +1,39 @@
+.content h2 {
+    margin: 20px auto;
+}
+
+.avatar-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.avatar {
+    width: 200px;
+    margin: 20px 30px;
+}
+
+.avatar img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.avatar p {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+.modal {
+    font-family: Microsoft Sans Serif;
+}
+
+.modal h5 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.modal ul span {
+    font-weight: 700;
+}

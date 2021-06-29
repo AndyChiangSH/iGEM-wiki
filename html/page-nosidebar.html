@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="..\\css\\clean.css">
     <link rel="stylesheet" href="..\\css\\bootstrap.css">
     <link rel="stylesheet" href="..\\css\\layout.css">
-    <link rel="stylesheet" href="..\\css\\page.css">
+    <link rel="stylesheet" href="..\\css\\page-nosidebar.css">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-offset="10" data-bs-method="position">
@@ -123,33 +123,14 @@
     <main class="page">
         <img class="main-img img-fluid" src="..\\resources\\placeholder.png" alt="">
         <div class="content-container">
-            <!-- sidebar start -->
-            <div class="sidebar">
-                <div class="position-sticky">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item">Parts</li>
-                            <li class="breadcrumb-item active" aria-current="page">Overview</li>
-                        </ol>
-                    </nav>
-                    <nav id="scrollspy" class="navbar flex-column align-items-stretch">
-                        <a class="navbar-brand" href="#header">Header</a>
-                        <nav class="nav nav-pills flex-column">
-                            <a class="nav-link" href="#item-1">Item 1</a>
-                            <a class="nav-link" href="#item-2">Item 2</a>
-                            <a class="nav-link" href="#item-3">Item 3</a>
-                            <nav class="nav nav-pills flex-column">
-                                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
-                                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
-                            </nav>
-                        </nav>
-                    </nav>
-                </div>
-            </div>
-            <!-- sidebar end -->
-
             <!-- content start -->
             <div class="content">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">Parts</li>
+                        <li class="breadcrumb-item active" aria-current="page">Overview</li>
+                    </ol>
+                </nav>
                 <h1 id="header">Header</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget nisl tempor, tincidunt orci et,
                     ultrices velit. Aliquam erat volutpat. Suspendisse at libero eget dui semper facilisis et euismod
