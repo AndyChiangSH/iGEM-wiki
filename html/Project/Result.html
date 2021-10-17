@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chang me!</title>
+    <title>Result</title>
     <!-- css -->
-    <!-- <link rel="stylesheet" href="..\\css\\mdb.min.css"> -->
-    <link rel="stylesheet" href="..\\css\\clean.css">
-    <link rel="stylesheet" href="..\\css\\bootstrap.css">
-    <link rel="stylesheet" href="..\\css\\layout.css">
+    <link rel="stylesheet" href="../../css/clean.css">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/page.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-offset="10" data-bs-method="position">
     <!-- Back to top button start-->
     <button type="button" class="btn btn-danger btn-lg" id="btn-back-to-top">
         <svg width="24" height="24" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
@@ -27,8 +27,8 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="main.html">
-                <img class="d-inline-block align-text-top team-logo" src="..\\resources\\team-logo.jpeg"
-                    alt="team-logo">
+                <img class="d-inline-block align-text-top team-logo"
+                    src="https://2021.igem.org/wiki/images/2/2c/T--NCHU_Taichung--team-logo.jpg" alt="team-logo">
                 NCHU_Taichung</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -38,8 +38,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="https://www.google.com/" id="navbarDropdown"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Project
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -103,9 +103,131 @@
     <!-- navbar end -->
 
     <!-- page content start -->
-    <div class="page">
+    <main class="page">
+        <img class="main-img img-fluid" src="https://2021.igem.org/wiki/images/1/18/T--NCHU_Taichung--placeholder.png"
+            alt="">
+        <div class="content-container">
+            <!-- sidebar start -->
+            <div class="sidebar">
+                <div class="position-sticky">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">Project</li>
+                            <li class="breadcrumb-item active" aria-current="page">Result</li>
+                        </ol>
+                    </nav>
+                    <nav id="scrollspy" class="navbar flex-column align-items-stretch">
+                        <a class="navbar-brand" href="#header">Result</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link" href="#item-1">Overview</a>
+                            <a class="nav-link" href="#item-2">Cellulase Plasmid Extraction</a>
+                            <a class="nav-link" href="#item-3">Sugar concentration quantification</a>
+                            <a class="nav-link" href="#item-4">Extract PQQ plasmid from Bacillus subtilis WB800N</a>
+                            <a class="nav-link" href="#item-5">Gene Expression On Bacillus subtilis WB800N</a>
+                        </nav>
+                    </nav>
+                </div>
+            </div>
+            <!-- sidebar end -->
 
-    </div>
+            <!-- content start -->
+            <div class="content">
+                <h1 id="header">Result</h1>
+                <h2 id="item-1">Overview</h2>
+                <p>
+                    The primary goal of our project is achieving circular agriculture by reusing rice straws.
+                    Decomposing agricultural waste produced by the rice becomes the first aim. To fulfill the aim, we
+                    transferred the cellulase gene into Bacillus subtilis and used this modified bacteria to degrade
+                    rice straws.
+                </p>
+                <h2 id="item-2">Cellulase Plasmid Extraction</h2>
+                <p>
+                    On the gel electrophoresis diagram, the third well contains scaffolding protein cipA . From seventh
+                    well to twelfth well, they respectively contain celA, K, R, S, and xyn C and Z.(Figure 1.)
+                </p>
+                <p>
+                    These cellulosomes can be classified into three groups. CelA and celR are endo-glucosidases. CelK
+                    and celS are exo-glucosidases. XynC and xynZ are both xylanase. In order to achieve the maximum
+                    efficiency, the cellulosomes that have better performance in each group are chosen for the
+                    experiments, including xynC, celK, and celA.
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/8/8d/T--NCHU_Taichung--result_fig01.png" alt="">
+                    <label class="img-label">Figure 1. Cellulase plasmid extraction</label>
+                </div>
+                <h2 id="item-3">Sugar concentration quantification</h2>
+                <p>
+                    To quantify the sugar concentration in our broth, we mixed the DNS with the sugar that will change
+                    color while reaching one hundred celsius degrees. After calibration and testing of the OD600 value,
+                    we obtained the concentration of the sugar in the rice straw by analyzing how much the sugar
+                    generates, and calculated the weight of sugar generated from rice straw by concentration.
+                </p>
+                <p>
+                    In Figure five, our cellulosomes are assauredly viable because ensurement is made that our
+                    experimental environment is sterile and only the cellulosomes we put in can decompose the cellulose
+                    and hemicellulose.
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/f/f4/T--NCHU_Taichung--result_fig02-1.png" alt="">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/7/77/T--NCHU_Taichung--result_fig02-2.png" alt="">
+                    <label class="img-label">Figure 2. Sugar concentration quantification</label>
+                </div>
+                <p>
+                    The next step is to transfer the pyrroloquinoline quinone(PQQ) gene into another chassis-Bacillus,
+                    which can make the chassis-Bacillus endophytic and produce pyrroloquinoline quinone to accelerate
+                    rice growth.
+                </p>
+                <h2 id="item-4">Extract PQQ plasmid from Bacillus subtilis WB800N</h2>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/8/80/T--NCHU_Taichung--result_fig03.png" alt="">
+                    <label class="img-label">Figure 3.</label>
+                </div>
+                <h2 id="item-5">Gene Expression On Bacillus subtilis WB800N</h2>
+                <p>
+                    To test the effectiveness of PQQ on plants, we inoculate bacillus subtilis WB800N within or without
+                    the PQQ plasmid into arabidopsis.
+                </p>
+                <p>
+                    In the picture below, respectively shows phenotypes of 5-week-old Arabidopsis inoculated with
+                    Bacillus subtilis WB800 with PQQ plasmid(PQQ), with Bacillus subtilis WB800(WB800N), and with
+                    water(CK) (Figure 4A)
+                </p>
+                <p>
+                    Bacillus subtilis WB800 with PQQ plasmid significantly improved stalk height, the stalk height of
+                    arabidopsis with PQQ is about 8 cm, and the stalk height of arabidopsis with Bacillus subtilis WB800
+                    is about 2 cm.(Figure 4B)
+                </p>
+                <p>
+                    In chart C, arabidopsis inoculated with water has one primary inflorescence. Arabidopsis inoculated
+                    with Bacillus subtilis WB800 have 3 inflorescences, including primary and secondary inflorescence.
+                    Arabidopsis inoculated with Bacillus subtilis with PQQ plasmid have nearly 5.25 inflorescences,
+                    encompassing primary, secondary and tertiary inflorescence. (Figure 4C)
+                </p>
+                <p>
+                    Bacillus subtilis WB800 with PQQ plasmid possibly help plants to reach reproductive stages earlier
+                </p>
+                <p>
+                    Chart D shows that the arabidopsis inoculated with PQQ has the highest performance in the leaves
+                    area of arabidopsis. The leaves area is about 5 cm2, in contrast to 4 cm2 of Bacillus subtilis
+                    WB800, and to 3 cm² of CK (Figure 4D)
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/8/8a/T--NCHU_Taichung--result_fig04.png" alt="">
+                    <label class="img-label">Figure 4.</label>
+                </div>
+                <p>
+                    However, we discovered that WB800N has a kanamycin resistance gene in its genome. So we decided to
+                    make Bacillus subtilis RM125 as the new host.
+                </p>
+            </div>
+            <!-- content end -->
+        </div>
+    </main>
     <!-- page content end -->
 
     <!-- footer start -->
@@ -158,9 +280,8 @@
     <!-- footer start -->
 
     <!-- javascript -->
-    <script type="text/javascript" src="..\\js\\bootstrap.js"></script>
-    <script type="text/javascript" src="..\\js\\mdb.min.js"></script>
-    <script type="text/javascript" src="..\\js\\main.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
 
 </body>
 

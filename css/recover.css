@@ -1,0 +1,15 @@
+.mw-content-ltr ol, .mw-content-rtl .mw-content-ltr ol {
+    margin: 0px;
+    padding: 0px;
+}
+
+.mw-content-ltr ul, .mw-content-rtl .mw-content-ltr ul {
+    margin: 0;
+    padding: 0;
+}
+
+#bodyContent .dropdown-item.active, #bodyContent .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #ffae0f;
+}
