@@ -118,6 +118,8 @@
 .img-container {
     margin: 50px auto;
     width: 80%;
+    display: flex;
+    flex-direction: column;
 }
 
 .table {
@@ -146,7 +148,15 @@
 }
 
 .order-list li {
-    margin: 50px 0px;
+    margin: 30px 0px;
+}
+
+.unorder-list {
+    list-style: disc;
+}
+
+.unorder-list li {
+    margin: 30px 0px;
 }
 
 .img-label {
@@ -159,4 +169,11 @@
     font-style: italic;
     font-family: serif;
     font-weight: 600;
+}
+
+.photo-label {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
 }

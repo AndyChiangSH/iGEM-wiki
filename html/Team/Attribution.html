@@ -5,12 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Improvement</title>
+    <title>Attribution</title>
     <!-- css -->
     <link rel="stylesheet" href="../../css/clean.css">
     <link rel="stylesheet" href="../../css/bootstrap.css">
     <link rel="stylesheet" href="../../css/layout.css">
     <link rel="stylesheet" href="../../css/page.css">
+    <style>
+        .avatar-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .avatar {
+            width: 200px;
+            margin: 10px 30px;
+        }
+
+        .avatar img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        .avatar p {
+            font-size: 24px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .timeline {
+            border: 5px dotted #e42f2f;
+            padding: 20px 0px;
+        }
+
+        .timeline ol li {
+            margin: 5px 0px;
+        }
+
+        .timeline ul {
+            display: flex;
+        }
+
+        .timeline ul li:nth-child(1) {
+            font-weight: 700;
+            width: 30%;
+        }
+
+        .timeline ul li:nth-child(2) {
+            width: 70%;
+        }
+    </style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-offset="10" data-bs-method="position">
@@ -104,28 +150,26 @@
 
     <!-- page content start -->
     <main class="page">
-        <img class="main-img img-fluid" src="https://2021.igem.org/wiki/images/1/18/T--NCHU_Taichung--placeholder.png"
-            alt="">
+        <img class="main-img img-fluid"
+            src="https://2021.igem.org/wiki/images/4/47/T--NCHU_Taichung--Attribution_cover.png" alt="">
         <div class="content-container">
             <!-- sidebar start -->
             <div class="sidebar">
                 <div class="position-sticky">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item">Parts</li>
-                            <li class="breadcrumb-item active" aria-current="page">Improvement</li>
+                            <li class="breadcrumb-item">Team</li>
+                            <li class="breadcrumb-item active" aria-current="page">Attribution</li>
                         </ol>
                     </nav>
                     <nav id="scrollspy" class="navbar flex-column align-items-stretch">
-                        <a class="navbar-brand" href="#header">Improvement</a>
+                        <a class="navbar-brand" href="#header">Attribution</a>
                         <nav class="nav nav-pills flex-column">
-                            <a class="nav-link" href="#item-1">Item 1</a>
-                            <a class="nav-link" href="#item-2">Item 2</a>
-                            <a class="nav-link" href="#item-3">Item 3</a>
-                            <nav class="nav nav-pills flex-column">
-                                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
-                                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
-                            </nav>
+                            <a class="nav-link" href="#item-1">General Support</a>
+                            <a class="nav-link" href="#item-2">Financial Support</a>
+                            <a class="nav-link" href="#item-3">Wet Lab</a>
+                            <a class="nav-link" href="#item-4">Training</a>
+                            <a class="nav-link" href="#item-5">Suggestion</a>
                         </nav>
                     </nav>
                 </div>
@@ -134,138 +178,117 @@
 
             <!-- content start -->
             <div class="content">
-                <h1 id="header">Improvement</h1>
-                <p>
-                    To express our genes in endophyte, Bacillus subtilis, and make subsequent genetic tests for E. coli
-                    and Bacillus subtilis more diverse, we constructed a shuttle vector for expressed gene in Bacillus
-                    subtilis and E. coli.
-                </p>
-                <p>
-                    Modifying f1 Ori and replace T7 promoter by pr promoter.
-                    into BBa K2141000 as a shuttle vector makes it performed by Bacillus subtilis besides
-                    E. coli.
-                </p>
-                <p>
-                    Moreover, we chose kanamycin resistance as the selection marker to ensure that our genes were
-                    transferred into the endophyte .
-                </p>
-                <p>
-                    E. coli and Bacillus subtilis being broadly used, for example, 2016 iGEM team_auxin let E.coli
-                    generate auxin able to promote plant root growth; 2013 iGEM team_B.fruit utilize both bacteria to
-                    regulate fruit maturity date.Making BBa K2141000 as a shuttle vector can
-                    expand its applied field.
-                </p>
-                <p>
-                    Although, a lot of previous iGEM team have decomposed waste to produce saccharified straw liquid and
-                    culture genetically modified bacteria to gain more valuable products such as 2019 iGEM team
-                    CAU_China decompose waste into saccharified straw liquid to culture E. coli which can produce
-                    Astaxanthin, 2020 team NFLS decompose cellulose to produce glucose and afterwards employ microbial
-                    fuel cell to generate electricity, also our PQQ genes can perform pet28 on E. coli and significantly
-                    promote E. coli growth. If following iGEM team demand exploit E. coli as competent cell,
-                </p>
-                <h3 id="item-3-2">item-3-2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget nisl tempor, tincidunt orci et,
-                    ultrices velit. Aliquam erat volutpat. Suspendisse at libero eget dui semper facilisis et euismod
-                    dui. Integer nec aliquam elit. Sed id pretium nibh, a elementum lacus. Etiam tincidunt metus eget
-                    magna pellentesque, ut viverra sapien iaculis. Donec dapibus volutpat ligula sit amet dignissim.
-                    Vivamus tristique feugiat felis ac vulputate. Sed mollis urna in odio rutrum, eget vulputate elit
-                    maximus. Mauris venenatis massa egestas odio hendrerit rutrum. Maecenas porta nunc sed nulla congue,
-                    vel pulvinar nibh scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-                    per inceptos himenaeos.
-                </p>
-                <!-- table start -->
-                <table class="table table-striped table-hover">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td colspan="2">Larry the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <!-- table end -->
-                <div class="info-card">
-                    <nav>
-                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
-                                data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
-                                aria-selected="true">Home</button>
-                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
-                                data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
-                                aria-selected="false">Profile</button>
-                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
-                                data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
-                                aria-selected="false">Contact</button>
-                        </div>
-                    </nav>
-                    <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
-                            aria-labelledby="nav-home-tab">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget nisl tempor, tincidunt orci
-                            et,
-                            ultrices velit. Aliquam erat volutpat. Suspendisse at libero eget dui semper facilisis et
-                            euismod dui. Integer nec aliquam elit. Sed id pretium nibh, a elementum lacus. Etiam
-                            tincidunt
-                            metus eget magna pellentesque, ut viverra sapien iaculis. Donec dapibus volutpat ligula sit
-                            amet
-                            dignissim. Vivamus tristique feugiat felis ac vulputate. Sed mollis urna in odio rutrum,
-                            eget
-                            vulputate elit maximus. Mauris venenatis massa egestas odio hendrerit rutrum. Maecenas porta
-                            nunc sed nulla congue, vel pulvinar nibh scelerisque. Class aptent taciti sociosqu ad litora
-                            torquent per conubia nostra, per inceptos himenaeos.
-                        </div>
-                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget nisl tempor, tincidunt orci
-                            et,
-                            ultrices velit. Aliquam erat volutpat. Suspendisse at libero eget dui semper facilisis et
-                            euismod dui. Integer nec aliquam elit. Sed id pretium nibh, a elementum lacus. Etiam
-                            tincidunt
-                            metus eget magna pellentesque, ut viverra sapien iaculis. Donec dapibus volutpat ligula sit
-                            amet
-                            dignissim. Vivamus tristique feugiat felis ac vulputate. Sed mollis urna in odio rutrum,
-                            eget
-                            vulputate elit maximus. Mauris venenatis massa egestas odio hendrerit rutrum. Maecenas porta
-                            nunc sed nulla congue, vel pulvinar nibh scelerisque. Class aptent taciti sociosqu ad litora
-                            torquent per conubia nostra, per inceptos himenaeos.
-                        </div>
-                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget nisl tempor, tincidunt orci
-                            et,
-                            ultrices velit. Aliquam erat volutpat. Suspendisse at libero eget dui semper facilisis et
-                            euismod dui. Integer nec aliquam elit. Sed id pretium nibh, a elementum lacus. Etiam
-                            tincidunt
-                            metus eget magna pellentesque, ut viverra sapien iaculis. Donec dapibus volutpat ligula sit
-                            amet
-                            dignissim. Vivamus tristique feugiat felis ac vulputate. Sed mollis urna in odio rutrum,
-                            eget
-                            vulputate elit maximus. Mauris venenatis massa egestas odio hendrerit rutrum. Maecenas porta
-                            nunc sed nulla congue, vel pulvinar nibh scelerisque. Class aptent taciti sociosqu ad litora
-                            torquent per conubia nostra, per inceptos himenaeos.
-                        </div>
+                <h1 id="header">Attribution</h1>
+                <h2 id="item-1">General Support</h2>
+                <div class="avatar-container">
+                    <!-- avatar start -->
+                    <div class="avatar">
+                        <img src="https://2021.igem.org/wiki/images/9/9f/T--NCHU_Taichung--Attribution_fig01.png"
+                            alt="avatar">
+                        <p>Professor Chieh-Chen Huang</p>
                     </div>
+                    <div class="avatar">
+                        <img src="https://2021.igem.org/wiki/images/0/0e/T--NCHU_Taichung--Attribution_fig02.png"
+                            alt="avatar">
+                        <p>National Chung Hsing University</p>
+                    </div>
+                    <!-- avatar end -->
                 </div>
+                <h2 id="item-2">Financial Support</h2>
+                <div class="avatar-container">
+                    <!-- avatar start -->
+                    <div class="avatar">
+                        <img src="https://2021.igem.org/wiki/images/b/b7/T--NCHU_Taichung--Attribution_fig03.png"
+                            alt="avatar">
+                    </div>
+                    <div class="avatar">
+                        <img src="https://2021.igem.org/wiki/images/4/4b/T--NCHU_Taichung--Attribution_fig04.png"
+                            alt="avatar">
+                    </div>
+                    <div class="avatar">
+                        <img src="https://2021.igem.org/wiki/images/1/1a/T--NCHU_Taichung--Attribution_fig05.png"
+                            alt="avatar">
+                    </div>
+                    <!-- avatar end -->
+                </div>
+                <h2 id="item-3">Wet Lab</h2>
+                <h3 id="item-3-1">Lab Instruments</h3>
+                <ul class="unorder-list">
+                    <li>Professor Huang Chieh Chen provides us with lab instruments.</li>
+                </ul>
+                <h3 id="item-3-2">Project Support & Technical Advice</h3>
+                <ul class="unorder-list">
+                    <li>Professor Huang Chieh Chen provides us with technical advice for the whole wet experiment.</li>
+                    <li>Dr. Pei-Hong Chen provides modeling advice.</li>
+                    <li>Dr. Wei-Jen Lin provides modeling advice.</li>
+                </ul>
+                <h3 id="item-3-3">Materials</h3>
+                <ul class="unorder-list">
+                    <li>Professor Huang Chieh Chen provides us with cells, plasmids,Arabidopsis thaliana seed and rice
+                        seed as the biomaterial for plant experiments.</li>
+                </ul>
+                <h3 id="item-3-4">Human Practice</h3>
+                <div class="timeline">
+                    <ol>
+                        <li>
+                            2020
+                            <ol>
+                                <li>
+                                    <ul>
+                                        <li>Aug. 17, 18<sup>th</sup></li>
+                                        <li>Meetup Conference of teams in Taiwan</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            2021
+                            <ol>
+                                <li>
+                                    <ul>
+                                        <li>Apr. 1<sup>st</sup></li>
+                                        <li>Interview with Mingdao high school</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>June. 4<sup>th</sup></li>
+                                        <li>Interview with Info-Link Services</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>July. 3<sup>rd</sup></li>
+                                        <li>Online Meetup Conference of teams in Taiwan</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>Aug. 19<sup>th</sup></li>
+                                        <li>Interview with local farmers</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>Sep. 14<sup>th</sup></li>
+                                        <li>Podcast with PanSci</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+                <h2 id="item-4">Training</h2>
+                <ul class="unorder-list">
+                    <li>Ti Fang guides us wet lab experiments.</li>
+                    <li>Shih-Hsun Hung guides us plant tests and wet lab experiments.</li>
+                </ul>
+                <h2 id="item-5">Suggestion</h2>
+                <ul class="unorder-list">
+                    <li>Tzai-Ching Huang</li>
+                </ul>
+                <!-- content end -->
             </div>
-            <!-- content end -->
         </div>
     </main>
     <!-- page content end -->

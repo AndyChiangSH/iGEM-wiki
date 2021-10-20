@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/clean.css">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/page.css">
+    <style>
+        .one-day {
+            margin: 10px 0px;
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-offset="10" data-bs-method="position">
+    <!-- Back to top button start-->
+    <button type="button" class="btn btn-danger btn-lg" id="btn-back-to-top">
+        <svg width="24" height="24" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+            <path
+                d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+        </svg>
+    </button>
+    <!-- Back to top button end-->
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="main.html">
+                <img class="d-inline-block align-text-top team-logo"
+                    src="https://2021.igem.org/wiki/images/2/2c/T--NCHU_Taichung--team-logo.jpg" alt="team-logo">
+                NCHU_Taichung</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Project
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="page.html">Description</a></li>
+                            <li><a class="dropdown-item" href="#">Implementation</a></li>
+                            <li><a class="dropdown-item" href="#">Design</a></li>
+                            <li><a class="dropdown-item" href="#">Model</a></li>
+                            <li><a class="dropdown-item" href="#">Results</a></li>
+                            <li><a class="dropdown-item" href="#">Engineering Success</a></li>
+                            <li><a class="dropdown-item" href="#">Proof of Concept</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Parts
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Basic Part</a></li>
+                            <li><a class="dropdown-item" href="#">Composite Part</a></li>
+                            <li><a class="dropdown-item" href="#">Contribution</a></li>
+                            <li><a class="dropdown-item" href="#">Improvement</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Notebook
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Experiments</a></li>
+                            <li><a class="dropdown-item" href="#">Protocol</a></li>
+                            <li><a class="dropdown-item" href="#">Safety</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Human Practices
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Integrated Human Practices</a></li>
+                            <li><a class="dropdown-item" href="#">Education and Communication</a></li>
+                            <li><a class="dropdown-item" href="#">Collaboration</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Team
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Members</a></li>
+                            <li><a class="dropdown-item" href="#">Attributions</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- page content start -->
+    <main class="page">
+        <img class="main-img img-fluid" src="https://2021.igem.org/wiki/images/4/4f/T--NCHU_Taichung--Note_cover.png"
+            alt="">
+        <div class="content-container">
+            <!-- sidebar start -->
+            <div class="sidebar">
+                <div class="position-sticky">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">Notebook</li>
+                            <li class="breadcrumb-item active" aria-current="page">Note</li>
+                        </ol>
+                    </nav>
+                    <nav id="scrollspy" class="navbar flex-column align-items-stretch">
+                        <a class="navbar-brand" href="#header">Note</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link" href="#item-1">2020 Apr-Jun</a>
+                            <a class="nav-link" href="#item-2">2020 July-Sep</a>
+                            <a class="nav-link" href="#item-3">2020 Oct-Dec</a>
+                            <a class="nav-link" href="#item-4">2021 Jan-Mar</a>
+                            <a class="nav-link" href="#item-5">2021 Apr-Jun</a>
+                            <a class="nav-link" href="#item-6">2021 Jul-Sep</a>
+                            <a class="nav-link" href="#item-7">2021 Oct-Now</a>
+                        </nav>
+                    </nav>
+                </div>
+            </div>
+            <!-- sidebar end -->
+
+            <!-- content start -->
+            <div class="content">
+                <h1 id="header">Note</h1>
+                <h2 id="item-1">2020 Apr-Jun</h2>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20200415"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2020/04/15
+                    </button>
+                    <div class="collapse" id="d20200415" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Design PQQ plasmid
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20200416"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2020/04/16
+                    </button>
+                    <div class="collapse" id="d20200416" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Transfer PQQ gene into Bacillus subtilis WB800N
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20200418"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2020/04/18
+                    </button>
+                    <div class="collapse" id="d20200418" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            B.subtilis WB800/PQQ growth curve measurement
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20200515"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2020/05/15
+                    </button>
+                    <div class="collapse" id="d20200515" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Sow the seed of Arabidopsis
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20200617"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2020/06/17
+                    </button>
+                    <div class="collapse" id="d20200617" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Inoculate Arabidopsis with Bacillus subtilis WB800N/PQQ and Bacillus subtilis WB800 .
+                            Control group only inoculated water.
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20200623"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2020/06/23
+                    </button>
+                    <div class="collapse" id="d20200623" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            PQQ plasmid extraction
+                            <div class="img-container">
+                                <img class="img-fluid"
+                                    src="https://2021.igem.org/wiki/images/8/80/T--NCHU_Taichung--result_fig03.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20200628"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2020/06/28
+                    </button>
+                    <div class="collapse" id="d20200628" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Record the phenotype of Arabidopsis<br>
+                            Bacillus subtilis WB800 with PQQ plasmid improved the growth of Arabidopsis.
+                            <div class="img-container">
+                                <img class="img-fluid"
+                                    src="https://2021.igem.org/wiki/images/b/ba/T--NCHU_Taichung--Note_fig02.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 id="item-2">2020 July-Sep</h2>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20200715"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2020/07/15
+                    </button>
+                    <div class="collapse" id="d20200715" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Rice straw decomposition<br>
+                            Use four kinds of cellulose to decomposition rice straw, in order to get more sugar in the
+                            solution.<br>
+                            The result of the DNS reagent shows that, with cellulose, the sugar in solution is higher.
+                            <div class="img-container">
+                                <img class="img-fluid"
+                                    src="https://2021.igem.org/wiki/images/f/f6/T--NCHU_Taichung--Note_fig03.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20200817"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2020/08/17 - 2020/08/18
+                    </button>
+                    <div class="collapse" id="d20200817" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Meetup Conference
+                            <div class="img-container">
+                                <img class="img-fluid"
+                                    src="https://2021.igem.org/wiki/images/5/5a/T--NCHU_Taichung--Note_fig05.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20200827"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2020/08/27
+                    </button>
+                    <div class="collapse" id="d20200827" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Transfer PQQ plasmid into Bacillus subtilis RM125 and extract it.
+                            <div class="img-container">
+                                <img class="img-fluid"
+                                    src="https://2021.igem.org/wiki/images/8/8b/T--NCHU_Taichung--result_fig05.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 id="item-3">2020 Oct-Dec</h2>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20201011"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2020/10/11
+                    </button>
+                    <div class="collapse" id="d20201011" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            growth curve measurement
+                            <div class="img-container">
+                                <img class="img-fluid"
+                                    src="https://2021.igem.org/wiki/images/7/7b/T--NCHU_Taichung--Note_fig06.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20201017"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2020/10/17
+                    </button>
+                    <div class="collapse" id="d20201017" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Sow the seed of Arabidopsis.
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20201107"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2020/11/07
+                    </button>
+                    <div class="collapse" id="d20201107" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            1. Inoculation.<br>
+                            Inoculate Arabidopsis with Bacillus subtilis RM125/PQQ and Bacillus subtilis RM125. Control
+                            group only inoculated water.<br>
+                            2. Sow the seed of Arabidopsis
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20201121"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2020/11/21
+                    </button>
+                    <div class="collapse" id="d20201121" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Record the phenotype of Arabidopsis.<br>
+                            The result shows that Bacillus subtilis RM125 with PQQ plasmid improved the growth of
+                            Arabidopsis.But the sample size was small this time. We need to repeat this experiment again
+                            and increase the sample size.
+                            <div class="img-container">
+                                <img class="img-fluid"
+                                    src="https://2021.igem.org/wiki/images/c/c7/T--NCHU_Taichung--Note_fig09.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20201125"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2020/11/25
+                    </button>
+                    <div class="collapse" id="d20201125" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Bacillus subtilis RM125 16s rDNA PCR
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20201128"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2020/11/28
+                    </button>
+                    <div class="collapse" id="d20201128" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Inoculation<br>
+                            Inoculate Arabidopsis with the supernatant of Bacillus subtilis RM125/PQQ and Bacillus
+                            subtilis RM125. Control group only inoculated water.
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20201205"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2020/12/05
+                    </button>
+                    <div class="collapse" id="d20201205" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Inoculation<br>
+                            Inoculate the supernatant of Bacillus subtilis RM125/PQQ and Bacillus subtilis RM125 again.
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20201212"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2020/12/12
+                    </button>
+                    <div class="collapse" id="d20201212" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Record the phenotype of Arabidopsis.<br>
+                            Supernatant of Bacillus improved the growth of Arabidopsis
+                            <div class="img-container">
+                                <img class="img-fluid"
+                                    src="https://2021.igem.org/wiki/images/e/e3/T--NCHU_Taichung--Note_fig10.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 id="item-4">2021 Jan-Mar</h2>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210220"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/02/20
+                    </button>
+                    <div class="collapse" id="d20210220" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Find the best carbon-nitrogen ratio of the saccharified straw liquid<br>
+                            We think the straw solution lacks nitrogen, bacteria can’t grow well, so we add okara
+                            solution to find the carbon nitrogen ratio Bacillus subtilis RM125/PQQ most like.<br>
+                            Mix okara solution and straw solution in different formulas, and use them to culture.<br>
+                            Then find the best formula is 80% okara solution plus 20% straw solution.<br>
+                            <div class="img-container">
+                                <img class="img-fluid"
+                                    src="https://2021.igem.org/wiki/images/7/78/T--NCHU_Taichung--Note_fig11.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210305"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/03/05
+                    </button>
+                    <div class="collapse" id="d20210305" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Sow the dehull rice seed in MS medium.
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210309"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/03/09
+                    </button>
+                    <div class="collapse" id="d20210309" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Inoculation<br>
+                            Inoculated rice seeding with Bacillus subtilis RM125/PQQ and Bacillus subtilis RM125.
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210315"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/03/15
+                    </button>
+                    <div class="collapse" id="d20210315" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Re-isolation
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210321"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/03/21
+                    </button>
+                    <div class="collapse" id="d20210321" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Record the phenotype of rice.
+                            <div class="img-container">
+                                <img class="img-fluid"
+                                    src="https://2021.igem.org/wiki/images/1/1d/T--NCHU_Taichung--result_fig09.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210330"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/03/30
+                    </button>
+                    <div class="collapse" id="d20210330" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Collaboration<br>
+                            Discussed modeling with 2021 Mingdao iGEM team instructor Dr. Pei-Hong Chen.
+                        </div>
+                    </div>
+                </div>
+                <h2 id="item-5">2021 Apr-Jun</h2>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210403"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/04/03
+                    </button>
+                    <div class="collapse" id="d20210403" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Sow the seed of Arabidopsis.
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210410"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/04/10
+                    </button>
+                    <div class="collapse" id="d20210410" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Use saccharified straw liquid to culture Bacillus subtilis RM125/PQQ, and find the growth
+                            curve.
+                            <div class="img-container">
+                                <img class="img-fluid"
+                                    src="https://2021.igem.org/wiki/images/b/bb/T--NCHU_Taichung--result_fig14.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210424"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/04/24
+                    </button>
+                    <div class="collapse" id="d20210424" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Inoculation<br>
+                            Inoculate Arabidopsis with Bacillus subtilis RM125/PQQ and Bacillus subtilis RM125. Control
+                            group only inoculated water.
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210501"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/05/01
+                    </button>
+                    <div class="collapse" id="d20210501" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Arabidopsis phenotype recording I
+                            <div class="img-container">
+                                <img class="img-fluid"
+                                    src="https://2021.igem.org/wiki/images/a/a0/T--NCHU_Taichung--result_fig08-1.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210507"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/05/07
+                    </button>
+                    <div class="collapse" id="d20210507" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Sow rice seeds in pot soil
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210508"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/05/08
+                    </button>
+                    <div class="collapse" id="d20210508" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Arabidopsis phenotype recording II
+                            <div class="img-container">
+                                <img class="img-fluid"
+                                    src="https://2021.igem.org/wiki/images/4/48/T--NCHU_Taichung--result_fig08-2.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210515"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/05/15
+                    </button>
+                    <div class="collapse" id="d20210515" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Covid-19 outbreak<br>
+                            Many members left the school
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210522"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/05/22
+                    </button>
+                    <div class="collapse" id="d20210522" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Rice inoculation I<br>
+                            Use saccharified straw liquid as culture medium and inoculate the supernatant of Bacillus
+                            subtilis RM125/PQQ.<br>
+                            The concentration of the supernatant is 1x, 1/100x,1/200x, and 1/500x.
+                            Control group inoculated water.
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210612"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/06/12
+                    </button>
+                    <div class="collapse" id="d20210612" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Rice inoculation II
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210625"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/06/25
+                    </button>
+                    <div class="collapse" id="d20210625" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Phenotype recording I
+                            <div class="img-container">
+                                <img class="img-fluid"
+                                    src="https://2021.igem.org/wiki/images/8/8e/T--NCHU_Taichung--result_pic03.png"
+                                    alt="">
+                                <img class="img-fluid"
+                                    src="https://2021.igem.org/wiki/images/8/8d/T--NCHU_Taichung--Note_fig17.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 id="item-6">2021 Jul-Sep</h2>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210702"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/07/02
+                    </button>
+                    <div class="collapse" id="d20210702" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Collaboration with Info-Tech Services
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210703"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/07/03
+                    </button>
+                    <div class="collapse" id="d20210703" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            1. Online meetup conference
+                            <div class="img-container">
+                                <img class="img-fluid"
+                                    src="https://2021.igem.org/wiki/images/b/b4/T--NCHU_Taichung--Note_fig18.png"
+                                    alt="">
+                            </div>
+                            2. Measure chlorophyll content and plant weight
+                            <div class="img-container">
+                                <img class="img-fluid"
+                                    src="https://2021.igem.org/wiki/images/1/16/T--NCHU_Taichung--Note_fig19.png"
+                                    alt="">
+                                <img class="img-fluid"
+                                    src="https://2021.igem.org/wiki/images/2/21/T--NCHU_Taichung--Note_fig20.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210709"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/07/09
+                    </button>
+                    <div class="collapse" id="d20210709" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Rice inoculation III
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210716"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/07/16
+                    </button>
+                    <div class="collapse" id="d20210716" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Phenotype recording III
+                            <div class="img-container">
+                                <img class="img-fluid"
+                                    src="https://2021.igem.org/wiki/images/3/33/T--NCHU_Taichung--Note_fig21.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210725"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/07/25 - 2021/08/07
+                    </button>
+                    <div class="collapse" id="d20210725" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Data analyzing and integration
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210812"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/08/12
+                    </button>
+                    <div class="collapse" id="d20210812" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Data discussion I
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210819"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/08/19
+                    </button>
+                    <div class="collapse" id="d20210819" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Interviews with Taiwan Riceplant Association, Mr. Liang Huoqiu, and several of its members
+                            <div class="img-container">
+                                <img class="img-fluid"
+                                    src="https://2021.igem.org/wiki/images/4/40/T--NCHU_Taichung--Note_fig22.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210825"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/08/25
+                    </button>
+                    <div class="collapse" id="d20210825" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Data discussion II
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210828"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/08/28
+                    </button>
+                    <div class="collapse" id="d20210828" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Coffee with jamboree
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210914"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/09/14
+                    </button>
+                    <div class="collapse" id="d20210914" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            PanSci Podcast
+                            <div class="img-container">
+                                <img class="img-fluid"
+                                    src="https://2021.igem.org/wiki/images/2/20/T--NCHU_Taichung--Note_fig24.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210916"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/09/16
+                    </button>
+                    <div class="collapse" id="d20210916" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            B. subtilis RM125/PQQ can be endophyte.<br>
+                            The picture below shows the PQQ plasmid extracted from re-isolated bacteria.
+                            <div class="img-container">
+                                <img class="img-fluid"
+                                    src="https://2021.igem.org/wiki/images/a/ae/T--NCHU_Taichung--result_fig10.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20210928"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/09/28
+                    </button>
+                    <div class="collapse" id="d20210928" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Re-isolated Bacillus subtilis RM125/PQQ PCR.<br>
+                            Double check the bacteria re-isolated was Bacillus subtilis RM125/PQQ
+                            <div class="img-container">
+                                <img class="img-fluid"
+                                    src="https://2021.igem.org/wiki/images/d/da/T--NCHU_Taichung--Note_fig25.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 id="item-7">2021 Oct-Now</h2>
+                <div class="one-day">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#d20211025"
+                        aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                        2021/10/25
+                    </button>
+                    <div class="collapse" id="d20211025" style="margin-top: 10px;">
+                        <div class="card card-body">
+                            Interview with Nantou Environmental Protection Bureau
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content end -->
+        </div>
+    </main>
+    <!-- page content end -->
+
+    <!-- footer start -->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="contact">
+                <ul>
+                    <li>
+                        <svg width="16" height="16" class="bi bi-envelope-fill footer-icon" viewBox="0 0 16 16">
+                            <path
+                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                        </svg>
+                        <span>igemnchu2019@gmail.com</span>
+                    </li>
+                    <li>
+                        <svg width="16" height="16" class="bi bi-facebook footer-icon" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                        <span>NCHU iGEM Team</span>
+                    </li>
+                    <li>
+                        <svg width="16" height="16" class="bi bi-instagram footer-icon" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                        <span>@nchuigem2019</span>
+                    </li>
+                    <li>
+                        <svg width="16" height="16" class="bi bi-twitter footer-icon" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg>
+                        <span>@NCHUiGEM</span>
+                    </li>
+                    <li>
+                        <svg width="16" height="16" class="bi bi-pin-map-fill footer-icon" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z" />
+                            <path fill-rule="evenodd"
+                                d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
+                        </svg>
+                        <span>NCHU, Taichung, Taiwan</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright">Copyright © 2021 Andy Chiang</div>
+        </div>
+    </div>
+    <!-- footer start -->
+
+    <!-- javascript -->
+    <script type="text/javascript" src="../../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+
+</body>
+
+</html>

@@ -5,12 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page</title>
+    <title>Composite Part</title>
     <!-- css -->
     <link rel="stylesheet" href="../../css/clean.css">
     <link rel="stylesheet" href="../../css/bootstrap.css">
     <link rel="stylesheet" href="../../css/layout.css">
     <link rel="stylesheet" href="../../css/page.css">
+    <style>
+        .plist {
+            list-style: disc;
+        }
+
+        .plist li {
+            margin: 10px 0px;
+        }
+
+        .pline {
+            background-color: #ffae00;
+            border: 2px solid #ffae00;
+            margin: 50px auto;
+        }
+    </style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-offset="10" data-bs-method="position">
@@ -104,27 +119,26 @@
 
     <!-- page content start -->
     <main class="page">
-        <img class="main-img img-fluid" src="https://2021.igem.org/wiki/images/2/25/T--NCHU_Taichung--Safty_cover.png"
-            alt="">
+        <img class="main-img img-fluid"
+            src="https://2021.igem.org/wiki/images/a/a9/T--NCHU_Taichung--Composite_cover.png" alt="">
         <div class="content-container">
             <!-- sidebar start -->
             <div class="sidebar">
                 <div class="position-sticky">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item">Notebook</li>
-                            <li class="breadcrumb-item active" aria-current="page">Safty</li>
+                            <li class="breadcrumb-item">Parts</li>
+                            <li class="breadcrumb-item active" aria-current="page">Composite Part</li>
                         </ol>
                     </nav>
                     <nav id="scrollspy" class="navbar flex-column align-items-stretch">
-                        <a class="navbar-brand" href="#header">Safty</a>
+                        <a class="navbar-brand" href="#header">Composite Part</a>
                         <nav class="nav nav-pills flex-column">
-                            <a class="nav-link" href="#item-1">Prologue</a>
-                            <a class="nav-link" href="#item-2">Biosecurity</a>
-                            <a class="nav-link" href="#item-3">Plant test</a>
-                            <a class="nav-link" href="#item-4">Chemical Control</a>
-                            <a class="nav-link" href="#item-5">Protective Equipment</a>
-                            <a class="nav-link" href="#item-6">Disposal</a>
+                            <a class="nav-link" href="#item-1">PQQ BBa_K3830012</a>
+                            <a class="nav-link" href="#item-2">xynC BBa_K3830016</a>
+                            <a class="nav-link" href="#item-3">celA BBa_K3830017</a>
+                            <a class="nav-link" href="#item-4">celK BBa_K3830018</a>
+                            <a class="nav-link" href="#item-5">cipA BBa_K3830019</a>
                         </nav>
                     </nav>
                 </div>
@@ -133,85 +147,130 @@
 
             <!-- content start -->
             <div class="content">
-                <h1 id="header">Safty</h1>
-                <h2 id="item-1">Prologue</h2>
-                <p>
-                    As responsible researchers, it is necessary for us to select appropriate organisms for
-                    experimentation (which includes avoiding the use of organisms in risk groups 3 and 4) and comply
-                    with the non-release policy, and to conduct experiments in appropriate laboratories and properly
-                    manage personal protection of those involved in the experiment.
-                </p>
-                <p>
-                    The following is NCHU_Taichung_2021’s safety-related information:
-                </p>
-                <h2 id="item-2">Biosecurity</h2>
-                <p>Our project can be divided into two steps:</p>
-                <ol class="order-list">
-                    <li>Cellulose decomposition</li>
-                    <li>Synthesis of pyrroloquinoline quinone (PQQ)</li>
-                </ol>
-                <p>
-                    a. In the cellulose decomposition step, we used numerous different genes from Clostridium
-                    thermocellum: cellulolytic enzyme genes, CelK (exo-glucosidase), CelA (endo-glucosidase); and
-                    hemicellulolytic enzyme genes, XynC (xylanase) and scaffold protein genes CipA. All these genes were
-                    synthesized on plasmid, pGETS-118.
-                    The above-mentioned Clostridium thermocellum is a widely used cellulosome synthetic gene source,
-                    which had been used by several iGEM teams, includingthe 2012 iGEM Missouri Miners, 2015 iGEM
-                    NEAU-China, and 2020 iGEM HK SSC-iGEM.
-                </p>
-                <p>
-                    b. During the step of synthetically producing pyrroloquinoline quinone (PQQ), our PQQ synthetic
-                    genes, pqqA, pqqB, pqqC, pqqD, and pqqE, all derived from Gluconobacter oxydans, which were found to
-                    not cause disease in humans and animals (Gupta et al. 2001).
-                </p>
-                <p>
-                    The chassis used in the above two steps are 1. Bacillus subtilis WB800 and 2. Bacillus subtilis
-                    RM125, and Bacillus subtilis are found on the iGEM white
-                </p>
-                <h2 id="item-3">Plant test</h2>
-                <p>
-                    In this project, 1. Arabidopsis thaliana Col-0 and 2. Oryza sativa var Japonica Taiken 9 are used as
-                    test specimens.
-                </p>
-                <ol class="order-list">
-                    <li>Arabidopsis thaliana Col-0 is a common model plant, which does not grow in Taiwan under natural
-                        conditions.</li>
-                    <li>Oryza sativa var Japonica Taiken 9 is a widely grown food crop in Taiwan.</li>
-                </ol>
-                <p>
-                    The experiments using the above two plants were all carried out in a controlled laboratory
-                    environment: the test using Arabidopsis thaliana Col-0 was performed in a constant temperature
-                    growth room; and the test using Oryza sativa var Japonica Taiken 9 was performed in NCHU’s
-                    experimental greenhouse.
-                </p>
-                <h2 id="item-1">Chemical Control</h2>
-                <p>
-                    Among the chemicals used in our experiments, Dimethylformamide, which is carcinogenic to humans, and
-                    corrosive Sodium hydroxide, and 3,5-Dinitrosalicylic
-                    acid, are used and discarded according to the regulations and guidelines of NCHU’s Safety Center
-                    (full name: Center for Environmental Protection & Occupational Safety and Health).
-                </p>
-                <p>
-                    The experimental operations were all carried out in a fume hood, equipped with personal safety
-                    protection (see Protective equipment for details).
-                </p>
-                <h2 id="item-5">Protective Equipment</h2>
-                <p>It is necessary to be equipped with qualified personal safety protection equipment (PPE) during the
-                    experiment and in qualified environments.
-                </p>
-                <div class="img-container">
-                    <img class="img-fluid"
-                        src="https://2021.igem.org/wiki/images/d/dc/T--NCHU_Taichung--safty_fig01.jpg" alt="">
-                    <img class="img-fluid"
-                        src="https://2021.igem.org/wiki/images/0/06/T--NCHU_Taichung--safty_fig02.jpg" alt="">
+                <h1 id="header">Composite Part</h1>
+                <!-- table start -->
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Part name</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Length</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>BBa_K3830012</td>
+                            <td>Composite</td>
+                            <td>PQQ</td>
+                            <td>3777 bp</td>
+                        </tr>
+                        <tr>
+                            <td>BBa_K3830016</td>
+                            <td>Composite</td>
+                            <td>xynC</td>
+                            <td>2070 bp</td>
+                        </tr>
+                        <tr>
+                            <td>BBa_K3830017</td>
+                            <td>Composite</td>
+                            <td>celK</td>
+                            <td>2898 bp</td>
+                        </tr>
+                        <tr>
+                            <td>BBa_K3830018</td>
+                            <td>Composite</td>
+                            <td>celA</td>
+                            <td>1646 bp</td>
+                        </tr>
+                        <tr>
+                            <td>BBa_K3830019</td>
+                            <td>Composite</td>
+                            <td>cipA</td>
+                            <td>5775 bp</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>Introduction</h2>
+                <div class="one-protein">
+                    <ul class="plist">
+                        <li id="item-1">Name: PQQ BBa_K3830012</li>
+                        <li>
+                            Short description:pET28-A inserted with pqqA, pqqB, pqqC, pqqD, pqqE, f1 ori, T7 terminator
+                            and pr promoter.
+                        </li>
+                        <li>
+                            Long description:The purification of PQQ compound is very difficult.The concentration of PQQ
+                            secrete from bacteria may too low to be detected by HPLC.However, We found that the OD value
+                            in the log phase and the stationary phase of Bacillus subtilis RM125/PQQ raise.
+                            We conducted plasmid extraction and PCR to verify that the PQQ plasmid was successfully
+                            transferred into Bacillus subtilis RM125.
+                        </li>
+                    </ul>
+                    <div class="img-container">
+                        <img class="img-fluid"
+                            src="https://2021.igem.org/wiki/images/2/2f/T--NCHU_Taichung--Composite_01.png" alt="">
+                        <label class="img-label">Figure 1. The OD<sub>600</sub> value of Bacillus with PQQ plasmid is
+                            higher.</label>
+                        <img class="img-fluid"
+                            src="https://2021.igem.org/wiki/images/b/b6/T--NCHU_Taichung--Composite_02.png" alt="">
+                    </div>
                 </div>
-                <h2 id="item-6">Disposal</h2>
-                <ol class="order-list">
-                    <li>Biological waste is sterilized in an autoclave at 121°C and then discarded according to the
-                        rules of the NCHU Safety Center.</li>
-                    <li>The disposed chemicals are managed by university officials who pass the waste on to a licensed
-                        third party.</li>
-                </ol>
+                <hr class="pline">
+                <div class="one-protein">
+                    <ul class="plist">
+                        <li id="item-2">Name: xynC BBa_K3830016</li>
+                        <li>
+                            Short description: pGET-118 inserted with xynC, T7 terminator and pr promoter
+                        </li>
+                        <li>
+                            Long description: we use this plasmid to degrade hemicellulose at the non-reducing end and
+                            we inserted pr promoter to enhance the express of this plasmid
+                        </li>
+                    </ul>
+                </div>
+                <hr class="pline">
+                <div class="one-protein">
+                    <ul class="plist">
+                        <li id="item-3">Name: celK BBa_K3830017</li>
+                        <li>
+                            Short description: pGET-118 inserted with celK, T7 terminator and pr promoter
+                        </li>
+                        <li>
+                            Long description: we use this plasmid to hydrolyze the reducing or non-reducing end to xylan
+                            disaccharide and we inserted pr promoter to enhance the express of this plasmid
+                        </li>
+                    </ul>
+                </div>
+                <hr class="pline">
+                <div class="one-protein">
+                    <ul class="plist">
+                        <li id="item-4">Name: celA BBa_K3830018</li>
+                        <li>
+                            Short description: pGET-118 inserted with celA, T7 terminator and pr promoter
+                        </li>
+                        <li>
+                            Long description: we use this plasmid to hydrolyze the β-1,4 bond by producing a new
+                            reduction end at the loosely arranged amorphous region then make the new reducing end at
+                            long chain molecule and we inserted pr promoter to enhance the express of this plasmid
+                        </li>
+                    </ul>
+                </div>
+                <hr class="pline">
+                <div class="one-protein">
+                    <ul class="plist">
+                        <li id="item-5">Name: cipA BBa_K3830019</li>
+                        <li>
+                            Short description: pGET-118 inserted with cipA, T7 terminator and pr promoter
+                        </li>
+                        <li>
+                            long description: we use this plasmid to promotes binding of cellulose to the catalytic
+                            domains of the cellulolytic enzymes and we inserted pr promoter to enhance the express of
+                            this plasmid.
+                        </li>
+                    </ul>
+                </div>
+
             </div>
             <!-- content end -->
         </div>
