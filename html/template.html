@@ -1,130 +1,263 @@
-<!DOCTYPE html>
-<html lang="en">
+{{NCHU_Taichung}}
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chang me!</title>
     <!-- css -->
-    <!-- <link rel="stylesheet" href="..\\css\\mdb.min.css"> -->
-    <link rel="stylesheet" href="..\\css\\bootstrap.css">
-    <link rel="stylesheet" href="..\\css\\layout.css">
-    <!-- <link rel="stylesheet" href="..\\css\\main.css"> -->
+    <link rel="stylesheet" type="text/css"
+        href="https://2021.igem.org/wiki/index.php?title=Template:NCHU Taichung/css/page&action=raw&ctype=text/css" />
+    <style>
+        /* page css */
+
+        .main-img {
+            width: 100%;
+        }
+
+        .position-sticky {
+            position: sticky !important;
+            top: 100px;
+        }
+
+        .content-container {
+            width: 100%;
+            display: flex;
+            /* align-items: stretch; */
+        }
+
+        .sidebar {
+            display: block;
+            width: 20%;
+            padding: 30px;
+            background-color: #fff9a8;
+        }
+
+        .breadcrumb {
+            justify-content: flex-start;
+            font-size: 15px;
+            margin: 0px !important;
+        }
+
+        .breadcrumb a {
+            color: #5e5e5e;
+            text-decoration: none;
+            transition: 0.5s;
+        }
+
+        .breadcrumb a:hover {
+            color: #e42f2f;
+            transition: 0.5s;
+        }
+
+        #scrollspy .navbar {
+            justify-content: flex-start;
+        }
+
+        #scrollspy .navbar-brand {
+            color: #e42f2f;
+        }
+
+        #scrollspy .navbar-brand:hover {
+            color: #e42f2f;
+        }
+
+        #scrollspy .nav-link {
+            margin: 5px 0px;
+            color: #636363;
+            transition: 0.3s ease-in-out;
+        }
+
+        #scrollspy .nav-link:hover {
+            color: #636363;
+            background: #00000010;
+        }
+
+        #scrollspy .nav-link.active {
+            color: #fff;
+            background-color: #e42f2f;
+        }
+
+        .content {
+            width: 80%;
+            /* background-color: #f0f0f0; */
+            padding: 60px 10%;
+        }
+
+        /* if width is less than 600px */
+        @media screen and (max-width: 600px) {
+            .sidebar {
+                display: none;
+            }
+
+            .content {
+                width: 100%;
+            }
+        }
+
+        .content h1 {
+            color: #e42f2f;
+            font-size: 50px;
+            line-height: 1.5em;
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: 800;
+        }
+
+        .content h2 {
+            color: #e42f2f;
+            font-size: 40px;
+            line-height: 1.5em;
+            text-align: center;
+            margin: 50px auto;
+            font-weight: 600;
+        }
+
+        .content h3 {
+            color: #e42f2f;
+            font-size: 30px;
+            line-height: 1.5em;
+            text-align: center;
+        }
+
+        .content p {
+            font-size: 20px !important;
+            line-height: 2em;
+            margin: 50px auto;
+        }
+
+        .img-container {
+            margin: 50px auto;
+            width: 80%;
+        }
+
+        .table {
+            margin: 50px auto;
+        }
+
+        .info-card {
+            margin: 50px auto;
+        }
+
+        .info-card .nav-link {
+            color: #2e2e2e;
+        }
+
+        .info-card .nav-link.active {
+            color: #0084d1;
+        }
+
+        .info-card .tab-content {
+            margin-top: 10px;
+            line-height: 2em;
+        }
+
+        .order-list {
+            list-style: decimal;
+        }
+
+        .order-list li {
+            margin: 50px 0px;
+        }
+
+        .img-label {
+            font-size: 0.8em;
+            text-align: center;
+            width: 100%;
+        }
+
+        .math-formula {
+            font-style: italic;
+            font-family: serif;
+            font-weight: 600;
+        }
+    </style>
 </head>
 
-<body>
-    <!-- Back to top button start-->
-    <button type="button" class="btn btn-danger btn-lg" id="btn-back-to-top">
-        <svg width="24" height="24" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
-            <path
-                d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
-        </svg>
-    </button>
-    <!-- Back to top button end-->
+<body data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-offset="10" data-bs-method="position">
 
-    <!-- navbar start -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="main.html">
-                <img class="d-inline-block align-text-top team-logo" src="..\\resources\\team-logo.jpeg"
-                    alt="team-logo">
-                NCHU_Taichung</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Parts
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="page.html">Overview</a></li>
-                            <li><a class="dropdown-item" href="#">Basic</a></li>
-                            <li><a class="dropdown-item" href="#">Composite</a></li>
-                            <li><a class="dropdown-item" href="#">Collection</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Project
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Description</a></li>
-                            <li><a class="dropdown-item" href="#">Design</a></li>
-                            <li><a class="dropdown-item" href="#">Experiments</a></li>
-                            <li><a class="dropdown-item" href="#">Notebooks</a></li>
-                            <li><a class="dropdown-item" href="#">Contribution</a></li>
-                            <li><a class="dropdown-item" href="#">Results</a></li>
-                            <li><a class="dropdown-item" href="#">Demonstrate</a></li>
-                            <li><a class="dropdown-item" href="#">Improve</a></li>
-                            <li><a class="dropdown-item" href="#">Model</a></li>
-                            <li><a class="dropdown-item" href="#">Sponsors</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Safety</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            HP
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">HP</a></li>
-                            <li><a class="dropdown-item" href="#">Education & Engagement</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            How to
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Handle Chlamy</a></li>
-                            <li><a class="dropdown-item" href="#">Do crowfunding</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Team
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Members</a></li>
-                            <li><a class="dropdown-item" href="#">Collaborations</a></li>
-                            <li><a class="dropdown-item" href="#">Attributions</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Awards
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Measurement</a></li>
-                            <li><a class="dropdown-item" href="#">Plant</a></li>
-                            <li><a class="dropdown-item" href="#">Model</a></li>
-                        </ul>
-                    </li>
-                </ul>
+    <!-- page content start -->
+    <main class="page">
+        <img class="main-img img-fluid"
+            src="https://2021.igem.org/wiki/images/4/4c/T--NCHU_Taichung--Collaboration_cover.png" alt="">
+        <div class="content-container">
+            <!-- sidebar start -->
+            <div class="sidebar">
+                <div class="position-sticky">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">Human Practices</li>
+                            <li class="breadcrumb-item active" aria-current="page">Collaboration</li>
+                        </ol>
+                    </nav>
+                    <nav id="scrollspy" class="navbar flex-column align-items-stretch">
+                        <a class="navbar-brand" href="#header">Collaboration</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link" href="#item-1">Conference in Taichung, Taiwan(2020)</a>
+                            <a class="nav-link" href="#item-2">Online meetup conference(2021)</a>
+                            <a class="nav-link" href="#item-3">Welcome party</a>
+                        </nav>
+                    </nav>
+                </div>
             </div>
+            <!-- sidebar end -->
+
+            <!-- content start -->
+            <div class="content">
+                <h1 id="header">Collaboration</h1>
+                <h2 id="item-1">1. Conference in Taichung, Taiwan(2020)</h2>
+                <p>
+                    On August 17th, our team hosted a meetup in Taichung. The main purpose was building up a stage to
+                    provide a chance for all the iGEM teams in Taiwan to share their projects by presenting and showing
+                    their posters. Furthermore, we invited Dr. ZHANG, RUI-REN, Dr. LI, DONG-YANG, who are both CEOs from
+                    the biotechnology industry, and professor CHEN, WEN-LIANG from iGEM team NCTU_Formosa to provide
+                    views from different aspects. And there’re a lot of teams that were invited to the conference,
+                    including NCKU_Tainan, NCTU_FORMOSA, CSMU_Taiwan, CCU_Taiwan, and NTHU_Taiwan.
+                </p>
+                <p>
+                    This conference really gave us a chance to interact with other Taiwanese teams, and let us know we
+                    are not alone devastating in the science on this beautiful island. At the end of the meetup, we took
+                    pictures to commemorate this awesome day.
+                </p>
+                <h2 id="item-2">2. Online meetup conference(2021)</h2>
+                <p>
+                    As the pandemic lost control, we are afraid of being unable to collaborate with other teams.
+                    However, fortunately, NCCU_Taiwan had contacted us, and invited us for the online meetup on July
+                    third.
+                </p>
+                <p>
+                    In the meeting, we started with sharing projects. After some troubleshooting, we soon began to
+                    discuss how every team had made adjustments due to the pandemic.
+                </p>
+                <p>
+                    After exchanging ideas, we discovered that every team showed immense dependence on technology. We
+                    were also acknowledged by new solution we never thought before.
+                </p>
+                <p>
+                    During the discussion, all the team were paying the main attention unconsciously on the how to
+                    accomplish the HP tasks. Due to the pandemic, all of the offline interviews were delayed.
+                </p>
+                <p>
+                    After exchanging ideas, we decided to transfer our target to the publicity which can done online,
+                    and other teams really help us out by providing some website that maintain useful information.
+                </p>
+                <p>
+                    At the end of the conference, we truly appreciated we had the opportunity to interact with other
+                    Taiwanese teams.
+                </p>
+                <h2 id="item-3">3. Welcome party</h2>
+                <p>
+                    At night of Intaichung Taiwanese conference, we threw a welcome party. We have prepared some little
+                    games, of course, about science. We placed cards of different traits and protosome around the room,
+                    and let every guest create a new creature by the cards they gathered.
+                </p>
+            </div>
+            <!-- content end -->
         </div>
-    </nav>
-    <!-- navbar end -->
-
-    <div style="height:10000px"></div>
-
-    <!-- javascript -->
-    <script type="text/javascript" src="..\\js\\bootstrap.js"></script>
-    <!-- <script type="text/javascript" src="..\\js\\mdb.min.js"></script> -->
-    <script type="text/javascript" src="..\\js\\main.js"></script>
+    </main>
+    <!-- page content end -->
 
 </body>
 
 </html>
+{{NCHU_Taichung/footer}}

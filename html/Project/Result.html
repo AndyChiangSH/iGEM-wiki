@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../../css/bootstrap.css">
     <link rel="stylesheet" href="../../css/layout.css">
     <link rel="stylesheet" href="../../css/page.css">
+    <script type="text/javascript" src="../../js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-offset="10" data-bs-method="position">
@@ -104,7 +105,7 @@
 
     <!-- page content start -->
     <main class="page">
-        <img class="main-img img-fluid" src="https://2021.igem.org/wiki/images/1/18/T--NCHU_Taichung--placeholder.png"
+        <img class="main-img img-fluid" src="https://2021.igem.org/wiki/images/c/cb/T--NCHU_Taichung--Result_cover.png"
             alt="">
         <div class="content-container">
             <!-- sidebar start -->
@@ -117,13 +118,32 @@
                         </ol>
                     </nav>
                     <nav id="scrollspy" class="navbar flex-column align-items-stretch">
-                        <a class="navbar-brand" href="#header">Result</a>
-                        <nav class="nav nav-pills flex-column">
+                        <a class="navbar-brand" onclick="$('#side-nav1').slideToggle(200);">Result</a>
+                        <nav class="nav nav-pills flex-column" id="side-nav1">
                             <a class="nav-link" href="#item-1">Overview</a>
                             <a class="nav-link" href="#item-2">Cellulase Plasmid Extraction</a>
                             <a class="nav-link" href="#item-3">Sugar concentration quantification</a>
                             <a class="nav-link" href="#item-4">Extract PQQ plasmid from Bacillus subtilis WB800N</a>
                             <a class="nav-link" href="#item-5">Gene Expression On Bacillus subtilis WB800N</a>
+                        </nav>
+                        <a class="navbar-brand" onclick="$('#side-nav2').slideToggle(200);">Engineering success</a>
+                        <nav class="nav nav-pills flex-column" id="side-nav2">
+                            <a class="nav-link" href="#item-2-1">Plasmid Extraction and PCR</a>
+                            <a class="nav-link" href="#item-2-2">Growth Curve</a>
+                            <a class="nav-link" href="#item-2-3">Gene Expression On Bacillus subtilis RM125/PQQ</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link ms-3 my-1" href="#item-2-3-1">Inoculate Arabidopsis</a>
+                                <a class="nav-link ms-3 my-1" href="#item-2-3-2">Inoculate Rice</a>
+                                <a class="nav-link ms-3 my-1" href="#item-2-3-3">Endophyte Re-isolation</a>
+                                <a class="nav-link ms-3 my-1" href="#item-2-3-4">Inoculate Supernatant of Bacillus
+                                    subtilis RM125/PQQ</a>
+                            </nav>
+                        </nav>
+                        <a class="navbar-brand" onclick="$('#side-nav3').slideToggle(200);">Proof of concept</a>
+                        <nav class="nav nav-pills flex-column" id="side-nav3">
+                            <a class="nav-link" href="#item-3-1">Culture Bacillus subtilis RM125/PQQ with saccharified
+                                straw liquid</a>
+                            <a class="nav-link" href="#item-3-2">Rice Inoculation</a>
                         </nav>
                     </nav>
                 </div>
@@ -164,9 +184,9 @@
                     generates, and calculated the weight of sugar generated from rice straw by concentration.
                 </p>
                 <p>
-                    In Figure five, our cellulosomes are assauredly viable because ensurement is made that our
-                    experimental environment is sterile and only the cellulosomes we put in can decompose the cellulose
-                    and hemicellulose.
+                    Our cellulosomes are assauredly viable because ensurement is made that our experimental environment
+                    is sterile and only the cellulosomes we put in can decompose the cellulose and hemicellulose.(Figure
+                    2.)
                 </p>
                 <div class="img-container">
                     <img class="img-fluid"
@@ -184,45 +204,277 @@
                 <div class="img-container">
                     <img class="img-fluid"
                         src="https://2021.igem.org/wiki/images/8/80/T--NCHU_Taichung--result_fig03.png" alt="">
-                    <label class="img-label">Figure 3.</label>
+                    <label class="img-label">Figure 3. PQQ plasmid extraction from B.subtilis WB800.(Plasmid didn’t cut
+                        by restriction enzyme,so the circular DNA will locate above 10000bp)</label>
                 </div>
                 <h2 id="item-5">Gene Expression On Bacillus subtilis WB800N</h2>
                 <p>
-                    To test the effectiveness of PQQ on plants, we inoculate bacillus subtilis WB800N within or without
-                    the PQQ plasmid into arabidopsis.
+                    To test the effectiveness of PQQ on plants, we inoculate <i>bacillus subtilis</i> WB800 within or
+                    without
+                    the PQQ plasmid into <i>Arabidopsis</i>.
                 </p>
                 <p>
-                    In the picture below, respectively shows phenotypes of 5-week-old Arabidopsis inoculated with
-                    Bacillus subtilis WB800 with PQQ plasmid(PQQ), with Bacillus subtilis WB800(WB800N), and with
+                    In the picture below, respectively shows phenotypes of 5-week-old <i>Arabidopsis</i> inoculated with
+                    <i>Bacillus subtilis</i> WB800 with PQQ plasmid(PQQ), with <i>Bacillus subtilis</i> WB800N(WB800N),
+                    and with
                     water(CK) (Figure 4A)
                 </p>
                 <p>
-                    Bacillus subtilis WB800 with PQQ plasmid significantly improved stalk height, the stalk height of
-                    arabidopsis with PQQ is about 8 cm, and the stalk height of arabidopsis with Bacillus subtilis WB800
-                    is about 2 cm.(Figure 4B)
+                    <i>Bacillus subtilis</i> WB800N with PQQ plasmid significantly improved stalk height, the stalk
+                    height of
+                    <i>Arabidopsis</i> with PQQ is about 8 cm, and the stalk height of Arabidopsis with <i>Bacillus
+                        subtilis</i> WB800N is about 2 cm.(Figure 4B)
                 </p>
                 <p>
-                    In chart C, arabidopsis inoculated with water has one primary inflorescence. Arabidopsis inoculated
-                    with Bacillus subtilis WB800 have 3 inflorescences, including primary and secondary inflorescence.
-                    Arabidopsis inoculated with Bacillus subtilis with PQQ plasmid have nearly 5.25 inflorescences,
+                    <i>Arabidopsis</i> inoculated with water has one primary inflorescence. <i>Arabidopsis</i>
+                    inoculated with
+                    <i>Bacillus subtilis</i> WB800N have 3 inflorescences, including primary and secondary
+                    inflorescence.
+                    <i>Arabidopsis</i> inoculated with <i>Bacillus subtilis</i> with PQQ plasmid have nearly 5.25
+                    inflorescences,
                     encompassing primary, secondary and tertiary inflorescence. (Figure 4C)
                 </p>
                 <p>
-                    Bacillus subtilis WB800 with PQQ plasmid possibly help plants to reach reproductive stages earlier
+                    <i>Bacillus subtilis</i> WB800N with PQQ plasmid possibly help plants to reach reproductive stages
+                    earlier.
                 </p>
                 <p>
-                    Chart D shows that the arabidopsis inoculated with PQQ has the highest performance in the leaves
-                    area of arabidopsis. The leaves area is about 5 cm2, in contrast to 4 cm2 of Bacillus subtilis
-                    WB800, and to 3 cm² of CK (Figure 4D)
+                    <i>Arabidopsis</i> inoculated with PQQ has the highest performance in the leaves area of
+                    <i>Arabidopsis</i>. The
+                    leaves area is about 5 cm², in contrast to 4 cm² of <i>Bacillus subtilis</i> WB800N, and to 3 cm² of
+                    CK
+                    (Figure 4D)
                 </p>
                 <div class="img-container">
                     <img class="img-fluid"
                         src="https://2021.igem.org/wiki/images/8/8a/T--NCHU_Taichung--result_fig04.png" alt="">
-                    <label class="img-label">Figure 4.</label>
+                    <label class="img-label">Figure 4. Bacillus subtilis WB800N with PQQ plasmid possibly help plants to
+                        reach reproductive stages earlier.</label>
                 </div>
                 <p>
                     However, we discovered that WB800N has a kanamycin resistance gene in its genome. So we decided to
                     make Bacillus subtilis RM125 as the new host.
+                </p>
+
+                <h1 id="header-2">Engineering success</h1>
+                <h2 id="item-2-1">Plasmid Extraction and PCR</h2>
+                <p>
+                    We conducted plasmid extraction and PCR to verify that the PQQ plasmid was successfully transferred
+                    into Bacillus subtilis RM125(Figure 5. & 6.)
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/8/8b/T--NCHU_Taichung--result_fig05.png" alt="">
+                    <label class="img-label">Figure 5. PQQ plasmid from B.subtilis RM125.</label>
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/f/f8/T--NCHU_Taichung--result_fig06.png" alt="">
+                    <label class="img-label">Figure 6. PCR result.</label>
+                </div>
+                <h2 id="item-2-2">Growth Curve</h2>
+                <p>
+                    The OD<sub>600</sub> value of Bacillus with PQQ plasmid is higher than wild type Bacillus in log
+                    phase and
+                    stationary phase. PQQ can improve the efficiency of nutrient utilization of Bacillus
+                    subtilis.(Figure 7.)
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/5/52/T--NCHU_Taichung--result_fig07.png" alt="">
+                    <label class="img-label">Figure 7. The OD<sub>600</sub> value of Bacillus with PQQ plasmid is
+                        higher.</label>
+                </div>
+                <h2 id="item-2-3">Gene Expression On Bacillus subtilis RM125/PQQ</h2>
+                <h3 id="item-2-3-1">Inoculate Arabidopsis</h3>
+                <p>
+                    Comparing with Arabidopsis which didn’t be inoculated (CK), the leaves area of Arabidopsis thaliana
+                    inoculated Bacillus subtilis RM125 with PQQ Plasmid(RM125/PQQ) increased by 1.5 times and capsule
+                    number raised by 2 times. Leaves NO. and stalk height also grew significantly. Bacillus subtilis
+                    RM125 with PQQ Plasmid can improve both vegetative and reproductive growth of <i>Arabidopsis
+                        thaliana</i>.(Figure 8B and 8C)
+                </p>
+                <p>
+                    In addition, the value of leaf number, leaves area, stalk height, and capsule of Arabidopsis
+                    thaliana inoculated with our engineered bacteria B.subtilis RM125/PQQ(RM125/PQQ) is higher than the
+                    Arabidopsis inoculated with <i>Bacillus subtilis</i> RM125(RM125), and also more homogenous. (Figure
+                    8E and 8F)
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/a/a0/T--NCHU_Taichung--result_fig08-1.png" alt="">
+                    <label class="img-label">Figure 8.1.Artificial endophyte B. subtilis RM125/PQQ promoted Arabidopsis
+                        growth.</label>
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/4/48/T--NCHU_Taichung--result_fig08-2.png" alt="">
+                    <label class="img-label">Figure 8.2.Artificial endophyte B. subtilis RM125/PQQ promoted Arabidopsis
+                        growth.</label>
+                </div>
+                <h3 id="item-2-3-2">Inoculate Rice</h3>
+                <p>
+                    Rice seeds were dehulled and sterilized, and constantly shaked in water under darkness for one day
+                    then sewed in Murashige & Skoog medium. Thirteen days after inoculation, we found that the value of
+                    leaves width, leaves length, shoot height of seedling inoculated B. subtilis RM125 with PQQ
+                    plasmid(RM125/PQQ) was higher than the seedling inoculated with B. subtilis RM125(RM125), and the
+                    fresh weight was doubled. (Figure 9.)
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/1/1d/T--NCHU_Taichung--result_fig09.png" alt="">
+                    <label class="img-label">Figure 9. Artificial endophyte B. subtilis RM125/PQQ promoted rice
+                        growth.</label>
+                </div>
+                <p>
+                    In test on Arabidopsis and rice, we got the same result: Bacillus RM125 inoculated with PQQ plasmid
+                    can effectively improve plant growth, and the PQQ gene may be the key factor.
+                </p>
+                <h3 id="item-2-3-3">Endophyte Re-isolation</h3>
+                <p>
+                    <b>Re-isolate Bacillus subtilis RM125/PQQ</b>
+                </p>
+                <p>
+                    After we had re-isolate Bacillus subtilis RM125 from Arabidopsis and checked it by sequence(picture
+                    1), whether Bacillus subtilis RM125/PQQ was endosymbiotic would affect the persistence and
+                    effectiveness of the product. To check whether the Bacillus subtilis RM125/PQQ was endosymbiotic,
+                    re-isolating the plants inoculated with RM125/PQQ can be the most intuitive way. Then, filtration
+                    was done to the re-isolated strain by kanamycin, and then plasmid was extracted. When PCR and
+                    sequencing are done continuously, PQQ gene was discovered, which was the direct evidence that
+                    Bacillus subtilis RM125/PQQ is endosymbiotic.(Figure 10. & 11.)
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/2/23/T--NCHU_Taichung--result_pic01.png" alt="">
+                    <label class="img-label">Picture 1. (A)Bacillus subtilis RM125 re-isolated from Arabidopsis.
+                        (B)Plant surface sterilization was successful.(Pic B)</label>
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/b/b0/T--NCHU_Taichung--result_pic02.png" alt="">
+                    <label class="img-label">Picture 2. Artificial endophyte.(A)B.subtilis RM125/PQQ re-isolated from
+                        Arabidopsis.(B)B.subtilis RM125/PQQ re-isolated from rice.
+                    </label>
+                </div>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/a/ae/T--NCHU_Taichung--result_fig10.png" alt="">
+                    <label class="img-label">Figure 10. Plasmid extraction of B. subtilis RM125/PQQ re-isolate from
+                        plant.(Plasmid didn’t cut by restriction enzyme,so the circular DNA will locate above
+                        10000bp)</label>
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/7/77/T--NCHU_Taichung--result_fig11.png" alt="">
+                    <label class="img-label">Figure 11. PCR result of B. subtilis RM125/PQQ re-isolate from
+                        plant</label>
+                </div>
+                <h3 id="item-2-3-4">Inoculate Supernatant of Bacillus subtilis RM125/PQQ</h3>
+                <p>
+                    Verification of our assumption that PQQ was secreted off to the supernatant needed to be reassured.
+                    We decided to adjust the easiest way, observing the difference after the inoculation by
+                    supernatants. Supernatants from B. subtilis RM125 with PQQ plasmid(RM125/PQQ) and B. subtilis(RM125)
+                </p>
+                <p>
+                    In this experiment, we pelleted down the cell and filtered the supernatant. The dilution fold of the
+                    supernatant is equal to the value of OD600 value because assumption was made that the amount of
+                    metabolites is proportional to the OD600 value.
+                </p>
+                <p>
+                    Results showed that the supernatant of Bacillus improved the vegetative and reproductive growth of
+                    Arabidopsis, and the vegetative growth of Arabidopsis inoculated with our engineered
+                    Bacillus(RM125/PQQ) was slightly higher than Arabidopsis inoculated with Bacillus subtilis RM125
+                    .(Figure 12.)
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/f/ff/T--NCHU_Taichung--result_fig12-1.png" alt="">
+                    <label class="img-label">Figure 12.1. Supernatant of Bacillus subtilis RM125/PQQ slightly improved
+                        the growth of Arabidopsis.</label>
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/7/7d/T--NCHU_Taichung--result_fig12-2.png" alt="">
+                    <label class="img-label">Figure 12.2. Supernatant of Bacillus subtilis RM125/PQQ slightly improved
+                        the growth of Arabidopsis.</label>
+                </div>
+                <h1>Proof of concept</h1>
+                <h2 id="item-3-1">Culture Bacillus subtilis RM125/PQQ with saccharified straw liquid</h2>
+                <p>
+                    Our final purpose is to turn the agriculture waste to the medium of plant probiotics bacteria, and
+                    use the bacteria with the medium as a growth promoter to increase agricultural productivity. The
+                    final goal is to find the best carbon-nitrogen ratio of the saccharified straw liquid to culture
+                    Bacillus subtilis RM125 with PQQ plasmid. We have rice straw for carbon sources and Okara for
+                    nitrogen sources. After a series of experiments, we found that 1:4 is the best ratio of rice straw
+                    to Okara. (Figure 13.)The OD600 value of Bacillus subtilis RM125 with PQQ can achieve nearly twice
+                    or twice and a half increase in the saccharified straw liquid.(Figure 14.)
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/d/d9/T--NCHU_Taichung--result_fig13.png" alt="">
+                    <label class="img-label">Figure 13. the best carbon-nitrogen ratio of the saccharified straw liquid
+                        to culture Bacillus subtilis RM125 with PQQ plasmid.</label>
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/b/bb/T--NCHU_Taichung--result_fig14.png" alt="">
+                    <label class="img-label">Figure 14. The OD600 value of Bacillus subtilis RM125 with PQQ can be about
+                        1 to 1.5 in the saccharified straw liquid.</label>
+                </div>
+                <h2 id="item-3-2">Rice Inoculation</h2>
+                <p>
+                    To avoid Soil-Borne disease, seeds of rice（Oryza sativa var. Japonica Taiken 9) was sterilized by
+                    NaClO, sowed in potting soil, and inoculated three times (12 days,33 days,60 days after sowing_DAS).
+                </p>
+                <p>
+                    For biosafety reasons, we filtered out the Bacillus, inoculated rice only with supernatant. After
+                    culturing our endophyte in saccharified straw liquid,we adjusted the OD value to 1，then pellet down
+                    the bacteria and filtered the supernatant as stock inoculant.The stock inoculant was diluted 100
+                    times 200times and 500times.The concentration of the supernatant is defined as 1x, 1/100x,1/200x,
+                    and 1/500x.
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/8/8e/T--NCHU_Taichung--result_pic03.png" alt="">
+                    <label class="img-label">Picture 3. The phenotype of rice inoculated with Supernatant of Bacillus
+                        subtilis RM125/PQQ.(46 days after sowing.)</label>
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/e/ef/T--NCHU_Taichung--result_pic04.png" alt="">
+                    <label class="img-label">Picture 4. The phenotype of rice inoculated with Supernatant of Bacillus
+                        subtilis RM125/PQQ.(54 days after sowing.)
+                    </label>
+                </div>
+                <p>
+                    Supernatants of higher concentration seemed to be more effective. (Picture 1 &2)Treatment with 1x
+                    and 100 x supernatant significantly increased the leaves number, shoot height, and leaf
+                    length.(Figure 15A,15D,15E)The tiller quantity of rice inoculated 1x supernatant escalated by
+                    50.3%(Figure 15B) and the dry weight was doubled.(Figure 15C) In the meantime, the tiller quantity
+                    of rice inoculated 100x supernatant was raised by 29%(Figure 15 B), the dry weight was increased by
+                    96%( Figure15C), and chlorophyll content raised 1.5 times(Figure 15F).
+                </p>
+                <p>
+                    More tillers means the rice may have more ears ,and the increase of chlorophyll content means the
+                    increase of photoassimilates.All these phenomena pointed out that that inoculant can improve rice
+                    growth and have a great opportunity to increase the yield.
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/d/dc/T--NCHU_Taichung--result_fig15.png" alt="">
+                    <label class="img-label">Figure 15. Supernatant of Bacillus subtilis RM125/PQQ cultured in
+                        saccharified straw liquid can promote rice growth.</label>
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/0/02/T--NCHU_Taichung--result_fig16.png" alt="">
+                    <label class="img-label">Figure 16. Supernatant of Bacillus subtilis RM125/PQQ cultured in
+                        saccharified straw liquid can increase the tiller quant and the clum diameter of rice
+                    </label>
+                </div>
+                <p>
+                    The vegetative phase of rice is about two months, and about 3-5 seedlings will be planted together
+                    until the total amount of tiller reaches 20-25, then the rice is ready to enter the reproductive
+                    phase. According to this, 4 tillers is the lowest value for every single plant. While the control
+                    groups have about 4 tillers, inoculated rice(1x,100x) have already reached 6-8 tillers,( Figure16B)
+                    which means that inoculants shorten the time for rice to reach 4 tillers, helping rice enter the
+                    reproductive phase earlier. Water sources are becoming a serious problem in agriculture because of
+                    global climate change. If the time for rice cultivation shortens, a lower amount of water is needed.
+                </p>
+                <p>
+                    Besides, the culm diameter also increased, which means that the inoculants may have the potential to
+                    improve breaking-type lodging resistance. (Figure 16C)
+                </p>
+                <p>
+                    Below is the frame of circular agriculture. Cellulolytic enzyme
+                    initially decomposes the rice straw to synthesize saccharification liquid, which can incubate the
+                    Bacillus subtilis RM125/PQQ turn the saccharification liquid to more valuable biostimulants that can
+                    significantly foster the rice to grow. Through all the steps in this system, nothing was wasted,
+                    which can successfully verify that circular agriculture is accomplishable.
                 </p>
             </div>
             <!-- content end -->

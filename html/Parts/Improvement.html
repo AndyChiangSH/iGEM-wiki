@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Implementation</title>
+    <title>Improvement</title>
     <!-- css -->
     <link rel="stylesheet" href="../../css/clean.css">
     <link rel="stylesheet" href="../../css/bootstrap.css">
@@ -104,20 +104,29 @@
 
     <!-- page content start -->
     <main class="page">
-        <img class="main-img img-fluid"
-            src="https://2021.igem.org/wiki/images/6/6b/T--NCHU_Taichung--Implementation_cover.png" alt="">
+        <img class="main-img img-fluid" src="https://2021.igem.org/wiki/images/1/18/T--NCHU_Taichung--placeholder.png"
+            alt="">
         <div class="content-container">
             <!-- sidebar start -->
             <div class="sidebar">
                 <div class="position-sticky">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item">Project</li>
-                            <li class="breadcrumb-item active" aria-current="page">Implementation</li>
+                            <li class="breadcrumb-item">Parts</li>
+                            <li class="breadcrumb-item active" aria-current="page">Improvement</li>
                         </ol>
                     </nav>
                     <nav id="scrollspy" class="navbar flex-column align-items-stretch">
-                        <a class="navbar-brand" href="#header">Implementation</a>
+                        <a class="navbar-brand" href="#header">Improvement</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link" href="#item-1">Item 1</a>
+                            <a class="nav-link" href="#item-2">Item 2</a>
+                            <a class="nav-link" href="#item-3">Item 3</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                            </nav>
+                        </nav>
                     </nav>
                 </div>
             </div>
@@ -125,70 +134,136 @@
 
             <!-- content start -->
             <div class="content">
-                <h1 id="header">Implementation</h1>
+                <h1 id="header">Improvement</h1>
                 <p>
-                    In recent years, climate change has slowly been paid attention to. It can cause many problems, such
-                    as increased temperature, early or delayed flowering season, and increased evaporation. Studies have
-                    shown that rising temperatures are one of the main culprits for the decline in rice harvests. After
-                    we interviewed the farmers, we discovered that we were in a negative situation for a long time. In
-                    Taiwan, farmers often dispose of agricultural waste easily by burning, such as the <b>burning of
-                        rice straws.</b> In this way, a large amount of greenhouse gases has been produced, which has
-                    worsened
-                    climate change. It was for this reason that we realized that something must be done to improve the
-                    whole situation.
+                    To express our genes in endophyte, Bacillus subtilis, and make subsequent genetic tests for E. coli
+                    and Bacillus subtilis more diverse, we constructed a shuttle vector for expressed gene in Bacillus
+                    subtilis and E. coli.
                 </p>
                 <p>
-                    We found that after the farmers provided rice to consumers, the additional rice straw was often no
-                    longer used and discarded. This <b>non-recycling model resulted in a large amount of waste rice
-                        straw</b>,
-                    which means that resource recycling has become very important. Therefore, in our system, we have
-                    added the concept of <b>circular agriculture</b>, hoping to make rice straws useful, so that farmers
-                    do not
-                    have to worry about rice straws and society does not have to bear the negative effects of burning
-                    it, such as driving safety, health and environmental damage. I hope to use this to achieve a
-                    positive cycle.
+                    Modifying f1 Ori and replace T7 promoter by pr promoter.
+                    into BBa K2141000 as a shuttle vector makes it performed by Bacillus subtilis besides
+                    E. coli.
                 </p>
                 <p>
-                    In our project we use <b>cellulosome to decompose rice straw</b> into saccharified straw liquid and
-                    use it
-                    to culture an artificial endophyte,which can produce PQQ, a kind of promotion that can foster plant
-                    growth. It can be used with intelligent agriculture to help plants grow, reduce damage, increase
-                    benefits, and benefit the environment. We hope that the project can be promoted to farmers to solve
-                    problems, and the technologies used in our projects are all interdisciplinary characteristics. This
-                    means that it is not limited and can be used by people in other fields.
+                    Moreover, we chose kanamycin resistance as the selection marker to ensure that our genes were
+                    transferred into the endophyte .
                 </p>
                 <p>
-                    To reduce the burden on farmers, we can use intelligent agriculture to provide farm managers with a
-                    reference for business decision-making. Use smart monitoring to observe and regulate the growth of
-                    plants, reduce the burden of farm operations and reduce labor demand. Establish a more efficient
-                    farm management model.
+                    E. coli and Bacillus subtilis being broadly used, for example, 2016 iGEM team_auxin let E.coli
+                    generate auxin able to promote plant root growth; 2013 iGEM team_B.fruit utilize both bacteria to
+                    regulate fruit maturity date.Making BBa K2141000 as a shuttle vector can
+                    expand its applied field.
                 </p>
                 <p>
-                    We need to learn about private and official information to improve our project. To implement it in
-                    real life and enable farmers to use it, we visited many places, including the <b>Info-Tech
-                        Services</b> and
-                    <b>farmland</b>. After observing, we expect to build a collection center near the farm to gather all
-                    the
-                    surrounding farmland waste and treat it together to reduce the carbon footprint. The waste is
-                    provided by farmers, and we feed back with plant growth promoters. Through the cooperation of
-                    enzymes and intelligent agriculture, we hope to finally create a complete system.
+                    Although, a lot of previous iGEM team have decomposed waste to produce saccharified straw liquid and
+                    culture genetically modified bacteria to gain more valuable products such as 2019 iGEM team
+                    CAU_China decompose waste into saccharified straw liquid to culture E. coli which can produce
+                    Astaxanthin, 2020 team NFLS decompose cellulose to produce glucose and afterwards employ microbial
+                    fuel cell to generate electricity, also our PQQ genes can perform pet28 on E. coli and significantly
+                    promote E. coli growth. If following iGEM team demand exploit E. coli as competent cell,
                 </p>
-                <p>
-                    In terms of security, we have done a lot of research. Finally, it was discovered that gene leakage
-                    is one of the main culprits that cause harm to the environment, and there are many uncertainties.
-                    Therefore, to be able to implement our project, the PQQ plant growth promoter produced by our
-                    project does not contain any bacteria. This way, the doubt of gene leakage can be eliminated.
+                <h3 id="item-3-2">item-3-2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget nisl tempor, tincidunt orci et,
+                    ultrices velit. Aliquam erat volutpat. Suspendisse at libero eget dui semper facilisis et euismod
+                    dui. Integer nec aliquam elit. Sed id pretium nibh, a elementum lacus. Etiam tincidunt metus eget
+                    magna pellentesque, ut viverra sapien iaculis. Donec dapibus volutpat ligula sit amet dignissim.
+                    Vivamus tristique feugiat felis ac vulputate. Sed mollis urna in odio rutrum, eget vulputate elit
+                    maximus. Mauris venenatis massa egestas odio hendrerit rutrum. Maecenas porta nunc sed nulla congue,
+                    vel pulvinar nibh scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                    per inceptos himenaeos.
                 </p>
-                <p>
-                    In our project, we also encountered a lot of challenges. In our integrated HP part, after interviews
-                    with farmers, we learned that collecting rice straws is a big problem. For the average farmer in
-                    Taiwan, there are only a small number of farmers who can afford the cost of large equipment.
-                    Therefore, most of it will still be Artificial. As a result, the labor cost is relatively high, so
-                    the farmers suggested that we consult the Environmental Protection Agency whether it can use the
-                    funds of a program called the "Air Pollution Fund" currently used to deal with air pollution to
-                    subsidize the cost of collecting rice straws. In addition, the distribution of material
-                    transportation costs is also an issue that we must consider when implementing.
-                </p>
+                <!-- table start -->
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- table end -->
+                <div class="info-card">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                aria-selected="true">Home</button>
+                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                                aria-selected="false">Profile</button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                                aria-selected="false">Contact</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget nisl tempor, tincidunt orci
+                            et,
+                            ultrices velit. Aliquam erat volutpat. Suspendisse at libero eget dui semper facilisis et
+                            euismod dui. Integer nec aliquam elit. Sed id pretium nibh, a elementum lacus. Etiam
+                            tincidunt
+                            metus eget magna pellentesque, ut viverra sapien iaculis. Donec dapibus volutpat ligula sit
+                            amet
+                            dignissim. Vivamus tristique feugiat felis ac vulputate. Sed mollis urna in odio rutrum,
+                            eget
+                            vulputate elit maximus. Mauris venenatis massa egestas odio hendrerit rutrum. Maecenas porta
+                            nunc sed nulla congue, vel pulvinar nibh scelerisque. Class aptent taciti sociosqu ad litora
+                            torquent per conubia nostra, per inceptos himenaeos.
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget nisl tempor, tincidunt orci
+                            et,
+                            ultrices velit. Aliquam erat volutpat. Suspendisse at libero eget dui semper facilisis et
+                            euismod dui. Integer nec aliquam elit. Sed id pretium nibh, a elementum lacus. Etiam
+                            tincidunt
+                            metus eget magna pellentesque, ut viverra sapien iaculis. Donec dapibus volutpat ligula sit
+                            amet
+                            dignissim. Vivamus tristique feugiat felis ac vulputate. Sed mollis urna in odio rutrum,
+                            eget
+                            vulputate elit maximus. Mauris venenatis massa egestas odio hendrerit rutrum. Maecenas porta
+                            nunc sed nulla congue, vel pulvinar nibh scelerisque. Class aptent taciti sociosqu ad litora
+                            torquent per conubia nostra, per inceptos himenaeos.
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget nisl tempor, tincidunt orci
+                            et,
+                            ultrices velit. Aliquam erat volutpat. Suspendisse at libero eget dui semper facilisis et
+                            euismod dui. Integer nec aliquam elit. Sed id pretium nibh, a elementum lacus. Etiam
+                            tincidunt
+                            metus eget magna pellentesque, ut viverra sapien iaculis. Donec dapibus volutpat ligula sit
+                            amet
+                            dignissim. Vivamus tristique feugiat felis ac vulputate. Sed mollis urna in odio rutrum,
+                            eget
+                            vulputate elit maximus. Mauris venenatis massa egestas odio hendrerit rutrum. Maecenas porta
+                            nunc sed nulla congue, vel pulvinar nibh scelerisque. Class aptent taciti sociosqu ad litora
+                            torquent per conubia nostra, per inceptos himenaeos.
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- content end -->
         </div>

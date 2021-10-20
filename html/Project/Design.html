@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Implementation</title>
+    <title>Design</title>
     <!-- css -->
     <link rel="stylesheet" href="../../css/clean.css">
     <link rel="stylesheet" href="../../css/bootstrap.css">
@@ -104,8 +104,8 @@
 
     <!-- page content start -->
     <main class="page">
-        <img class="main-img img-fluid"
-            src="https://2021.igem.org/wiki/images/6/6b/T--NCHU_Taichung--Implementation_cover.png" alt="">
+        <img class="main-img img-fluid" src="https://2021.igem.org/wiki/images/1/10/T--NCHU_Taichung--design_cover.png"
+            alt="">
         <div class="content-container">
             <!-- sidebar start -->
             <div class="sidebar">
@@ -113,11 +113,17 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">Project</li>
-                            <li class="breadcrumb-item active" aria-current="page">Implementation</li>
+                            <li class="breadcrumb-item active" aria-current="page">Design</li>
                         </ol>
                     </nav>
                     <nav id="scrollspy" class="navbar flex-column align-items-stretch">
-                        <a class="navbar-brand" href="#header">Implementation</a>
+                        <a class="navbar-brand" href="#header">Design</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link" href="#item-1">Project Overview</a>
+                            <a class="nav-link" href="#item-2">The First Goal</a>
+                            <a class="nav-link" href="#item-3">The Second Goal</a>
+                            <a class="nav-link" href="#item-4">The Final Goal</a>
+                        </nav>
                     </nav>
                 </div>
             </div>
@@ -125,70 +131,166 @@
 
             <!-- content start -->
             <div class="content">
-                <h1 id="header">Implementation</h1>
+                <h1 id="header">Design</h1>
+                <h2 id="item-1">Project Overview</h2>
                 <p>
-                    In recent years, climate change has slowly been paid attention to. It can cause many problems, such
-                    as increased temperature, early or delayed flowering season, and increased evaporation. Studies have
-                    shown that rising temperatures are one of the main culprits for the decline in rice harvests. After
-                    we interviewed the farmers, we discovered that we were in a negative situation for a long time. In
-                    Taiwan, farmers often dispose of agricultural waste easily by burning, such as the <b>burning of
-                        rice straws.</b> In this way, a large amount of greenhouse gases has been produced, which has
-                    worsened
-                    climate change. It was for this reason that we realized that something must be done to improve the
-                    whole situation.
+                    The “slash and burn” method of processing agricultural waste, which produces an excess of useless
+                    ash, is still prominent in Taiwanese agriculture. This project aims to present a solution which uses
+                    organic agricultural waste to extract enzymes that can increase the efficiency of plant growth,
+                    helping to curtail the need for slash and burn. Rice straws are decomposed to produce sugar solution
+                    that is used to make PQQ and promote plant growth to increase agricultural yields and reduce waste
+                    to meet the needs of circular agriculture.
+                </p>
+                <p>To accomplish this program, three main goals must be achieved:</p>
+                <h2 id="item-2">The First Goal: Decompose the straws into sugar solution via saccharification.</h2>
+                <h3 id="item-2-1">Rice Straw</h3>
+                <p>
+                    Rice straw consists of cellulose, hemicellulose, and lignin. In the picture, the cellulose is
+                    enclosed circularly by hemicellulose and lignin.(Figure 1.)
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/0/0f/T--NCHU_Taichung--design_fig01.png" alt="">
+                    <label class="img-label">Figure 1. Rice straw structure.</label>
+                </div>
+                <h3 id="item-2-2">Decompose rice straw by Cellulosome</h3>
+                <p>
+                    Cellulosome, which was kindly provided by prof.Chieh-Chen Huang, is aimed to decompose rice
+                    straw.Our cellulosome is composed of three cellulases and one scaffolding protein.
+                    The enzyme that can decompose cellulose is called cellulase. The decomposition method firstly
+                    hydrolyzes cellulose into cellobiose by exonuclease, and then breaks it down into glucose by
+                    endonuclease. Scaffolding protein is a protein that assembles cellulase and increases its
+                    decomposition efficiency. [1][2]
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/e/ec/T--NCHU_Taichung--design_fig02.png" alt="">
+                    <label class="img-label">Figure 2. The cellusome.</label>
+                </div>
+                <p>
+                    In our project,every cellulase has its own plasmid.The cellulosome gene is from Clostridium
+                    thermocellum. (Figure 3.)
                 </p>
                 <p>
-                    We found that after the farmers provided rice to consumers, the additional rice straw was often no
-                    longer used and discarded. This <b>non-recycling model resulted in a large amount of waste rice
-                        straw</b>,
-                    which means that resource recycling has become very important. Therefore, in our system, we have
-                    added the concept of <b>circular agriculture</b>, hoping to make rice straws useful, so that farmers
-                    do not
-                    have to worry about rice straws and society does not have to bear the negative effects of burning
-                    it, such as driving safety, health and environmental damage. I hope to use this to achieve a
-                    positive cycle.
+                    XynC is xylanase, which can degrade hemicellulose. CelA and celK are glucosidases. The former is
+                    endoglycosidase, and the latter is exoglycosidase.
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/4/42/T--NCHU_Taichung--design_fig03.png" alt="">
+                    <label class="img-label">Figure 3. Scaffolding protein and cellulase.</label>
+                </div>
+                <h3 id="item-2-3">Experiment design</h3>
+                <p>
+                    Make rice straw into powder,add cellulase water and NaOAc which acts as a buffer,incubate in
+                    60°C,add Okara solution for nitrogen source then filter the solution.
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/2/23/T--NCHU_Taichung--design_fig04.png" alt="">
+                    <label class="img-label">Figure 4. Decompose the straws into sugar solution via
+                        saccharification.From BioRender.</label>
+                </div>
+                <h2 id="item-3">The Second Goal: Apply PQQ-producing endosymbiotic bacteria to promote plant growth.
+                </h2>
+                <h3 id="item-3-1">What are endosymbionts?</h3>
+                <p>
+                    Endosymbionts are microorganisms, fungi or bacteria, that can co-exist in plants and do not cause
+                    plant diseases. Some of them help plants absorb nutrients, such as nitrogen-fixing bacteria [3], and
+                    metabolites secreted by endophytes which act as an important role in plant growth, such as Bacillus
+                    subtilis to produce glutamate. [4] Others are resistant to comorbidities, such as Burkholderia
+                    cenocepacia strain 869T2 against soil borne Fusarium wilt of banana.[5]
+                </p>
+                <h3 id="item-3-2">What is PQQ?</h3>
+                <p>
+                    Pyrroloquinoline quinone (PQQ) is a coenzyme that combines with lactate dehydrogenase to convert
+                    lactic acid that is not available to organisms, into pyruvate, which they need for survival. [6] PQQ
+                    is also a good antioxidant, which can reduce cell oxidation potential and protect cells.According to
+                    many papers, PQQ is beneficial to bacteria, plants and animals. Humans can ingest it to resist
+                    cancer and Alzheimer's disease.[7]PQQ is precious, too. It can only be synthesized by a few bacteria
+                    and the yield is insufficient.
                 </p>
                 <p>
-                    In our project we use <b>cellulosome to decompose rice straw</b> into saccharified straw liquid and
-                    use it
-                    to culture an artificial endophyte,which can produce PQQ, a kind of promotion that can foster plant
-                    growth. It can be used with intelligent agriculture to help plants grow, reduce damage, increase
-                    benefits, and benefit the environment. We hope that the project can be promoted to farmers to solve
-                    problems, and the technologies used in our projects are all interdisciplinary characteristics. This
-                    means that it is not limited and can be used by people in other fields.
+                    n addition, many studies have confirmed that PQQ can promote plant growth. [8]Therefore, we plan to
+                    synthesize PQQ plastids and transfer them into Bacillus, and inoculate plants with endophytes that
+                    can produce PQQ to foster growth in plants.
                 </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/2/2c/T--NCHU_Taichung--design_fig05.png" alt="">
+                    <label class="img-label">Figure 5. PQQ structure.Modified from[9]</label>
+                </div>
+                <h3 id="item-3-3">Biosynthesis of PQQ</h3>
                 <p>
-                    To reduce the burden on farmers, we can use intelligent agriculture to provide farm managers with a
-                    reference for business decision-making. Use smart monitoring to observe and regulate the growth of
-                    plants, reduce the burden of farm operations and reduce labor demand. Establish a more efficient
-                    farm management model.
+                    Five gene Pqq A,Pqq B,Pqq C,Pqq D,Pqq E is necessary in the biosynthesis of PQQ
+                    Pqq A is the precursor,a short peptide that contains two residues, glutamate, and tyrosine.First,Pqq
+                    A,Pqq D and Pqq E will form P A/D/E complex.In the presence of Pqq D,Pqq E and external reducing
+                    power Glu-Tyr cross-linking within PqqA is generated.Second,Pqq F/G complex trims the cross-linked
+                    product from the PqqA/D/E reaction,but the two gene is not found in all species.Our PQQ gene is from
+                    Gluconobacter oxydans, without Pqq F and Pqq G in it.There is still many intriguing questions remain
+                    in PQQ biogenesis. Third,Pqq B, a hydroxylating enzyme,catalyzes the generation of AHQQ, which acts
+                    as the substrate in the final oxidative steps of the pathway catalyzed by PqqC.There is still many
+                    intriguing questions remain in PQQ biogenesis.[9][10]
                 </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/2/25/T--NCHU_Taichung--design_fig06.png" alt="">
+                    <label class="img-label">Figure 6. Biosynthesis of PQQ.From [9]</label>
+                </div>
+                <h3 id="item-3-4">Construct PQQ Plasmid</h3>
                 <p>
-                    We need to learn about private and official information to improve our project. To implement it in
-                    real life and enable farmers to use it, we visited many places, including the <b>Info-Tech
-                        Services</b> and
-                    <b>farmland</b>. After observing, we expect to build a collection center near the farm to gather all
-                    the
-                    surrounding farmland waste and treat it together to reduce the carbon footprint. The waste is
-                    provided by farmers, and we feed back with plant growth promoters. Through the cooperation of
-                    enzymes and intelligent agriculture, we hope to finally create a complete system.
+                    We use pet28a for plasmid backbone, add the f1 ori and sequences of PQQ ,replace T7 promoter by PR
+                    promoter,make our gene can be copied in Bacillus subtilis,which can be a plant endophyte.
                 </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/8/89/T--NCHU_Taichung--design_fig07.png" alt="">
+                    <label class="img-label">Figure 7. PQQ plasmid</label>
+                </div>
+                <h3 id="item-3-5">Experimental Design</h3>
+                <ol class="order-list">
+                    <li>
+                        Inoculation
+                        <p>
+                            Culture the strain overnight, pellet down the strain, replace the supernatant with
+                            sterilized water and finally inoculate plants.
+                        </p>
+                        <div class="img-container">
+                            <img class="img-fluid"
+                                src="https://2021.igem.org/wiki/images/2/2a/T--NCHU_Taichung--design_fig08.png" alt="">
+                            <label class="img-label">Figure 8. Inoculation.From BioRender</label>
+                        </div>
+                    </li>
+                    <li>
+                        Re-isolation
+                        <p>
+                            Collect the samples, after sterilizing the sample's surface, we use mortar and pestle, grind
+                            the samples, place samples into spread plates, and then select a single colony for plasmid
+                            extraction and sequencing.
+                        </p>
+                        <div class="img-container">
+                            <img class="img-fluid"
+                                src="https://2021.igem.org/wiki/images/5/52/T--NCHU_Taichung--design_fig09.png" alt="">
+                            <label class="img-label">Figure 9. Re-isolation.From BioRender</label>
+                        </div>
+                    </li>
+                </ol>
+                <h2 id="item-4">The Final Goal: Circular Agriculture</h2>
                 <p>
-                    In terms of security, we have done a lot of research. Finally, it was discovered that gene leakage
-                    is one of the main culprits that cause harm to the environment, and there are many uncertainties.
-                    Therefore, to be able to implement our project, the PQQ plant growth promoter produced by our
-                    project does not contain any bacteria. This way, the doubt of gene leakage can be eliminated.
+                    The modified Bacillus subtilis is cultivated in the saccharification liquid of rice straws to
+                    produce PQQ, which promotes the growth of rice and completes the entire agricultural cycle. The
+                    larger and healthier plants grown via this method ultimately produce more agricultural waste, which
+                    provides a larger supply of materials that can be collected to produce PQQ. (Another sentence
+                    explaining the role of IOT, Big Data, etc. in this process).
+                    Moreover ,information technology such as big data ,ICT,can be combined with this circular system and
+                    monitor plant growth,so farmers can know what time and how much our product should be used during
+                    planting.
                 </p>
-                <p>
-                    In our project, we also encountered a lot of challenges. In our integrated HP part, after interviews
-                    with farmers, we learned that collecting rice straws is a big problem. For the average farmer in
-                    Taiwan, there are only a small number of farmers who can afford the cost of large equipment.
-                    Therefore, most of it will still be Artificial. As a result, the labor cost is relatively high, so
-                    the farmers suggested that we consult the Environmental Protection Agency whether it can use the
-                    funds of a program called the "Air Pollution Fund" currently used to deal with air pollution to
-                    subsidize the cost of collecting rice straws. In addition, the distribution of material
-                    transportation costs is also an issue that we must consider when implementing.
-                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/5/5f/T--NCHU_Taichung--design_fig10.png" alt="">
+                    <label class="img-label">Figure 10. Circular Agriculture</label>
+                </div>
             </div>
             <!-- content end -->
         </div>
