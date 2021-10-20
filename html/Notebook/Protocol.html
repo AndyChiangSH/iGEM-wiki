@@ -5,143 +5,665 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page</title>
+    <title>Protocol</title>
     <!-- css -->
+    <link rel="stylesheet" href="../../css/clean.css">
     <link rel="stylesheet" href="../../css/bootstrap.css">
     <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/page.css">
+    <style>
+        .accordion-header button {
+            font-size: 20px;
+        }
+    </style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-offset="10" data-bs-method="position">
-    
-    <div class="container">
-        <h1 id="header">Protocol</h1>
-        <hr>
-        <div class="accordion" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-heading1">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse1" aria-expanded="false" aria-controls="panelsStayOpen-collapse1">
-                      Making okara solution
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapse1" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading1">
-                    <div class="accordion-body">
-                        <ol>
-                            <li>Mix okara and d.d.water with weight 8：1, and put the mixture into a serum bottle.</li>
-                            <li>Prepare a clear serum bottle and sterilize with (1.) together.</li>
-                            <li>Use steamer cloth to filter the okara solution.</li>
-                            <li>Use tissue and suction filter to filter again.</li>
-                            <li>Adjust okara solution to pH 8 with NaOH and HCl.</li>
-                            <li>Use .22filter filter again, and get the okara solution.</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-heading2">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse2" aria-expanded="false" aria-controls="panelsStayOpen-collapse2">
-                      Making cellulase solution
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapse2" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading2">
-                    <div class="accordion-body">
-                        <ol>
-                            <li>Culture the bacteria Cip A, Xyn C, Cel A, and Cel K in LB broth for 16 hours.</li>
-                            <li>Use .22 filter to filter each bacteria, and get the suspension.</li>
-                            <li>Store in a 4 ℃ refrigerator.</li>
+    <!-- Back to top button start-->
+    <button type="button" class="btn btn-danger btn-lg" id="btn-back-to-top">
+        <svg width="24" height="24" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+            <path
+                d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+        </svg>
+    </button>
+    <!-- Back to top button end-->
 
-                        </ol>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-heading3">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse3" aria-expanded="false" aria-controls="panelsStayOpen-collapse3">
-                      Making rice straw solution
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapse3" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading3">
-                    <div class="accordion-body">
-                        <ol>
-                            <li>Put straw powder 2 g, NaOAc(pH 5, 3 M) 3 ml, d.d.water 57 ml, Cip A 5.714 ml, Xyn C 22.857 ml, Cel A 5.714 ml, Cel K 5.714 ml, and tetracycline 0.1 ml.</li>
-                            <li>Put (1) into a 60 ℃ incubator, and shake for 24 hours.</li>
-                            <li>Use tissue and suction filter to filter the solution.</li>
-                            <li>Use .22filter filter again, and get the rice straw solution.</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-heading4">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse4" aria-expanded="false" aria-controls="panelsStayOpen-collapse4">
-                      Making saccharified straw liquid
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading4">
-                    <div class="accordion-body">
-                        <ol>
-                            <li>Put 20% rice straw liquid and 80% okara liquid together.</li>
-                            <li>Adjust the solution to pH 8 with NaOH(KOH) and HCl.</li>
-                            <li>Filter by .22 filter, and get the saccharified straw liquid.</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-heading5">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse5" aria-expanded="false" aria-controls="panelsStayOpen-collapse5">
-                      Enzyme activity (DNS)
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapse5" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading5">
-                    <div class="accordion-body">
-                        <ol>
-                            <li>Mix rice straw solution and DNS reagent for 1：1, and put them into an eppendorf.</li>
-                            <li>into a 100℃ dry bath incubator for 10 minutes.</li>
-                            <li>Cool to room temperature.</li>
-                            <li>Measure 570nm OD value, and convert the glucose, concentration, and enzyme activity.</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-heading6">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse6" aria-expanded="false" aria-controls="panelsStayOpen-collapse6">
-                      Transformation of Bacillus subtilis
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapse6" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading6">
-                    <div class="accordion-body">
-                        <ol>
-                            <li>Pre-culture B.subtilis for 15-17 hours.</li>
-                            <li>Add 900μl TFI, 25μl 2% CAA and 50μl pre-cultured bacterial solution and incubate at 37°C for 4 hours.</li>
-                            <li>Take 900 μl of TFII, add 100 μl of the above TFI bacterial solution, and incubate at 37°C for 1 hour and 15 minutes.</li>
-                            <li>Take 100 μl of the above TFII bacterial solution, add 5-6 μl of the plasmids and incubate at 37°C for 1 hour.</li>
-                            <li>Add 300μl of LB broth to the mentioned bacterial solution after transformation, and incubate at 37°C for 1 hour.</li>
-                            <li>Take 200 μl of the above bacterial liquid and apply it on a solid culture medium and use antibiotics to screen successful strains.</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="panelsStayOpen-heading7">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse7" aria-expanded="false" aria-controls="panelsStayOpen-collapse7">
-                      Growth Curve measurement
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapse7" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-heading7">
-                    <div class="accordion-body">
-                        <ol>
-                            <li>Activate strain within 2ml LB medium containing 1/1000 kanamycin under 37⁰C and constant shaking speed 150rpm overnight.</li>
-                            <li>Subculture in flask within 200ml LB medium under 37⁰C and constant shaking speed 150rpm,adjust the initial OD600 value to 0.01.</li>
-                            <li>Measure the OD600 value every one hour.</li>
-                        </ol>
-                    </div>
-                </div>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="main.html">
+                <img class="d-inline-block align-text-top team-logo"
+                    src="https://2021.igem.org/wiki/images/2/2c/T--NCHU_Taichung--team-logo.jpg" alt="team-logo">
+                NCHU_Taichung</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Project
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="page.html">Description</a></li>
+                            <li><a class="dropdown-item" href="#">Implementation</a></li>
+                            <li><a class="dropdown-item" href="#">Design</a></li>
+                            <li><a class="dropdown-item" href="#">Model</a></li>
+                            <li><a class="dropdown-item" href="#">Results</a></li>
+                            <li><a class="dropdown-item" href="#">Engineering Success</a></li>
+                            <li><a class="dropdown-item" href="#">Proof of Concept</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Parts
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Basic Part</a></li>
+                            <li><a class="dropdown-item" href="#">Composite Part</a></li>
+                            <li><a class="dropdown-item" href="#">Contribution</a></li>
+                            <li><a class="dropdown-item" href="#">Improvement</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Notebook
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Experiments</a></li>
+                            <li><a class="dropdown-item" href="#">Protocol</a></li>
+                            <li><a class="dropdown-item" href="#">Safety</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Human Practices
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Integrated Human Practices</a></li>
+                            <li><a class="dropdown-item" href="#">Education and Communication</a></li>
+                            <li><a class="dropdown-item" href="#">Collaboration</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Team
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Members</a></li>
+                            <li><a class="dropdown-item" href="#">Attributions</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- page content start -->
+    <main class="page">
+        <img class="main-img img-fluid"
+            src="https://2021.igem.org/wiki/images/4/43/T--NCHU_Taichung--Protocol_cover.png" alt="">
+        <div class="content-container">
+            <!-- sidebar start -->
+            <div class="sidebar">
+                <div class="position-sticky">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">Notebook</li>
+                            <li class="breadcrumb-item active" aria-current="page">Protocol</li>
+                        </ol>
+                    </nav>
+                    <nav id="scrollspy" class="navbar flex-column align-items-stretch">
+                        <a class="navbar-brand" href="#header">Protocol</a>
+                    </nav>
+                </div>
+            </div>
+            <!-- sidebar end -->
+
+            <!-- content start -->
+            <div class="content">
+                <h1 id="header">Protocol</h1>
+                <div class="accordion" id="accordionPanelsStayOpen">
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="panelsStayOpen-heading1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#protocol01" aria-expanded="false" aria-controls="protocol01">
+                                Making okara solution
+                            </button>
+                        </div>
+                        <div id="protocol01" class="accordion-collapse collapse" aria-labelledby="protocol01">
+                            <div class="accordion-body">
+                                <ol class="order-list">
+                                    <li>Mix okara and d.d.water with weight 8：1, and put the mixture into a serum
+                                        bottle.</li>
+                                    <li>Prepare a clear serum bottle and sterilize with (1.) together.</li>
+                                    <li>Use steamer cloth to filter the okara solution.</li>
+                                    <li>Use tissue and suction filter to filter again.</li>
+                                    <li>Adjust okara solution to pH 8 with NaOH and HCl.</li>
+                                    <li>Use .22filter filter again, and get the okara solution.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="panelsStayOpen-heading2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapse2" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapse2">
+                                Making cellulase solution
+                            </button>
+                        </div>
+                        <div id="panelsStayOpen-collapse2" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-heading2">
+                            <div class="accordion-body">
+                                <ol class="order-list">
+                                    <li>Culture the bacteria Cip A, Xyn C, Cel A, and Cel K in LB broth for 16 hours.
+                                    </li>
+                                    <li>Use .22 filter to filter each bacteria, and get the suspension.</li>
+                                    <li>Store in a 4 ℃ refrigerator.</li>
+
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="panelsStayOpen-heading3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapse3" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapse3">
+                                Making rice straw solution
+                            </button>
+                        </div>
+                        <div id="panelsStayOpen-collapse3" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-heading3">
+                            <div class="accordion-body">
+                                <ol class="order-list">
+                                    <li>Put straw powder 2 g, NaOAc(pH 5, 3 M) 3 ml, d.d.water 57 ml, Cip A 5.714 ml,
+                                        Xyn C 22.857 ml, Cel A 5.714 ml, Cel K 5.714 ml, and tetracycline 0.1 ml.</li>
+                                    <li>Put (1) into a 60 ℃ incubator, and shake for 24 hours.</li>
+                                    <li>Use tissue and suction filter to filter the solution.</li>
+                                    <li>Use .22filter filter again, and get the rice straw solution.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="panelsStayOpen-heading4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapse4" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapse4">
+                                Making saccharified straw liquid
+                            </button>
+                        </div>
+                        <div id="panelsStayOpen-collapse4" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-heading4">
+                            <div class="accordion-body">
+                                <ol class="order-list">
+                                    <li>Put 20% rice straw liquid and 80% okara liquid together.</li>
+                                    <li>Adjust the solution to pH 8 with NaOH(KOH) and HCl.</li>
+                                    <li>Filter by .22 filter, and get the saccharified straw liquid.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="panelsStayOpen-heading5">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapse5" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapse5">
+                                Enzyme activity (DNS)
+                            </button>
+                        </div>
+                        <div id="panelsStayOpen-collapse5" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-heading5">
+                            <div class="accordion-body">
+                                <ol class="order-list">
+                                    <li>Mix rice straw solution and DNS reagent for 1：1, and put them into an eppendorf.
+                                    </li>
+                                    <li>into a 100℃ dry bath incubator for 10 minutes.</li>
+                                    <li>Cool to room temperature.</li>
+                                    <li>Measure 570nm OD value, and convert the glucose, concentration, and enzyme
+                                        activity.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="panelsStayOpen-heading6">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapse6" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapse6">
+                                Transformation of Bacillus subtilis
+                            </button>
+                        </div>
+                        <div id="panelsStayOpen-collapse6" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-heading6">
+                            <div class="accordion-body">
+                                <ol class="order-list">
+                                    <li>Pre-culture B.subtilis for 15-17 hours.</li>
+                                    <li>Add 900μl TFI, 25μl 2% CAA and 50μl pre-cultured bacterial solution and incubate
+                                        at 37°C for 4 hours.</li>
+                                    <li>Take 900 μl of TFII, add 100 μl of the above TFI bacterial solution, and
+                                        incubate at 37°C for 1 hour and 15 minutes.</li>
+                                    <li>Take 100 μl of the above TFII bacterial solution, add 5-6 μl of the plasmids and
+                                        incubate at 37°C for 1 hour.</li>
+                                    <li>Add 300μl of LB broth to the mentioned bacterial solution after transformation,
+                                        and incubate at 37°C for 1 hour.</li>
+                                    <li>Take 200 μl of the above bacterial liquid and apply it on a solid culture medium
+                                        and use antibiotics to screen successful strains.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="panelsStayOpen-heading7">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapse7" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapse7">
+                                Growth Curve measurement
+                            </button>
+                        </div>
+                        <div id="panelsStayOpen-collapse7" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-heading7">
+                            <div class="accordion-body">
+                                <ol class="order-list">
+                                    <li>Activate strain within 2ml LB medium containing 1/1000 kanamycin under 37⁰C and
+                                        constant shaking speed 150rpm overnight.</li>
+                                    <li>Subculture in flask within 200ml LB medium under 37⁰C and constant shaking speed
+                                        150rpm,adjust the initial OD600 value to 0.01.</li>
+                                    <li>Measure the OD600 value every one hour.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="panelsStayOpen-heading8">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapse8" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapse8">
+                                Polymerase chain reaction for PQQ gene
+                            </button>
+                        </div>
+                        <div id="panelsStayOpen-collapse8" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-heading8">
+                            <div class="accordion-body">
+                                <ol class="order-list">
+                                    <li>
+                                        Mix the components.
+                                        <img class="img-fluid"
+                                            src="https://2021.igem.org/wiki/images/e/e7/T--NCHU_Taichung--protocol_sc01.png"
+                                            alt="">
+                                    </li>
+                                    <li>
+                                        Transfer to a PCR machine with the block preheated to 95°C
+                                    </li>
+                                    <li>
+                                        Begin thermocycling.
+                                        <img class="img-fluid"
+                                            src="https://2021.igem.org/wiki/images/5/5e/T--NCHU_Taichung--protocol_sc02.png"
+                                            alt="">
+                                    </li>
+                                    <li>
+                                        Evaluate amplified DNA by agarose gel electrophoresis followed by ethidium
+                                        bromide staining.
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="panelsStayOpen-heading9">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapse9" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapse9">
+                                Polymerase chain reaction for 16s rDNA sequencing
+                            </button>
+                        </div>
+                        <div id="panelsStayOpen-collapse9" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-heading9">
+                            <div class="accordion-body">
+                                All reaction components on ice
+                                <ol class="order-list">
+                                    <li>
+                                        Mix the components.<br>
+                                        <img class="img-fluid"
+                                            src="https://2021.igem.org/wiki/images/8/8d/T--NCHU_Taichung--protocol_sc03.png"
+                                            alt="">
+                                    </li>
+                                    <li>Transfer to a PCR machine with the block preheated to 95°C</li>
+                                    <li>
+                                        Begin thermocycling.
+                                        <img class="img-fluid"
+                                            src="https://2021.igem.org/wiki/images/1/1b/T--NCHU_Taichung--protocol_sc04.png"
+                                            alt="">
+                                    </li>
+                                    <li>Evaluate amplified DNA by agarose gel electrophoresis followed by ethidium
+                                        bromide staining.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="panelsStayOpen-heading10">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapse10" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapse10">
+                                Plasmid extraction
+                            </button>
+                        </div>
+                        <div id="panelsStayOpen-collapse10" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-heading10">
+                            <div class="accordion-body">
+                                <ol class="order-list">
+                                    <li>Culture in LB agar with proper antibiotics 37℃ 200 rpm for 14-16 hr.</li>
+                                    <li>Centrifuge cells at 15000 rpm for 10 sec and remove the supernatant.</li>
+                                    <li>Resuspend bacterial pellet.</li>
+                                    <li>Add 100µl solution l , vortex and react in 37℃ for 8 min.</li>
+                                    <li>Add 200µl solution ll for 3 mins.</li>
+                                    <li>Add 150µl solution lll and put on ice for 3-5 min. for reaction.</li>
+                                    <li>Centrifuge at 12000 rpm for 5 min.</li>
+                                    <li>Transfer 450µl supernatant into a new microcentrifuge tube.</li>
+                                    <li>Add 450µl Phenol/Chloroform, mix thoroughly by inverting several times.</li>
+                                    <li>Centrifuge at 12000 rpm for 5 min.</li>
+                                    <li>Transfer 320µl supernatant into a new microcentrifuge tube.</li>
+                                    <li>Add 900µl 100% Ethanol.</li>
+                                    <li>Centrifuge at 4℃ 12000 rpm for 5 min.</li>
+                                    <li>Wash the pellet with 900µl 70% Ethanol.</li>
+                                    <li>Centrifuge at 12000 rpm for 1 min to pellet down the DNA.</li>
+                                    <li>Discard the supernatant carefully.</li>
+                                    <li>Dry the pellet in a heat oven (60℃) for 10 min.</li>
+                                    <li>Add 33µl sterile water and resuspend the DNA pellet in 60℃.</li>
+                                    <li>Add 1µl RNase for 10-15min.</li>
+                                    <li>Evaluate amplified DNA by agarose gel electrophoresis followed by ethidium
+                                        bromide staining.</li>
+                                </ol>
+                                <img class="img-fluid"
+                                    src="https://2021.igem.org/wiki/images/6/66/T--NCHU_Taichung--protocol_sc05.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="panelsStayOpen-heading11">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapse11" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapse11">
+                                Preparing Arabidopsis thaliana col-0 seedling
+                            </button>
+                        </div>
+                        <div id="panelsStayOpen-collapse11" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-heading11">
+                            <div class="accordion-body">
+                                <ol class="order-list">
+                                    <li>Use 75% ethanol sterilize the seeds for 30 second .</li>
+                                    <li>1.5% NaClO to sterilize the seeds, constant shaking for 15 min.</li>
+                                    <li>Wash for 3-5 times and store in 4℃ to vernalize for 2-4 days.</li>
+                                    <li>Sow the seeds in 104 plug with BVB peat soil with vermiculite,the ratio of soil
+                                        and vermiculite is 1:1.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="panelsStayOpen-heading12">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapse12" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapse12">
+                                Preparing rice (Oryza sativa var. Japonica Taiken 9) seedling
+                            </button>
+                        </div>
+                        <div id="panelsStayOpen-collapse12" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-heading12">
+                            <div class="accordion-body">
+                                <ol class="order-list">
+                                    <li>Sterilize the seeds with 1.5% NaClO for 15 min.</li>
+                                    <li>Soaked the seeds in water at 28C, constantly shaking for 3 day in darkness, the
+                                        water is replaced every day.</li>
+                                    <li>After three days in darkness,sow the germinated seeds in 104 plug.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="panelsStayOpen-heading13">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapse13" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapse13">
+                                Preparing rice (Oryza sativa var. Japonica Taiken 9) seedling growth in MS medium
+                            </button>
+                        </div>
+                        <div id="panelsStayOpen-collapse13" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-heading13">
+                            <div class="accordion-body">
+                                <ol class="order-list">
+                                    <li>Remove the hull.</li>
+                                    <li>Sterilized the seed with 2% NaClO for 15 min and soaked in water at
+                                        28℃,constantly shaking for 1 day in darkness.</li>
+                                    <li>Sow in MS medium.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="panelsStayOpen-heading14">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapse14" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapse14">
+                                Preparing Murashige and Skoog medium
+                            </button>
+                        </div>
+                        <div id="panelsStayOpen-collapse14" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-heading14">
+                            <div class="accordion-body">
+                                <ol class="order-list">
+                                    <li>sucrose 1%</li>
+                                    <li>MES powder 0.1%</li>
+                                    <li>MS powder 4.43g/L</li>
+                                    <li>Adjust pH value to 5.8 by KOH</li>
+                                    <li>Gellan Gum Powder 0.3%</li>
+                                    <li>Moist heat sterilize.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="panelsStayOpen-heading15">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapse15" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapse15">
+                                Inoculation
+                            </button>
+                        </div>
+                        <div id="panelsStayOpen-collapse15" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-heading15">
+                            <div class="accordion-body">
+                                <ol class="order-list">
+                                    <li>Activate strain within 5ml LB medium containing 1/1000 Kanamycin under 37⁰C and
+                                        constant shaking speed 150rpm overnight</li>
+                                    <li>Subculture in flask within LB medium under 37⁰C and constant shaking speed
+                                        150rpm until log phase.</li>
+                                    <li>Pellet down the strain with a centrifuge machine under 3000 xg at RT for 10 min,
+                                        replace the supernatant with sterilised water and adjust final OD600 value to 1
+                                        as ‘inoculant’.</li>
+                                    <li>Filter the supernatant with .22 filter, add sterilised water and adjust final
+                                        OD600 value to 1 as “sup”.</li>
+                                    <li>Take 20ul sup. on plate for control.</li>
+                                    <li>Inoculate 3 weeks old Arabidopsis thaliana Col-0,10ml for each plug.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="panelsStayOpen-heading16">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapse16" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapse16">
+                                Saccharified straw liquid inoculation
+                            </button>
+                        </div>
+                        <div id="panelsStayOpen-collapse16" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-heading16">
+                            <div class="accordion-body">
+                                <ol class="order-list">
+                                    <li>Activate strain within 5ml LB medium containing 1/1000 Kanamycin under 37⁰C and
+                                        constant shaking speed 150rpm overnight.</li>
+                                    <li>Subculture the strain in flask within saccharified straw liquid under 37⁰C and
+                                        constant shaking speed 150rpm until log phase.</li>
+                                    <li>Adjust OD600 value to 1 ,pellet down the strain with centrifuge machine under
+                                        5000
+                                        xg for 10 min,filtr the supernatant with .22 filter.</li>
+                                    <li>Supernatant diluted 0X,100X,200X,500X times.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="panelsStayOpen-heading17">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapse17" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapse17">
+                                Re-isolation of Bacillus subtilis RM125/PQQ in plant
+                            </button>
+                        </div>
+                        <div id="panelsStayOpen-collapse17" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-heading17">
+                            <div class="accordion-body">
+                                <ol class="order-list">
+                                    <li>Soak in 75% ethanol for 30 seconds and in 0.6% NaClO with constant shaking for
+                                        12 min to sterilize the tissue.</li>
+                                    <li>Rinse by sterile water for five times and drip the final washing water on L.B.
+                                        agar, then incubated at 37°C for 16 hours to ensure the sterilization
+                                        effectiveness.</li>
+                                    <li>Homogenize in a sterile mortar pestle and dilute to 10-1, 10-2, 10-3 and 10-4
+                                        with sterile water.</li>
+                                    <li>20-μL dilutions were dripped on the surface of solid media and incubated at 37°C
+                                        for 16 hours.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="panelsStayOpen-heading18">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapse18" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapse18">
+                                Data analysis
+                            </button>
+                        </div>
+                        <div id="panelsStayOpen-collapse18" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-heading18">
+                            <div class="accordion-body">
+                                <ol class="order-list">
+                                    <li>Record the phenotype in a manual way.</li>
+                                    <li>Use Shapiro-Wilk test for normal distribution,Levene’s test for
+                                        homoscedasticity.</li>
+                                    <li>If the data conforms to normal distribution and homoscedasticity,statistical
+                                        analyses of variance were performed using one-way ANOVA employing a post hoc
+                                        Tukey-Kramer test. If the data didn’t conforms to normal distribution and
+                                        homoscedasticity,statistical analyses of variance were performed using
+                                        Kruskal-Wallis test employing a post hoc DUNN’s test. p-value &lt; 0.05 was
+                                        considered to be a significant effect.
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="panelsStayOpen-heading19">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapse19" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapse19">
+                                Measure chlorophyll concentration
+                            </button>
+                        </div>
+                        <div id="panelsStayOpen-collapse19" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-heading19">
+                            <div class="accordion-body">
+                                <ol class="order-list">
+                                    <li>Soak sample in DMF and store in -4⁰C one day in darkness to extract the
+                                        chlorophyll.</li>
+                                    <li>Use a spectrophotometer to measure the chlorophyll concentration.</li>
+                                    <li>
+                                        The formula is as follows:<br>
+                                        <br>
+                                        Concentration (ug/mL)<br>
+                                        Ca=11.65*A664-2.69*A647<br>
+                                        Cb=20.81*A647-4.53*A664<br>
+                                        Cx+c=(1000*A480-0.89*Ca-52.02*Cb)/245<br>
+                                        <br>
+                                        Content (ug/g)<br>
+                                        X*(V/W)<br>
+                                        X: Chlorophyll concentration from the equation<br>
+                                        V: Volume of extraction solvent<br>
+                                        W: Weight of extraction sample<br>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content end -->
+        </div>
+    </main>
+    <!-- page content end -->
+
+    <!-- footer start -->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="contact">
+                <ul>
+                    <li>
+                        <svg width="16" height="16" class="bi bi-envelope-fill footer-icon" viewBox="0 0 16 16">
+                            <path
+                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                        </svg>
+                        <span>igemnchu2019@gmail.com</span>
+                    </li>
+                    <li>
+                        <svg width="16" height="16" class="bi bi-facebook footer-icon" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                        <span>NCHU iGEM Team</span>
+                    </li>
+                    <li>
+                        <svg width="16" height="16" class="bi bi-instagram footer-icon" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                        <span>@nchuigem2019</span>
+                    </li>
+                    <li>
+                        <svg width="16" height="16" class="bi bi-twitter footer-icon" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg>
+                        <span>@NCHUiGEM</span>
+                    </li>
+                    <li>
+                        <svg width="16" height="16" class="bi bi-pin-map-fill footer-icon" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z" />
+                            <path fill-rule="evenodd"
+                                d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
+                        </svg>
+                        <span>NCHU, Taichung, Taiwan</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright">Copyright © 2021 Andy Chiang</div>
+        </div>
     </div>
-
-
+    <!-- footer start -->
 
     <!-- javascript -->
     <script type="text/javascript" src="../../js/bootstrap.js"></script>

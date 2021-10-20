@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../../css/clean.css">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/page.css">
+    <style>
+        .avatar-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .avatar {
+            width: 200px;
+            margin: 10px 30px;
+        }
+
+        .avatar img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        .avatar p {
+            font-size: 24px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .modal {
+            font-family: Microsoft Sans Serif;
+        }
+
+        .modal h5 {
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .modal ul span {
+            font-weight: 700;
+        }
+
+        .timeline {
+            border: 5px dotted #e42f2f;
+            padding: 20px 0px;
+        }
+
+        .timeline ol li {
+            margin: 5px 0px;
+        }
+
+        .timeline ul {
+            display: flex;
+        }
+
+        .timeline ul li:nth-child(1) {
+            font-weight: 700;
+            width: 30%;
+        }
+
+        .timeline ul li:nth-child(2) {
+            width: 70%;
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-offset="10" data-bs-method="position">
+    <!-- Back to top button start-->
+    <button type="button" class="btn btn-danger btn-lg" id="btn-back-to-top">
+        <svg width="24" height="24" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+            <path
+                d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+        </svg>
+    </button>
+    <!-- Back to top button end-->
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="main.html">
+                <img class="d-inline-block align-text-top team-logo"
+                    src="https://2021.igem.org/wiki/images/2/2c/T--NCHU_Taichung--team-logo.jpg" alt="team-logo">
+                NCHU_Taichung</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Project
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="page.html">Description</a></li>
+                            <li><a class="dropdown-item" href="#">Implementation</a></li>
+                            <li><a class="dropdown-item" href="#">Design</a></li>
+                            <li><a class="dropdown-item" href="#">Model</a></li>
+                            <li><a class="dropdown-item" href="#">Results</a></li>
+                            <li><a class="dropdown-item" href="#">Engineering Success</a></li>
+                            <li><a class="dropdown-item" href="#">Proof of Concept</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Parts
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Basic Part</a></li>
+                            <li><a class="dropdown-item" href="#">Composite Part</a></li>
+                            <li><a class="dropdown-item" href="#">Contribution</a></li>
+                            <li><a class="dropdown-item" href="#">Improvement</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Notebook
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Experiments</a></li>
+                            <li><a class="dropdown-item" href="#">Protocol</a></li>
+                            <li><a class="dropdown-item" href="#">Safety</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Human Practices
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Integrated Human Practices</a></li>
+                            <li><a class="dropdown-item" href="#">Education and Communication</a></li>
+                            <li><a class="dropdown-item" href="#">Collaboration</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Team
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Members</a></li>
+                            <li><a class="dropdown-item" href="#">Attributions</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- page content start -->
+    <main class="page">
+        <img class="main-img img-fluid"
+            src="https://2021.igem.org/wiki/images/4/47/T--NCHU_Taichung--Attribution_cover.png" alt="">
+        <div class="content-container">
+            <!-- sidebar start -->
+            <div class="sidebar">
+                <div class="position-sticky">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">Team</li>
+                            <li class="breadcrumb-item active" aria-current="page">Members</li>
+                        </ol>
+                    </nav>
+                    <nav id="scrollspy" class="navbar flex-column align-items-stretch">
+                        <a class="navbar-brand" href="#header">Members</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link" href="#item-1">PI</a>
+                            <a class="nav-link" href="#item-2">Advisor</a>
+                            <a class="nav-link" href="#item-3">Student Member-Lab</a>
+                            <a class="nav-link" href="#item-4">Student Member-Human Practice</a>
+                            <a class="nav-link" href="#item-5">Student Member-Wiki</a>
+                            <a class="nav-link" href="#item-6">Student Member-Media</a>
+                        </nav>
+                    </nav>
+                </div>
+            </div>
+            <!-- sidebar end -->
+
+            <!-- content start -->
+            <div class="content">
+                <h1 id="header">Members</h1>
+                <h2 id="item-1">PI</h2>
+                <div class="avatar-container">
+                    <!-- avatar start -->
+                    <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#modal1-1">
+                        <img src="https://2021.igem.org/wiki/images/3/31/T--NCHU_Taichung--avatar.jpg" alt="avatar">
+                        <p>Chieh-Chen Huang</p>
+                    </div>
+                    <!-- avatar end -->
+
+                    <!-- Modal 1-1 start -->
+                    <div class="modal fade" id="modal1-1" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel">Chieh-Chen Huang</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li><span>Professor, Department of Life Sciences</span></li>
+                                        <li>
+                                            Dr. Huang is Associate Dean of College of life sciences, NCHU, and his
+                                            research areas include Bioremediation, Horizontal Gene Transfer and
+                                            Synthetic Biology. He supports us in most experimental cost and guides us in
+                                            every aspect in Synthetic Biology.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal 1-1 end -->
+
+                </div>
+                <!-- group 1 end -->
+
+                <!-- group 2 start -->
+                <h2 id="item-2">Advisor</h2>
+                <div class="avatar-container">
+                    <!-- avatar start -->
+                    <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#modal2-1">
+                        <img src="https://2021.igem.org/wiki/images/3/31/T--NCHU_Taichung--avatar.jpg" alt="avatar">
+                        <p>Shih-Hsun, Hung</p>
+                    </div>
+                    <!-- avatar end -->
+
+                    <!-- Modal 2-1 start -->
+                    <div class="modal fade" id="modal2-1" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel">Shih-Hsun, Hung</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li><span>Department: </span>Life Sciences</li>
+                                        <li><span>Introduction: </span>Hung, Shih-Hsun is a first grade student of the
+                                            Master's degree in the Department of Life Sciences. He helps us with all the
+                                            experiments.</li>
+                                        <li><span>Favourite quote: </span>SAVE THE RHINO</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal 2-1 end -->
+                </div>
+                <!-- group 2 end -->
+
+                <!-- group 3 start -->
+                <h2 id="item-3">Student Member-Lab</h2>
+                <div class="avatar-container">
+                    <!-- avatar start -->
+                    <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#modal3-1">
+                        <img src="https://2021.igem.org/wiki/images/3/31/T--NCHU_Taichung--avatar.jpg" alt="avatar">
+                        <p>Yi-Chia, Lu</p>
+                    </div>
+                    <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#modal3-2">
+                        <img src="https://2021.igem.org/wiki/images/3/31/T--NCHU_Taichung--avatar.jpg" alt="avatar">
+                        <p>Chia-Ho, Liu</p>
+                    </div>
+                    <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#modal3-3">
+                        <img src="https://2021.igem.org/wiki/images/3/31/T--NCHU_Taichung--avatar.jpg" alt="avatar">
+                        <p>Yu-Hsin, Chung</p>
+                    </div>
+                    <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#modal3-4">
+                        <img src="https://2021.igem.org/wiki/images/3/31/T--NCHU_Taichung--avatar.jpg" alt="avatar">
+                        <p>Yi-Le, Chen</p>
+                    </div>
+                    <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#modal3-5">
+                        <img src="https://2021.igem.org/wiki/images/3/31/T--NCHU_Taichung--avatar.jpg" alt="avatar">
+                        <p>Tzu-Ting, Weng</p>
+                    </div>
+                    <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#modal3-6">
+                        <img src="https://2021.igem.org/wiki/images/3/31/T--NCHU_Taichung--avatar.jpg" alt="avatar">
+                        <p>Bo-Ting, Chiang</p>
+                    </div>
+                    <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#modal3-7">
+                        <img src="https://2021.igem.org/wiki/images/3/31/T--NCHU_Taichung--avatar.jpg" alt="avatar">
+                        <p>Chin-Kung, Chang</p>
+                    </div>
+                    <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#modal3-8">
+                        <img src="https://2021.igem.org/wiki/images/3/31/T--NCHU_Taichung--avatar.jpg" alt="avatar">
+                        <p>Ruei-Teng, Gong</p>
+                    </div>
+                    <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#modal3-9">
+                        <img src="https://2021.igem.org/wiki/images/3/31/T--NCHU_Taichung--avatar.jpg" alt="avatar">
+                        <p>Huang, Eugene</p>
+                    </div>
+                    <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#modal3-10">
+                        <img src="https://2021.igem.org/wiki/images/3/31/T--NCHU_Taichung--avatar.jpg" alt="avatar">
+                        <p>Wung-Hung, Zhang</p>
+                    </div>
+                    <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#modal3-11">
+                        <img src="https://2021.igem.org/wiki/images/3/31/T--NCHU_Taichung--avatar.jpg" alt="avatar">
+                        <p>Tsung-Yi, Lin</p>
+                    </div>
+                    <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#modal3-12">
+                        <img src="https://2021.igem.org/wiki/images/3/31/T--NCHU_Taichung--avatar.jpg" alt="avatar">
+                        <p>Ti, Fang</p>
+                    </div>
+
+                    <!-- avatar end -->
+
+                    <!-- Modal start -->
+                    <div class="modal fade" id="modal3-1" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel">Yi-Chia, Lu</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li><span>Work: </span>Plant Experiments Leader</li>
+                                        <li><span>Department: </span>Horticulture</li>
+                                        <li><span>Favourite quote: </span>Life is a journey, and I am a traveler.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal3-2" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel">Chia-Ho, Liu</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li><span>Work: </span>Team Leader and Plant Experiments Member</li>
+                                        <li><span>Department: </span>Soil and Environmental Science</li>
+                                        <li><span>Favourite quote: </span>Success is the ability to go from one failure
+                                            to another with no loss of enthusiasm.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal3-3" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel">Yu-Hsin, Chung</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li><span>Work: </span>Compost Leader and Graphic Designer</li>
+                                        <li><span>Department: </span>Soil and Environmental Science</li>
+                                        <li><span>Favourite quote: </span>A man is not old until regrets take the place
+                                            of dreams.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal3-4" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel">Yi-Le, Chen</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li><span>Work: </span>Compost Member and Models</li>
+                                        <li><span>Department: </span>Plant Pathology</li>
+                                        <li><span>Favourite quote: </span>A thousand miles begins with a single step.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal3-5" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel">Tzu-Ting, Weng</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li><span>Work: </span>Plant Experiment Member</li>
+                                        <li><span>Department: </span>Chemistry</li>
+                                        <li><span>Favourite quote: </span>If you want something you have never had, you
+                                            must be willing to do something you have never done.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal3-6" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel">Bo-Ting, Chiang</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li><span>Work: </span>Plant Experiments Member</li>
+                                        <li><span>Department: </span>Soil and Environment Sciences</li>
+                                        <li><span>Favourite quote: </span>All things are difficult before they are easy.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal3-8" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel">Ruei-Teng, Gong</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li><span>Work: </span>Plant Experiments Member and Model</li>
+                                        <li><span>Department: </span>Chemical Engineering</li>
+                                        <li><span>Favourite quote: </span>Keep on going never give up.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal3-9" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel">Huang, Eugene</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li><span>Work: </span>Experiment assistance and Presenting Experimental Results
+                                        </li>
+                                        <li><span>Department: </span>Biotechnology</li>
+                                        <li><span>Favourite quote: </span>Ling Ling 40 hours For Guitar!
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal3-10" tabindex="-1" aria-labelledby="ModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel">Wung-Hung, Zhang</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li><span>Work: </span>Molecular Biology Experiment Member
+                                        </li>
+                                        <li><span>Department: </span>Life Science</li>
+                                        <li><span>Favourite quote: </span>Life is either a daring adventure or nothing.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal3-11" tabindex="-1" aria-labelledby="ModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel">Tsung-Yi, Lin</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li><span>Work: </span>Molecular Biology Experiment Member
+                                        </li>
+                                        <li><span>Department: </span>Animal Science</li>
+                                        <li><span>Favourite quote: </span>No pain, no gain.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal3-12" tabindex="-1" aria-labelledby="ModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel">Ti, Fang</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li><span>Work: </span>Teaching assistant and Molecular Biology Experiment
+                                        </li>
+                                        <li><span>Department: </span>Life Science</li>
+                                        <li><span>Favourite quote: </span>No amount of money ever bought a second of
+                                            time.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal end -->
+                </div>
+                <!-- group 3 end -->
+
+                <!-- group 4 start -->
+                <h2 id="item-4">Student Member-Human Practice</h2>
+                <div class="avatar-container">
+                    <!-- avatar start -->
+                    <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#modal4-1">
+                        <img src="https://2021.igem.org/wiki/images/3/31/T--NCHU_Taichung--avatar.jpg" alt="avatar">
+                        <p>Yi-Hsuan, Shen</p>
+                    </div>
+                    <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#modal4-2">
+                        <img src="https://2021.igem.org/wiki/images/3/31/T--NCHU_Taichung--avatar.jpg" alt="avatar">
+                        <p>Tso-Yuan, Yang</p>
+                    </div>
+                    <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#modal4-3">
+                        <img src="https://2021.igem.org/wiki/images/3/31/T--NCHU_Taichung--avatar.jpg" alt="avatar">
+                        <p>Chong-An, Wang</p>
+                    </div>
+                    <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#modal4-4">
+                        <img src="https://2021.igem.org/wiki/images/3/31/T--NCHU_Taichung--avatar.jpg" alt="avatar">
+                        <p>Hsuan-Lun, Chung</p>
+                    </div>
+                    <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#modal4-5">
+                        <img src="https://2021.igem.org/wiki/images/3/31/T--NCHU_Taichung--avatar.jpg" alt="avatar">
+                        <p>Po-An, Pai</p>
+                    </div>
+                    <!-- avatar end -->
+
+                    <!-- Modal 4 start -->
+                    <div class="modal fade" id="modal4-1" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel">Yi-Hsuan, Shen</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li><span>Work: </span>Team Leader and Graphic Designer</li>
+                                        <li><span>Department: </span>Environmental Engineering</li>
+                                        <li><span>Favourite quote: </span>It's okay to be scared. It's okay to cry, but
+                                            giving up is not.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal4-2" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel">Tso-Yuan, Yang</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li><span>Work: </span>HP Leader</li>
+                                        <li><span>Department: </span>Life Science</li>
+                                        <li><span>Favourite quote: </span>If you wait all that happens is that you get
+                                            older.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal4-3" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel">Chong-An, Wang</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li><span>Work: </span>HP Member and Wiki Helper</li>
+                                        <li><span>Department: </span>Agronomy</li>
+                                        <li><span>Favourite quote: </span>Never underestimate your power to change
+                                            yourself!</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal4-4" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel">Hsuan-Lun, Chung</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li><span>Work: </span>HP Member</li>
+                                        <li><span>Department: </span>Animal Science</li>
+                                        <li><span>Favourite quote: </span>Life is like a box of chocolate, you will
+                                            never know what you will get next.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="modal4-5" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel">Po-An, Pai</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li><span>Work: </span>HP Memeber</li>
+                                        <li><span>Department: </span>Horticulture</li>
+                                        <li><span>Favourite quote: </span>A dream you dream alone is only a dream. A
+                                            dream you dream together is reality.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal 4 end -->
+                </div>
+                <!-- group 4 end -->
+
+                <!-- group 5 start -->
+                <h2 id="item-5">Student Member-Wiki</h2>
+                <div class="avatar-container">
+                    <!-- avatar start -->
+                    <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#modal5-1">
+                        <img src="https://2021.igem.org/wiki/images/3/31/T--NCHU_Taichung--avatar.jpg" alt="avatar">
+                        <p>Shang-Hsuan, Chiang</p>
+                    </div>
+                    <!-- avatar end -->
+
+                    <!-- Modal 5 start -->
+                    <div class="modal fade" id="modal5-1" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel">Shang-Hsuan, Chiang</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li><span>Work: </span>Wiki Developer</li>
+                                        <li><span>Department: </span>Computer Science</li>
+                                        <li><span>Favourite quote: </span>Keep coding, keep learning.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal 5 end -->
+                </div>
+                <!-- group 5 end -->
+
+                <!-- group 6 start -->
+                <h2 id="item-6">Student Member-Media</h2>
+                <div class="avatar-container">
+                    <!-- avatar start -->
+                    <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#modal6-1">
+                        <img src="https://2021.igem.org/wiki/images/3/31/T--NCHU_Taichung--avatar.jpg" alt="avatar">
+                        <p>You-Yun, Wu</p>
+                    </div>
+                    <!-- avatar end -->
+
+                    <!-- Modal 5 start -->
+                    <div class="modal fade" id="modal6-1" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel">You-Yun, Wu</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li><span>Work: </span>Video Editor</li>
+                                        <li><span>Department: </span>Chinese Literature</li>
+                                        <li><span>Favourite quote: </span>If nothing can be done, then just let nature
+                                            take its course.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal 5 end -->
+                </div>
+                <!-- group 5 end -->
+            </div>
+        </div>
+    </main>
+    <!-- page content end -->
+
+    <!-- footer start -->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="contact">
+                <ul>
+                    <li>
+                        <svg width="16" height="16" class="bi bi-envelope-fill footer-icon" viewBox="0 0 16 16">
+                            <path
+                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+                        </svg>
+                        <span>igemnchu2019@gmail.com</span>
+                    </li>
+                    <li>
+                        <svg width="16" height="16" class="bi bi-facebook footer-icon" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                        <span>NCHU iGEM Team</span>
+                    </li>
+                    <li>
+                        <svg width="16" height="16" class="bi bi-instagram footer-icon" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                        <span>@nchuigem2019</span>
+                    </li>
+                    <li>
+                        <svg width="16" height="16" class="bi bi-twitter footer-icon" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg>
+                        <span>@NCHUiGEM</span>
+                    </li>
+                    <li>
+                        <svg width="16" height="16" class="bi bi-pin-map-fill footer-icon" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z" />
+                            <path fill-rule="evenodd"
+                                d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z" />
+                        </svg>
+                        <span>NCHU, Taichung, Taiwan</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright">Copyright © 2021 Andy Chiang</div>
+        </div>
+    </div>
+    <!-- footer start -->
+
+    <!-- javascript -->
+    <script type="text/javascript" src="../../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
+
+</body>
+
+</html>
