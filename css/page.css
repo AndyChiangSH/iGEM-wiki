@@ -12,7 +12,6 @@
 .content-container {
     width: 100%;
     display: flex;
-    /* align-items: stretch; */
 }
 
 .sidebar {
@@ -44,11 +43,11 @@
 }
 
 #scrollspy .navbar-brand {
-    color: #e42f2f;
+    color: #b78a61;
 }
 
 #scrollspy .navbar-brand:hover {
-    color: #e42f2f;
+    color: #b78a61;
 }
 
 #scrollspy .nav-link {
@@ -64,7 +63,7 @@
 
 #scrollspy .nav-link.active {
     color: #fff;
-    background-color: #e42f2f;
+    background-color: #a37244;
 }
 
 .content {
@@ -85,7 +84,7 @@
 }
 
 .content h1 {
-    color: #e42f2f;
+    color: #b78a61;
     font-size: 50px;
     line-height: 1.5em;
     text-align: center;
@@ -94,7 +93,7 @@
 }
 
 .content h2 {
-    color: #e42f2f;
+    color: #b78a61;
     font-size: 40px;
     line-height: 1.5em;
     text-align: center;
@@ -103,10 +102,11 @@
 }
 
 .content h3 {
-    color: #e42f2f;
+    color: #b78a61;
     font-size: 30px;
     line-height: 1.5em;
     text-align: center;
+    margin: 30px auto;
 }
 
 .content p {
@@ -120,6 +120,23 @@
     width: 80%;
     display: flex;
     flex-direction: column;
+    align-content: center;
+}
+
+.img-container2 {
+    margin: 50px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-box>div {
+    margin: 10px;
 }
 
 .table {
@@ -176,4 +193,38 @@
     font-weight: 600;
     text-align: center;
     width: 100%;
+}
+
+.reference ol>li {
+    font-size: 18px;
+    margin: 5px 0px;
+}
+
+.reference>h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.timeline {
+    border: 5px dotted #b78a61;
+    padding: 20px 0px;
+}
+
+.timeline ol li {
+    margin: 5px 0px;
+}
+
+.timeline ul {
+    display: flex;
+}
+
+.timeline ul li:nth-child(1) {
+    font-weight: 700;
+    width: 30%;
+}
+
+.timeline ul li:nth-child(2) {
+    width: 70%;
 }

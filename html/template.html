@@ -5,287 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css -->
-    <link rel="stylesheet" type="text/css"
-        href="https://2021.igem.org/wiki/index.php?title=Template:NCHU Taichung/css/page&action=raw&ctype=text/css" />
-    <style>
-        /* page css */
-
-        .main-img {
-            width: 100%;
-        }
-
-        .position-sticky {
-            position: sticky !important;
-            top: 100px;
-        }
-
-        .content-container {
-            width: 100%;
-            display: flex;
-            /* align-items: stretch; */
-        }
-
-        .sidebar {
-            display: block;
-            width: 20%;
-            padding: 30px;
-            background-color: #fff9a8;
-        }
-
-        .breadcrumb {
-            justify-content: flex-start;
-            font-size: 15px;
-            margin: 0px !important;
-        }
-
-        .breadcrumb a {
-            color: #5e5e5e;
-            text-decoration: none;
-            transition: 0.5s;
-        }
-
-        .breadcrumb a:hover {
-            color: #e42f2f;
-            transition: 0.5s;
-        }
-
-        #scrollspy .navbar {
-            justify-content: flex-start;
-        }
-
-        #scrollspy .navbar-brand {
-            color: #e42f2f;
-        }
-
-        #scrollspy .navbar-brand:hover {
-            color: #e42f2f;
-        }
-
-        #scrollspy .nav-link {
-            margin: 5px 0px;
-            color: #636363;
-            transition: 0.3s ease-in-out;
-        }
-
-        #scrollspy .nav-link:hover {
-            color: #636363;
-            background: #00000010;
-        }
-
-        #scrollspy .nav-link.active {
-            color: #fff;
-            background-color: #e42f2f;
-        }
-
-        .content {
-            width: 80%;
-            /* background-color: #f0f0f0; */
-            padding: 60px 10%;
-        }
-
-        /* if width is less than 600px */
-        @media screen and (max-width: 600px) {
-            .sidebar {
-                display: none;
-            }
-
-            .content {
-                width: 100%;
-            }
-        }
-
-        .content h1 {
-            color: #e42f2f;
-            font-size: 50px;
-            line-height: 1.5em;
-            text-align: center;
-            margin-bottom: 50px;
-            font-weight: 800;
-        }
-
-        .content h2 {
-            color: #e42f2f;
-            font-size: 40px;
-            line-height: 1.5em;
-            text-align: center;
-            margin: 50px auto;
-            font-weight: 600;
-        }
-
-        .content h3 {
-            color: #e42f2f;
-            font-size: 30px;
-            line-height: 1.5em;
-            text-align: center;
-        }
-
-        .content p {
-            font-size: 20px !important;
-            line-height: 2em;
-            margin: 50px auto;
-        }
-
-        .img-container {
-            margin: 50px auto;
-            width: 80%;
-        }
-
-        .table {
-            margin: 50px auto;
-        }
-
-        .info-card {
-            margin: 50px auto;
-        }
-
-        .info-card .nav-link {
-            color: #2e2e2e;
-        }
-
-        .info-card .nav-link.active {
-            color: #0084d1;
-        }
-
-        .info-card .tab-content {
-            margin-top: 10px;
-            line-height: 2em;
-        }
-
-        .order-list {
-            list-style: decimal;
-        }
-
-        .order-list li {
-            margin: 10px 20px;
-        }
-
-        .unorder-list {
-            list-style: disc;
-        }
-
-        .unorder-list li {
-            margin: 10px 20px;
-        }
-
-        .img-label {
-            font-size: 0.8em;
-            text-align: center;
-            width: 100%;
-        }
-
-        .math-formula {
-            font-style: italic;
-            font-family: serif;
-            font-weight: 600;
-        }
-
-        .plist {
-            list-style: disc;
-        }
-
-        .plist li {
-            margin: 10px 0px;
-        }
-
-        .pline {
-            background-color: #ffae00;
-            border: 2px solid #ffae00;
-            margin: 50px auto;
-        }
-
-        .one-day {
-            margin: 10px 0px;
-        }
-
-        .accordion-header button {
-            font-size: 20px;
-        }
-
-        .avatar-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-        }
-
-        .avatar {
-            width: 200px;
-            margin: 10px 30px;
-        }
-
-        .avatar img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-        }
-
-        .avatar p {
-            font-size: 24px;
-            text-align: center;
-            margin: 10px;
-        }
-
-        .modal {
-            font-family: Microsoft Sans Serif;
-        }
-
-        .modal h5 {
-            font-size: 25px;
-            font-weight: 700;
-        }
-
-        .modal ul span {
-            font-weight: 700;
-        }
-
-        .timeline {
-            border: 5px dotted #e42f2f;
-            padding: 20px;
-        }
-
-        .timeline ol li {
-            margin: 5px 0px;
-        }
-
-        .timeline ul {
-            display: flex;
-        }
-
-        .timeline ul li:nth-child(1) {
-            font-weight: 700;
-            width: 30%;
-        }
-
-        .timeline ul li:nth-child(2) {
-            width: 70%;
-        }
-    </style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#scrollspy" data-bs-offset="10" data-bs-method="position">
 
     <!-- page content start -->
     <main class="page">
-        <img class="main-img img-fluid"
-            src="https://2021.igem.org/wiki/images/4/47/T--NCHU_Taichung--Attribution_cover.png" alt="">
+        <img class="main-img img-fluid" src="https://2021.igem.org/wiki/images/c/cb/T--NCHU_Taichung--Result_cover.png"
+            alt="">
         <div class="content-container">
             <!-- sidebar start -->
             <div class="sidebar">
                 <div class="position-sticky">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item">Team</li>
-                            <li class="breadcrumb-item active" aria-current="page">Attributions</li>
+                            <li class="breadcrumb-item">Project</li>
+                            <li class="breadcrumb-item active" aria-current="page">Result</li>
                         </ol>
                     </nav>
                     <nav id="scrollspy" class="navbar flex-column align-items-stretch">
-                        <a class="navbar-brand" href="#header">Attributions</a>
-                        <nav class="nav nav-pills flex-column">
-                            <a class="nav-link" href="#item-1">General Support</a>
-                            <a class="nav-link" href="#item-2">Financial Support</a>
-                            <a class="nav-link" href="#item-3">Wet Lab</a>
-                            <a class="nav-link" href="#item-4">Training</a>
-                            <a class="nav-link" href="#item-5">Suggestion</a>
+                        <a class="navbar-brand" onclick="$('#side-nav1').slideToggle(200);">Result</a>
+                        <nav class="nav nav-pills flex-column" id="side-nav1">
+                            <a class="nav-link" href="#item-1">Overview</a>
+                            <a class="nav-link" href="#item-2">Construction of Cellulosome</a>
+                            <a class="nav-link" href="#item-3">Sugar concentration quantification</a>
+                            <a class="nav-link" href="#item-4">Extract PQQ plasmid from <i>Bacillus subtilis</i>
+                                WB800</a>
+                            <a class="nav-link" href="#item-5">Gene Expression On <i>Bacillus subtilis</i> WB800</a>
+                        </nav>
+                        <a class="navbar-brand" onclick="$('#side-nav2').slideToggle(200);">Engineering success</a>
+                        <nav class="nav nav-pills flex-column" id="side-nav2">
+                            <a class="nav-link" href="#item-2-1">Plasmid Extraction and PCR</a>
+                            <a class="nav-link" href="#item-2-2">Growth Curve</a>
+                            <a class="nav-link" href="#item-2-3">Gene Expression On <i>Bacillus subtilis</i>
+                                RM125/PQQ</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link ms-3 my-1" href="#item-2-3-1">Inoculate <i>Arabidopsis</i></a>
+                                <a class="nav-link ms-3 my-1" href="#item-2-3-2">Inoculate <i>Oryza sativa</i></a>
+                                <a class="nav-link ms-3 my-1" href="#item-2-3-3">Endophyte Re-isolation</a>
+                                <a class="nav-link ms-3 my-1" href="#item-2-3-4">Inoculate Supernatant of <i>Bacillus
+                                        subtilis</i> RM125/PQQ</a>
+                            </nav>
+                        </nav>
+                        <a class="navbar-brand" onclick="$('#side-nav3').slideToggle(200);">Proof of concept</a>
+                        <nav class="nav nav-pills flex-column" id="side-nav3">
+                            <a class="nav-link" href="#item-3-1">Culture <i>Bacillus subtilis</i> RM125/PQQ with
+                                saccharified
+                                straw liquid</a>
+                            <a class="nav-link" href="#item-3-2"><i>Oryza sativa</i> Inoculation</a>
                         </nav>
                     </nav>
                 </div>
@@ -294,117 +61,423 @@
 
             <!-- content start -->
             <div class="content">
-                <h1 id="header">Attributions</h1>
-                <h2 id="item-1">General Support</h2>
-                <div class="avatar-container">
-                    <!-- avatar start -->
-                    <div class="avatar">
-                        <img src="https://2021.igem.org/wiki/images/9/9f/T--NCHU_Taichung--Attribution_fig01.png"
-                            alt="avatar">
-                        <p>Professor Chieh-Chen Huang</p>
-                    </div>
-                    <div class="avatar">
-                        <img src="https://2021.igem.org/wiki/images/0/0e/T--NCHU_Taichung--Attribution_fig02.png"
-                            alt="avatar">
-                        <p>National Chung Hsing University</p>
-                    </div>
-                    <!-- avatar end -->
+                <h1 id="header">Result</h1>
+                <h2 id="item-1">Overview</h2>
+                <p>
+                    The primary goal of our project is to achieve circular agriculture by reuse of <i>Oryza sativa</i>
+                    straws. Decomposing agricultural wastes accompanished by the <i>Oryza sativa</i> becomes the first
+                    aim. To fulfill the aim, we transferred the cellulase genes into <i>Bacillus subtilis</i> and
+                    produced enzymes with scaffolding protein that could be assembled as a cellulosomal enzyme system to
+                    degrade <i>Oryza sativa</i> straws.
+                </p>
+                <h2 id="item-2">Construction of Cellulosome</h2>
+                <p>
+                    On the gel electrophoresis diagram, the third well contains the plasmid of scaffolding protein gene
+                    <i>cipA</i>. From seventh well to twelfth well, they respectively contain the plasmid of cellulase
+                    gene <i>celA</i>, <i>celK</i>, <i>celR</i>, <i>celS</i>, <i>xynC</i> and <i>celZ</i> (Figure 1).
+                </p>
+                <p>
+
+                    These cellulase can be classified into three groups. CelA and CelR are endo-glucosidases. CelK and
+                    celS are exo-glucosidases. XynC and xynZ are both xylanase. In order to achieve the maximum
+                    efficiency, the cellulase that have better activity in each group are chosen for the experiments,
+                    the construction of our cellulosome containing XynC, CelK, CelA and scaffolding protein CipA.
+
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/8/8d/T--NCHU_Taichung--result_fig01.png" alt="">
+                    <label class="img-label">Figure 1 Cellulase plasmid extraction</label>
                 </div>
-                <h2 id="item-2">Financial Support</h2>
-                <div class="avatar-container">
-                    <!-- avatar start -->
-                    <div class="avatar">
-                        <img src="https://2021.igem.org/wiki/images/b/b7/T--NCHU_Taichung--Attribution_fig03.png"
-                            alt="avatar">
-                    </div>
-                    <div class="avatar">
-                        <img src="https://2021.igem.org/wiki/images/4/4b/T--NCHU_Taichung--Attribution_fig04.png"
-                            alt="avatar">
-                    </div>
-                    <div class="avatar">
-                        <img src="https://2021.igem.org/wiki/images/1/1a/T--NCHU_Taichung--Attribution_fig05.png"
-                            alt="avatar">
-                    </div>
-                    <!-- avatar end -->
+                <h2 id="item-3">Sugar concentration quantification</h2>
+                <p>
+                    To quantify the sugar concentration in our broth, we mixed the DNS with the sugar that will change
+                    color while reaching one hundred celsius degrees. After calibration and testing of the
+                    OD<sub>600</sub> value, we obtained the concentration of the sugar in the <i>Oryza sativa</i> straw
+                    by analyzing how much the sugar generates, and calculated the weight of sugar generated from
+                    <i>Oryza sativa</i> straws by concentration.
+                </p>
+                <p>
+                    Our cellulosome are assauredly viable because ensurement is made that our experimental environment
+                    is sterile and only the cellulosome we put in can decompose the cellulose and hemicellulose (Figure
+                    2).
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/f/f4/T--NCHU_Taichung--result_fig02-1.png" alt="">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/7/77/T--NCHU_Taichung--result_fig02-2.png" alt="">
+                    <label class="img-label">Figure 2 Sugar concentration quantification</label>
                 </div>
-                <h2 id="item-3">Wet Lab</h2>
-                <h3 id="item-3-1">Lab Instruments</h3>
-                <ul class="unorder-list">
-                    <li>Professor Huang Chieh Chen provides us with lab instruments.</li>
-                </ul>
-                <h3 id="item-3-2">Project Support & Technical Advice</h3>
-                <ul class="unorder-list">
-                    <li>Professor Huang Chieh Chen provides us with technical advice for the whole wet experiment.</li>
-                    <li>Dr. Pei-Hong Chen provides modeling advice.</li>
-                    <li>Dr. Wei-Jen Lin provides modeling advice.</li>
-                </ul>
-                <h3 id="item-3-3">Materials</h3>
-                <ul class="unorder-list">
-                    <li>Professor Huang Chieh Chen provides us with cells, plasmids,Arabidopsis thaliana seed and rice
-                        seed as the biomaterial for plant experiments.</li>
-                </ul>
-                <h3 id="item-3-4">Human Practice</h3>
-                <div class="timeline">
-                    <ol>
-                        <li>
-                            2020
-                            <ol>
-                                <li>
-                                    <ul>
-                                        <li>Aug. 17, 18<sup>th</sup></li>
-                                        <li>Meetup Conference of teams in Taiwan</li>
-                                    </ul>
-                                </li>
-                            </ol>
-                        </li>
-                        <li>
-                            2021
-                            <ol>
-                                <li>
-                                    <ul>
-                                        <li>Apr. 1<sup>st</sup></li>
-                                        <li>Interview with Mingdao high school</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>
-                                        <li>June. 4<sup>th</sup></li>
-                                        <li>Interview with Info-Link Services</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>
-                                        <li>July. 3<sup>rd</sup></li>
-                                        <li>Online Meetup Conference of teams in Taiwan</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>
-                                        <li>Aug. 19<sup>th</sup></li>
-                                        <li>Interview with local farmers</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>
-                                        <li>Sep. 14<sup>th</sup></li>
-                                        <li>Podcast with PanSci</li>
-                                    </ul>
-                                </li>
-                            </ol>
-                        </li>
-                    </ol>
+                <p>
+                    The next step is to transfer the pyrroloquinoline quinone (PQQ) synthesis genes into the <i>Bacillus
+                        subtilis</i>, which can make the <i>Bacillus subtilis</i> produce pyrroloquinoline quinone and
+                    act as endophyte to accelerate <i>Oryza sativa</i> growth.
+                </p>
+                <h2 id="item-4">Extract PQQ plasmid from <i>Bacillus subtilis</i> WB800</h2>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/8/8b/T--NCHU_Taichung--result_fig003.png" alt="">
+                    <label class="img-label">Figure 3 PQQ plasmid extraction from <i>Bacillus subtilis</i> WB800
+                        (Plasmid didn’t cut
+                        by restriction enzyme,so the circular DNA will locate above 10000bp).</label>
                 </div>
-                <h2 id="item-4">Training</h2>
-                <ul class="unorder-list">
-                    <li>Ti Fang guides us wet lab experiments.</li>
-                    <li>Shih-Hsun Hung guides us plant tests and wet lab experiments.</li>
-                </ul>
-                <h2 id="item-5">Suggestion</h2>
-                <ul class="unorder-list">
-                    <li>Tzai-Ching Huang</li>
-                </ul>
-                <!-- content end -->
+                <h2 id="item-5">Gene Expression On <i>Bacillus subtilis</i> WB800</h2>
+                <p>
+                    To test the effectiveness of PQQ on plants, we inoculate <i>Bacillus subtilis</i> WB800 within or
+                    without
+                    the PQQ plasmid into <i>Arabidopsis</i>.
+                </p>
+                <p>
+                    In the picture below, respectively shows phenotypes of 5-week-old <i>Arabidopsis</i> inoculated with
+                    <i>Bacillus subtilis</i> WB800 with PQQ plasmid (PQQ), with <i>Bacillus subtilis</i> WB800 (WB800),
+                    and with
+                    water (CK) (Figure 4A).
+                </p>
+                <p>
+                    <i>Bacillus subtilis</i> WB800 with PQQ plasmid significantly improved stalk height, the stalk
+                    height of
+                    <i>Arabidopsis</i> with PQQ is about 8 cm, and the stalk height of <i>Arabidopsis</i> with
+                    <i>Bacillus
+                        subtilis</i> WB800 is about 2 cm (Figure 4B).
+                </p>
+                <p>
+                    <i>Arabidopsis</i> inoculated with water has one primary inflorescence. <i>Arabidopsis</i>
+                    inoculated with
+                    <i>Bacillus subtilis</i> WB800 have 3 inflorescences, including primary and secondary
+                    inflorescence.
+                    <i>Arabidopsis</i> inoculated with <i>Bacillus subtilis</i> with PQQ plasmid have nearly 5.25 for
+                    average
+                    inflorescences,
+                    encompassing primary, secondary and tertiary inflorescence (Figure 4C).
+                </p>
+                <p>
+                    <i>Bacillus subtilis</i> WB800 with PQQ plasmid possibly help plants to reach reproductive stages
+                    earlier.
+                </p>
+                <p>
+                    <i>Arabidopsis</i> inoculated with PQQ has the highest performance in the leaves area of
+                    <i>Arabidopsis</i>. The
+                    leaves area is about 5 cm², in contrast to 4 cm² of <i>Bacillus subtilis</i> WB800, and to 3 cm² of
+                    CK
+                    (Figure 4D).
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/8/8a/T--NCHU_Taichung--result_fig04.png" alt="">
+                    <label class="img-label">Figure 4 <i>Bacillus subtilis</i> WB800 with PQQ plasmid possibly help
+                        plants to
+                        reach reproductive stages earlier.</label>
+                </div>
+                <p>
+                    However, we discovered that WB800 has a kanamycin resistance gene in its genome(as knockout strain
+                    marker). So we decided to
+                    choose <i>Bacillus subtilis</i> RM125 as the new host.
+                </p>
+
+                <h1 id="header-2">Engineering success</h1>
+                <h2 id="item-2-1">Plasmid Extraction and PCR</h2>
+                <p>
+                    We conducted plasmid extraction and PCR to verify that the PQQ plasmid was successfully transferred
+                    into <i>Bacillus subtilis</i> RM125 (Figure 5).
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid" src="https://2021.igem.org/wiki/images/4/41/T--NCHU_Taichung--5new.png"
+                        alt="">
+                    <label class="img-label">Figure 5 PQQ plasmid extraction and PCR.</label>
+                </div>
+                <h2 id="item-2-2">Growth Curve</h2>
+                <p>
+                    The OD<sub>600</sub> value of <i>Bacillus subtilis</i> with PQQ plasmid is higher than wild type
+                    <i>Bacillus subtilis</i> in log
+                    phase and
+                    stationary phase. PQQ can improve the efficiency of nutrient utilization of <i>Bacillus
+                        subtilis</i>(Figure 6).
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/5/52/T--NCHU_Taichung--result_fig07.png" alt="">
+                    <label class="img-label">Figure 6 The OD<sub>600</sub> value of<i>Bacillus subtilis</i> with PQQ
+                        plasmid is
+                        higher.</label>
+                </div>
+                <h2 id="item-2-3">Gene Expression On <i>Bacillus subtilis</i> RM125/PQQ</h2>
+                <h3 id="item-2-3-1">Symbiosis assay of <i>Arabidopsis</i></h3>
+                <p>
+                    Comparing with <i>Arabidopsis</i> which didn’t be inoculated (CK), the leaves area of
+                    <i>Arabidopsis</i> thaliana
+                    inoculated <i>Bacillus subtilis</i> RM125 with PQQ Plasmid (RM125/PQQ) increased by 1.5 times and
+                    capsule
+                    number raised by 2 times. Leaves NO. and stalk height also grew significantly. <i>Bacillus
+                        subtilis</i>
+                    RM125 with PQQ Plasmid can improve both vegetative and reproductive growth of <i>Arabidopsis</i>
+                    (Figure 7B and 7C).
+                </p>
+                <p>
+                    In addition, the value of leaf number, leaves area, stalk height, and capsule of <i>Arabidopsis</i>
+                    inoculated with our engineered bacteria <i>Bacillus subtilis</i> RM125/PQQ (RM125/PQQ) is higher
+                    than the
+                    <i>Arabidopsis</i> inoculated with <i>Bacillus subtilis</i> RM125 (RM125), and also more homogenous
+                    (Figure
+                    7E and 7F).
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/4/48/T--NCHU_Taichung--result_fig008-1.png" alt="">
+                    <label class="img-label">Figure 7-1 Artificial endophyte <i>Bacillus subtilis</i> RM125/PQQ promoted
+                        <i>Arabidopsis</i>
+                        growth.</label>
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/2/25/T--NCHU_Taichung--result_fig008-2%281%29.png"
+                        alt="">
+                    <label class="img-label">Figure 7-2 Artificial endophyte <i>Bacillus subtilis</i> RM125/PQQ promoted
+                        <i>Arabidopsis</i>
+                        growth.</label>
+                </div>
+                <h3 id="item-2-3-2">Symbiosis assay of <i>Oryza sativa</i></h3>
+                <p>
+                    <i>Oryza sativa</i> seeds were dehulled and sterilized, and constantly shaked in water under
+                    darkness for one day
+                    then sewed in Murashige & Skoog medium. Thirteen days after inoculation, we found that the value of
+                    leaves width, leaves length, shoot height of seedling inoculated <i>Bacillus subtilis</i> RM125 with
+                    PQQ
+                    plasmid (RM125/PQQ) was higher than the seedling inoculated with <i>Bacillus subtilis</i> RM125
+                    (RM125), and the
+                    fresh weight was doubled (Figure 8).
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/0/0c/T--NCHU_Taichung--result_fig009-1.png" alt="">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/2/2a/T--NCHU_Taichung--result_fig009-2.png" alt="">
+                    <label class="img-label">Figure 8 Artificial endophyte <i>Bacillus subtilis</i> RM125/PQQ promoted
+                        <i>Oryza sativa</i>
+                        growth.</label>
+                </div>
+                <p>
+                    In test on <i>Arabidopsis</i> and <i>Oryza sativa</i>, we got the same result: <i>Bacillus
+                        subtilis</i> RM125 inoculated with PQQ plasmid
+                    can effectively improve plant growth, and the PQQ gene may be the key factor.
+                </p>
+                <h3 id="item-2-3-3">Endophyte Re-isolation</h3>
+                <p>
+                    <b>Re-isolate <i>Bacillus subtilis</i> RM125/PQQ</b>
+                </p>
+                <p>
+                    The persistence and effectiveness of the end product might be affected by the success of in planta
+                    endosymbiotic <i>Bacillus subtilis</i> RM125/PQQ. Thus, we re-isolated the strain after inoculation
+                    to check the endosymbiosis of the artificial endophyte, which may be the most intuitive way for the
+                    evaluation. For the <i>Bacillus</i> species, selective medium and 16S rDNA amplicon sequencing
+                    checks were used; for PQQ biosynthesis genes, plasmid size, PQQ biosynthesis genes size, and the
+                    follow-up Sanger-sequencing of these genes checks were performed (Figure 9 & 10). Taken all
+                    together, our results directly indicate the success of <i>Bacillus subtilis</i> RM125/PQQ in planta
+                    endosymbiosis.
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/b/b0/T--NCHU_Taichung--result_pic02.png" alt="">
+                    <label class="img-label">Picture 1. Artificial endophyte.(A)<i>Bacillus subtilis</i> RM125/PQQ
+                        re-isolated from
+                        <i>Arabidopsis</i>.(B)<i>Bacillus subtilis</i> RM125/PQQ re-isolated from <i>Oryza sativa</i>.
+                    </label>
+                </div>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/a/ae/T--NCHU_Taichung--result_fig10.png" alt="">
+                    <label class="img-label">Figure 9 Plasmid extraction of <i>Bacillus subtilis</i> RM125/PQQ
+                        re-isolate from
+                        plant.(Plasmid didn’t cut by restriction enzyme,so the circular DNA will locate above
+                        10000bp)</label>
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/7/77/T--NCHU_Taichung--result_fig11.png" alt="">
+                    <label class="img-label">Figure 10 PCR result of <i>Bacillus subtilis</i> RM125/PQQ re-isolate from
+                        plant</label>
+                </div>
+                <h3 id="item-2-3-4">Inoculate Supernatant of <i>Bacillus subtilis</i> RM125/PQQ</h3>
+                <p>
+                    Verification of our assumption that PQQ was secreted off to the supernatant needed to be reassured.
+                    We decided to adjust the easiest way, observing the difference after the inoculation by
+                    supernatants. Supernatants from <i>Bacillus subtilis</i> RM125 with PQQ plasmid(RM125/PQQ) and
+                    <i>Bacillus subtilis</i>(RM125).
+                </p>
+                <p>
+                    In this experiment, we pelleted down the cell and filtered the supernatant. The dilution fold of the
+                    supernatant is equal to the value of OD600 value because assumption was made that the amount of
+                    metabolites is proportional to the OD600 value.
+                </p>
+                <p>
+                    Results showed that the supernatant of <i>Bacillus subtilis</i> improved the vegetative and
+                    reproductive growth of
+                    <i>Arabidopsis</i>, and the vegetative growth of <i>Arabidopsis</i> inoculated with our engineered
+                    <i>Bacillus subtilis</i>(RM125/PQQ) was slightly higher than <i>Arabidopsis</i> inoculated with
+                    <i>Bacillus subtilis</i> RM125
+                    (Figure 11).
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/f/ff/T--NCHU_Taichung--result_fig12-1.png" alt="">
+                    <label class="img-label">Figure 11-1 Supernatant of <i>Bacillus subtilis</i> subtilis RM125/PQQ
+                        slightly improved
+                        the growth of <i>Arabidopsis</i>.</label>
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/7/7d/T--NCHU_Taichung--result_fig12-2.png" alt="">
+                    <label class="img-label">Figure 11-2 Supernatant of <i>Bacillus subtilis</i> RM125/PQQ slightly
+                        improved
+                        the growth of <i>Arabidopsis</i>.</label>
+                </div>
+                <h1>Proof of concept</h1>
+                <h2 id="item-3-1">Culture <i>Bacillus subtilis</i> RM125/PQQ with saccharified straw liquid</h2>
+                <p>
+                    Our final purpose is to turn the agriculture waste to the medium of benefical endophyte, and
+                    use the bacteria with the medium as a growth biostimulant to increase agricultural productivity. The
+                    final goal is to find the best carbon-nitrogen ratio of the saccharified straw liquid to culture
+                    <i>Bacillus subtilis</i> RM125 with PQQ plasmid. We have <i>Oryza sativa</i> straw for carbon
+                    sources and Okara for
+                    nitrogen sources. After a series of experiments, we found that 1:4 is the best ratio of <i>Oryza
+                        sativa</i> straw
+                    to Okara(Figure 12). The OD600 value of <i>Bacillus subtilis</i> RM125 with PQQ can achieve nearly
+                    twice
+                    or twice and a half increase in the saccharified straw liquid (Figure 13).
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/d/d9/T--NCHU_Taichung--result_fig13.png" alt="">
+                    <label class="img-label">Figure 12 the best carbon-nitrogen ratio of the saccharified straw liquid
+                        to culture <i>Bacillus subtilis</i> RM125 with PQQ plasmid.</label>
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/b/bb/T--NCHU_Taichung--result_fig14.png" alt="">
+                    <label class="img-label">Figure 13 The OD600 value of <i>Bacillus subtilis</i> RM125 with PQQ can be
+                        about
+                        1 to 1.5 in the saccharified straw liquid.</label>
+                </div>
+                <h2 id="item-3-2"><i>Oryza sativa</i> Inoculation</h2>
+                <p>
+                    To avoid Soil-Borne disease, seeds of <i>Oryza sativa</i>（Oryza sativa var. Japonica Taiken 9) was
+                    sterilized by
+                    NaClO, sowed in potting soil, and inoculated three times (12 days, 33 days, 60 days after
+                    sowing_DAS).
+                </p>
+                <p>
+                    For biosafety reasons, we filtered out the recombinant <i>Bacillus subtilis</i>, inoculated <i>Oryza
+                        sativa</i> only with supernatant. After
+                    culturing our endophyte in saccharified straw liquid,we adjusted the OD600 value to 1, then pellet
+                    down
+                    the bacteria and filtered the supernatant as stock inoculant.The stock inoculant was diluted 100
+                    times 200times and 500times.The concentration of the supernatant is defined as 1x, 1/100x,1/200x,
+                    and 1/500x.
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/8/8e/T--NCHU_Taichung--result_pic03.png" alt="">
+                    <label class="img-label">Picture 2. The phenotype of <i>Oryza sativa</i> inoculated with Supernatant
+                        of <i>Bacillus subtilis</i> RM125/PQQ (46 days after sowing).</label>
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/e/ef/T--NCHU_Taichung--result_pic04.png" alt="">
+                    <label class="img-label">Picture 3. The phenotype of <i>Oryza sativa</i> inoculated with Supernatant
+                        of <i>Bacillus subtilis</i> RM125/PQQ (54 days after sowing).
+                    </label>
+                </div>
+                <p>
+                    Supernatants of higher concentration seemed to be more effective (Picture 2 & 3 ). Treatment with 1x
+                    and 1/100 x supernatant significantly increased the leaves number, shoot height, and leaf
+                    length (Figure 14A,14D,14E).The tiller quantity of <i>Oryza sativa</i> inoculated 1x supernatant
+                    escalated by
+                    50.3%(Figure 14B) and the dry weight was doubled (Figure 14C). In the meantime, the tiller quantity
+                    of <i>Oryza sativa</i> inoculated 1/100x supernatant was raised by 29%(Figure 14 B), the dry weight
+                    was increased by
+                    96%( Figure15C), and chlorophyll content raised 1.5 times (Figure 14F).
+                </p>
+                <p>
+                    More tillers means the <i>Oryza sativa</i> may have more ears ,and the increase of chlorophyll
+                    content means the
+                    increase of photoassimilates.All these phenomena pointed out that that inoculant can improve
+                    <i>Oryza sativa</i>
+                    growth and have a great opportunity to increase the yield.
+                </p>
+                <div class="img-container">
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/3/3d/T--NCHU_Taichung--result_fig015.png" alt="">
+                    <label class="img-label">Figure 14 Supernatant of <i>Bacillus subtilis</i> RM125/PQQ cultured in
+                        saccharified straw liquid can promote <i>Oryza sativa</i> growth.</label>
+                    <img class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/0/02/T--NCHU_Taichung--result_fig16.png" alt="">
+                    <label class="img-label">Figure 15 Supernatant of <i>Bacillus subtilis</i> RM125/PQQ cultured in
+                        saccharified straw liquid can increase the tiller quant and the clum diameter of <i>Oryza
+                            sativa</i>
+                    </label>
+                    <img class="img-fluid" src="https://2021.igem.org/wiki/images/4/4d/T--NCHU_Taichung--Figure17.png"
+                        alt="">
+                    <label class="img-label">Figure 16 <i>Oryza sativa</i> phenotype measurement.</label>
+                </div>
+                <p>
+                    The vegetative phase of <i>Oryza sativa</i> is about two months, and about 3-5 seedlings will be
+                    planted together
+                    until the total amount of tiller reaches 20-25, then the <i>Oryza sativa</i> is ready to enter the
+                    reproductive
+                    phase. According to this, 4 tillers is the lowest value for every single plant. While the control
+                    groups have about 4 tillers, inoculated <i>Oryza sativa</i>(1x,100x) have already reached 6-8
+                    tillers,(Figure16B)
+                    which means that inoculants shorten the time for <i>Oryza sativa</i> to reach 4 tillers, helping
+                    <i>Oryza sativa</i> enter the
+                    reproductive phase earlier. Water sources are becoming a serious problem in agriculture because of
+                    global climate change. If the time for <i>Oryza sativa</i> cultivation shortens, a lower amount of
+                    water is needed.
+                </p>
+                <p>
+                    Besides, the culm diameter also increased, which means that the inoculants may have the potential to
+                    improve breaking-type lodging resistance (Figure 15C).
+                </p>
+                <h2 id="item-3-2">Harvest is just around the corner!</h2>
+                <p>
+                    The treatment group is almost ready to harvest, and the experiment is still in progress.
+                </p>
+                <div class="img-container" style="width: 100%">
+                    <img style="width: 100%" class="img-fluid"
+                        src="https://2021.igem.org/wiki/images/1/10/T--NCHU_Taichung--result_fig18.png" alt="">
+                </div>
+                <p>
+                    To us, the specific modified endophyte, RM125 can make plants growth promoting. We assume that it
+                    and its products have ability to decrease the emission of CO2 from the planting period. Aim to
+                    calculate the emission of CO2 concentration from plants and soil. The total CO2 output from the soil
+                    is mainly from the respiration of living root and microorganic biota in soil. Therefore, we divide
+                    it into two parts of content.
+                    The part of soil can be described as:
+                </p>
+                <p>
+                    where F (mg C cm−2 h−1) is the soil respiration rate, ρ is the density of CO2 (1.98 × 103 g m−3)
+                    under standard condition, V (m3) and A (m2) are the volume and bottom area of the chamber,
+                    respectively, Δc (m3 m−3) is the change in CO2 concentration in the chamber during the period Δt
+                    (h), T is the absolute temperature and α is the conversion factor for CO2 to C (12/44).
+                </p>
+                <p>
+                    And the other is root respiration of the plant, we did 16 groups of inoculating the pellet of RM125
+                    (RM125/pel.), supernatant containing PQQ without bacteria (sup.) in kinds of dilution ratio
+                    100-fold, 200-fold and fertilizer (TFC.) in kinds of dilution ratio100-fold,250-fold, 500-fold and
+                    1000-fold, which are treatments of planting and soil only. Put the same treatment of plants,
+                    <i>Arabidopsis thaliana</i>, in self-designed airtight chamber for 40 minutes accumulating CO2 to be
+                    detected respectively. Simultaneously, the data of plants’ dry weight from three independent
+                    replications in different treatments had been collected. Evaluate relative statement between the
+                    result of CO2 emission and biomass of plants.
+                </p>
+                <p>
+                    Depend on the result of experiment to the CO2 emission from plants and soil, which are effected by
+                    multiple treatments, we utilized our modeling value, represent the part of soil respiration, been
+                    reduced by emission of whole planting condition in chamber to obtain the respiration rate of plants
+                    only. the analysis result shows that the treatments of fertilizer have higher in respiration rate
+                    than the others in common. And the median of RM125/pel. is in middle of the distribution. The
+                    sup/100X and sup/200X obviously emits lower CO2 than others except for water.
+                </p>
+                <p>
+                    The gray spot represents the fertilizer treatment, the concentration of fertilizer is 1/100, 1/250,
+                    1/500, 1/1000, respectively. The yellow spot represents the supernatant treatment, the concentration
+                    is 1/100 and 1/200.The darker the spot color, the higher the concentration. The yellow spot is
+                    pellet treatment, inoculated the pellet of our artificial endophyte.CK is control group, treat with
+                    pure water. The result show that supernatant and pellet treatment can reduce the emission of carbon
+                    dioxide and also increase the biomass of <i>Arabidopsis</i>.
+                </p>
+
             </div>
+            <!-- content end -->
         </div>
     </main>
     <!-- page content end -->
